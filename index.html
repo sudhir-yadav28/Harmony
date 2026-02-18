@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony Neurocare</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <!-- Custom SVG Logo matching reference (5 parts) -->
+                <svg width="60" height="42" viewBox="0 0 70 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Far Left Sliver -->
+                    <path d="M8 12 Q 5 21 8 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
+                    <!-- Inner Left Crescent -->
+                    <path d="M16 8 Q 10 21 16 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
+                    <!-- Center Oval (Filled) -->
+                    <ellipse cx="35" cy="21" rx="11" ry="16" fill="#c25e28" />
+                    <!-- Inner Right Crescent -->
+                    <path d="M54 8 Q 60 21 54 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
+                    <!-- Far Right Sliver -->
+                    <path d="M62 12 Q 65 21 62 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
+                </svg>
+
+                <div class="d-flex flex-column align-items-start lh-1 ps-1">
+                    <span class="brand-top text-white"
+                        style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 2.2rem; letter-spacing: -1px; line-height: 0.9;">harmony</span>
+                    <span class="brand-bottom text-white text-uppercase"
+                        style="font-family: 'Lato', sans-serif; font-size: 0.75rem; letter-spacing: 4px; font-weight: 500; margin-left: 2px;">NEUROCARE</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link active-home" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#treatment">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="insurance.html">INSURANCE & PRICING</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conditions.html">CONDITIONS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">RESOURCES</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#contact">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center justify-content-center text-center text-white">
+        <div class="hero-content">
+            <h1 class="display-1 hero-title serif-font">Where neuroscience<br>and compassionate care<br>work together
+            </h1>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="py-5 bg-dark-green text-white">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <p class="text-uppercase small ls-2 fw-bold text-white-50">WELCOME TO HARMONY NEUROCARE IN CASTLE
+                        ROCK, CO</p>
+                    <hr class="border-secondary opacity-50 my-4">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
+                    <h2 class="display-3 serif-font mb-5">Healing starts with<br>being truly understood</h2>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#contact"
+                            class="btn btn-light-beige rounded-pill px-4 py-3 fw-bold text-uppercase ls-1 small text-dark">SCHEDULE
+                            A CONSULTATION</a>
+                        <a href="tel:3034097446"
+                            class="btn btn-outline-light rounded-pill px-4 py-3 fw-bold ls-1 small d-flex align-items-center">
+                            <i class="fas fa-phone-alt me-2"></i> 303-409-7446
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h3 class="serif-font h2 mb-4">A mental health clinic near you for people who feel like nothing has
+                        worked</h3>
+                    <p class="fw-light text-white-50 mb-4 lh-lg">Maybe you've tried talking, medications, or simply
+                        pushing through and still feel stuck in symptoms that won't let up. That's when most people find
+                        us. At Harmony NeuroCare in Castle Rock, CO, you'll meet providers who genuinely listen and
+                        understand what you've been carrying. With innovative treatments and a human-centered approach,
+                        we help you move toward relief that feels real, supported, and possible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Options Section -->
+    <section id="treatment" class="py-5 bg-light-beige position-relative text-center">
+        <!-- Background wavy lines might be needed here if visual shows it crossing sections -->
+        <div class="container py-5 position-relative z-1">
+            <h2 class="serif-font display-3 mb-3">Our Treatment Options</h2>
+            <p class="text-uppercase small text-orange ls-2 fw-bold mb-5">INNOVATIVE THERAPIES DESIGNED TO HELP YOU HEAL
+                AND THRIVE</p>
+        </div>
+
+        <div class="container-fluid px-0 pb-5">
+            <div class="row g-2 justify-content-center"> <!-- Reduced gap to g-2 for tight look -->
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="treatment-card rounded-4 overflow-hidden position-relative h-100 text-white shadow-sm">
+                        <div class="treatment-bg"
+                            style="background-image: url('images/home/BG-MacroMushroom.jpg'); filter: brightness(0.9);">
+                        </div> <!-- Using mushroom/light texture for light appearance -->
+                        <div
+                            class="card-overlay-light d-flex flex-column justify-content-center align-items-center p-4 h-100 position-relative z-1 text-center">
+                            <h3 class="serif-font h2 text-dark mb-4">TMS Therapy</h3>
+                            <p class="small mb-4 text-dark px-2">Featuring BrainsWay Deep TMS technology that reaches
+                                deeper brain regions and offers higher success rates for depression, anxiety, and OCD.
+                                Safe, non-invasive, and covered by most insurance plans.</p>
+                            <a href="tms.html"
+                                class="btn btn-light-beige rounded-pill px-4 py-2 text-dark small fw-bold ls-1 text-uppercase">LEARN
+                                MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="treatment-card rounded-4 overflow-hidden position-relative h-100 text-white shadow-sm">
+                        <div class="treatment-bg"
+                            style="background-image: url('images/home/BG-MacroGreenLeaf.jpg'); filter: brightness(0.8) sepia(0.2);">
+                        </div>
+                        <div
+                            class="card-overlay-light d-flex flex-column justify-content-center align-items-center p-4 h-100 position-relative z-1 text-center">
+                            <h3 class="serif-font h2 text-dark mb-4">Ketamine Therapy</h3>
+                            <p class="small mb-4 text-dark px-2">Rapid-relief treatment used for depression and related
+                                conditions when traditional approaches have not provided enough improvement. Available
+                                through in-clinic ketamine care with personalized dosing and careful monitoring.</p>
+                            <a href="ketamine.html"
+                                class="btn btn-light-beige rounded-pill px-4 py-2 text-dark small fw-bold ls-1 text-uppercase">LEARN
+                                MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="treatment-card rounded-4 overflow-hidden position-relative h-100 text-white shadow-sm">
+                        <div class="treatment-bg"
+                            style="background-image: url('images/home/BG-MacroMushroom.jpg'); filter: brightness(0.9);">
+                        </div>
+                        <div
+                            class="card-overlay-light d-flex flex-column justify-content-center align-items-center p-4 h-100 position-relative z-1 text-center">
+                            <h3 class="serif-font h2 text-dark mb-4">SPRAVATO®</h3>
+                            <p class="small mb-4 text-dark px-2">An FDA-approved option for treatment-resistant
+                                depression that can provide faster symptom relief when standard antidepressants have not
+                                worked well enough. Administered in-clinic with supervision.</p>
+                            <a href="ketamine.html"
+                                class="btn btn-light-beige rounded-pill px-4 py-2 text-dark small fw-bold ls-1 text-uppercase">LEARN
+                                MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="treatment-card rounded-4 overflow-hidden position-relative h-100 text-white shadow-sm">
+                        <div class="treatment-bg"
+                            style="background-image: url('images/home/BG-MacroGreenLeaf.jpg'); filter: brightness(0.8) sepia(0.2);">
+                        </div>
+                        <div
+                            class="card-overlay-light d-flex flex-column justify-content-center align-items-center p-4 h-100 position-relative z-1 text-center">
+                            <h3 class="serif-font h2 text-dark mb-4">Med Management</h3>
+                            <p class="small mb-4 text-dark px-2">Compassionate evaluations and medication management
+                                designed to stabilize symptoms and support long-term wellness with a minimum effective
+                                dose approach.</p>
+                            <a href="psychiatry.html"
+                                class="btn btn-light-beige rounded-pill px-4 py-2 text-dark small fw-bold ls-1 text-uppercase">LEARN
+                                MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section (Formerly Path) -->
+    <section id="why-choose" class="py-5 bg-dark-green text-white position-relative overflow-hidden">
+        <div class="wavy-bg position-absolute top-0 start-0 w-100 h-100"
+            style="background-image: url('images/home/AbstractWavyLines-1-Verdant.png'); opacity: 0.15; background-size: cover; background-position: center;">
+        </div>
+        <div class="container position-relative z-1 py-5">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <p class="text-uppercase small ls-2 fw-bold text-white-50">WHY CHOOSE HARMONY NEUROCARE</p>
+                    <hr class="border-secondary opacity-50 my-4">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-5 mb-5 mb-lg-0 pe-lg-5">
+                    <h2 class="display-3 serif-font mb-4">A clinic built with humanity, science, and accessibility in
+                        mind</h2>
+                    <p class="fw-light text-white-50 mb-5 lh-lg">Harmony NeuroCare was created to bring world-class
+                        treatments to people who have felt unheard or overlooked in traditional mental health care.
+                        Here, your story guides the plan. Your comfort guides the experience. And your results guide the
+                        ongoing care you receive.</p>
+                    <a href="#welcome"
+                        class="btn btn-light-beige rounded-pill text-dark px-4 py-3 fw-bold text-uppercase ls-1 small">ABOUT
+                        HARMONY NEUROCARE</a>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <p class="text-white-50 mb-4 fw-light">Patients choose Harmony because they value:</p>
+                    <ul class="list-unstyled text-white-50 fw-light lh-lg">
+                        <li class="mb-2 d-flex"><span class="me-2">•</span> A clinic that collaborates with your care
+                            team and is dedicated to community</li>
+                        <li class="mb-2 d-flex"><span class="me-2">•</span> Personalized, integrative treatment plans
+                        </li>
+                        <li class="mb-2 d-flex"><span class="me-2">•</span> BrainsWay Deep TMS for stronger and deeper
+                            stimulation</li>
+                        <li class="mb-2 d-flex"><span class="me-2">•</span> Ketamine and SPRAVATO® options for rapid,
+                            research-backed relief</li>
+                        <li class="mb-2 d-flex"><span class="me-2">•</span> Insurance-friendly mental health care</li>
+                        <li class="mb-2 d-flex"><span class="me-2">•</span> Innovative therapies supported by evidence
+                        </li>
+                        <li class="mb-2 d-flex"><span class="me-2">•</span> A clinic environment that feels warm, safe,
+                            and genuinely supportive</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conditions We Treat Section -->
+    <section id="conditions">
+        <div class="container text-center mb-5">
+            <h2 class="serif-font display-4 mb-3">Conditions We Treat</h2>
+            <p class="text-muted w-75 mx-auto">Evidence-based care for the most common conditions supported at our
+                Deep TMS, ketamine, and therapy clinic in Colorado.</p>
+        </div>
+
+        <div class="container-fluid px-0">
+            <div class="conditions-grid border-top border-bottom border-light-subtle">
+                <!-- Depression -->
+                <div class="condition-item">
+                    <div class="condition-icon">
+                        <img src="images/icons/Icon_Revive-1.png" alt="Depression Icon">
+                    </div>
+                    <div class="condition-text">Depression</div>
+                </div>
+
+                <!-- Anxiety -->
+                <div class="condition-item">
+                    <div class="condition-icon">
+                        <img src="images/icons/Icon_Revive-2.png" alt="Anxiety Icon">
+                    </div>
+                    <div class="condition-text">Anxiety</div>
+                </div>
+
+                <!-- PTSD -->
+                <div class="condition-item">
+                    <div class="condition-icon">
+                        <img src="images/icons/Icon_Revive-3.png" alt="PTSD Icon">
+                    </div>
+                    <div class="condition-text">PTSD</div>
+                </div>
+
+                <!-- OCD -->
+                <div class="condition-item">
+                    <div class="condition-icon">
+                        <img src="images/icons/Icon_Revive-4.png" alt="OCD Icon">
+                    </div>
+                    <div class="condition-text">OCD</div>
+                </div>
+
+                <!-- Bipolar -->
+                <div class="condition-item">
+                    <div class="condition-icon">
+                        <img src="images/icons/Icon_Revive-5.png" alt="Bipolar Icon">
+                    </div>
+                    <div class="condition-text">Bipolar</div>
+                </div>
+
+                <!-- ADHD / ADD -->
+                <div class="condition-item">
+                    <div class="condition-icon">
+                        <img src="images/icons/Icon_Revive-6.png" alt="ADHD Icon">
+                    </div>
+                    <div class="condition-text">ADHD / ADD</div>
+                </div>
+
+                <!-- Suicidal Ideation -->
+                <div class="condition-item">
+                    <div class="condition-icon">
+                        <img src="images/icons/Icon_Revive-7.png" alt="Suicidal Ideation Icon">
+                    </div>
+                    <div class="condition-text">Suicidal Ideation</div>
+                </div>
+
+                <!-- Trauma & Addiction -->
+                <div class="condition-item">
+                    <div class="condition-icon">
+                        <img src="images/icons/Icon_Revive-8.png" alt="Trauma Icon">
+                    </div>
+                    <div class="condition-text">Trauma & Addiction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Harmony Section -->
+    <section id="meet-harmony" class="py-5">
+        <div class="meet-harmony-wave"></div>
+
+        <div class="container py-5 position-relative z-1">
+            <div class="meet-harmony-card">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 px-lg-5 mb-5 mb-lg-0">
+                        <p class="text-rust mb-3">WHERE OUR MISSION BEGAN</p>
+                        <h2 class="serif-font mb-4">Meet Harmony</h2>
+                        <p class="text-muted mb-4 fw-light lh-lg">Harmony NeuroCare began with one person: Harmony
+                            herself.
+                            After years of navigating depression with little lasting relief, she found hope through Deep
+                            TMS
+                            and the compassionate providers who finally understood her experience. Her transformation
+                            inspired a vision for a clinic built on empathy, science, and access to care. Today,
+                            Harmony’s
+                            journey continues to guide everything we do, reminding us that healing is possible and every
+                            story deserves to be heard.</p>
+                        <a href="about.html" class="btn btn-dark-brown shadow-sm mt-2">MORE ABOUT HARMONY</a>
+                    </div>
+                    <div class="col-lg-6 px-lg-4 text-center">
+                        <!-- Image container -->
+                        <div class="rounded-5 overflow-hidden shadow-sm position-relative">
+                            <img src="images/home/img-Harmony.jpg" alt="Harmony Founder"
+                                class="img-fluid object-fit-cover meet-harmony-img w-100" style="max-height: 500px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light-beige">
+        <div class="container text-center py-5">
+            <h2 class="serif-font display-3 mb-3">Hear From Others</h2>
+            <p class="text-uppercase small text-orange ls-2 fw-bold mb-5">REAL EXPERIENCES FROM PEOPLE WHO FOUND HOPE
+            </p>
+
+            <div class="row g-4 align-items-stretch">
+                <!-- Card 1 (Left) -->
+                <div class="col-md-4">
+                    <div
+                        class="testimonial-card p-4 h-100 d-flex flex-column align-items-center justify-content-center bg-white rounded-4 shadow-sm border border-light">
+                        <p class="serif-font text-muted mb-4 small">"Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                            ut aliquip ex ea commodo consequat."</p>
+                        <p class="serif-font text-muted mb-0 small">— Name Goes Here</p>
+                    </div>
+                </div>
+                <!-- Card 2 (Center - Video) -->
+                <div class="col-md-4">
+                    <div
+                        class="testimonial-card h-100 rounded-4 overflow-hidden position-relative shadow-sm bg-white border border-light d-flex align-items-center justify-content-center">
+                        <div class="p-3 w-100">
+                            <div class="video-thumbnail rounded-4 position-relative overflow-hidden"
+                                style="height: 200px; background-color: #ddd;">
+                                <img src="images/img-Harmony.jpg" alt="Video Thumbnail"
+                                    class="w-100 h-100 object-fit-cover grayscale" style="filter: grayscale(100%);">
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <div class="play-button bg-danger rounded-3"
+                                        style="width: 40px; height: 30px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="fas fa-play text-white small"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="serif-font text-muted mt-4 mb-2 small px-2">Ut wisi enim ad minim veniam, quis
+                                nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                consequat.</p>
+                            <p class="serif-font text-muted fw-bold small">— Name Goes Here</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 (Right) -->
+                <div class="col-md-4">
+                    <div
+                        class="testimonial-card p-4 h-100 d-flex flex-column align-items-center justify-content-center bg-white rounded-4 shadow-sm border border-light">
+                        <div class="mb-4">
+                            <img src="images/home/img-Harmony.jpg" alt="Person" class="rounded-circle object-fit-cover"
+                                style="width: 80px; height: 80px;">
+                        </div>
+                        <p class="serif-font text-muted mb-4 small">"Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                            ut aliquip ex ea commodo consequat."</p>
+                        <p class="serif-font text-muted mb-0 small">— Name Goes Here</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 d-flex align-items-center justify-content-center gap-3">
+                <i class="fas fa-arrow-left text-muted fw-light"></i>
+                <span class="text-dark fw-bold small ls-2">01 OF 04</span>
+                <i class="fas fa-arrow-right text-muted fw-light"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 position-relative text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- Left Side Content -->
+                <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
+                    <p class="text-uppercase small ls-2 mb-4 fw-bold" style="color: #e3d3b6;">YOUR PATH FORWARD STARTS
+                        HERE</p>
+                    <hr class="border-white opacity-50 mb-4" style="width: 100%;">
+                    <h2 class="display-4 serif-font mb-4">Schedule a consultation or<br>visit our Castle Rock clinic
+                    </h2>
+                    <p class="fw-light mb-4 text-white-50 fs-5">During this no-obligation consultation, we'll:</p>
+                    <ul class="list-unstyled text-white-50 fw-light lh-lg fs-5">
+                        <li class="mb-2"><span class="me-2">•</span> Listen to your unique experience</li>
+                        <li class="mb-2"><span class="me-2">•</span> Explain how TMS might help your specific condition
+                        </li>
+                        <li class="mb-2"><span class="me-2">•</span> Answer all your questions about treatment</li>
+                        <li class="mb-2"><span class="me-2">•</span> Discuss practical matters like insurance and
+                            scheduling</li>
+                    </ul>
+                </div>
+                <!-- Right Side Form -->
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="bg-light-beige rounded-4 p-5 text-dark shadow-lg">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label text-uppercase mb-1">NAME*</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-uppercase mb-1">EMAIL*</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label text-uppercase mb-1">PHONE*</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                            <div class="mb-4">
+                                <label for="comments" class="form-label text-uppercase mb-1">COMMENTS*</label>
+                                <textarea class="form-control" id="comments" rows="6" required></textarea>
+                            </div>
+                            <div class="mb-4 form-check d-flex align-items-start">
+                                <input type="checkbox" class="form-check-input me-2 mt-1" id="consent"
+                                    style="border-radius: 2px; min-width: 16px;">
+                                <label class="form-check-label x-small text-muted lh-sm" for="consent"
+                                    style="font-size: 0.65rem;">
+                                    I consent to receive SMS notifications, alerts from Harmony Neurocare. Message
+                                    frequency varies. Message & data rates may apply. Text HELP to 720-410-6741 for
+                                    assistance. You can reply STOP to unsubscribe at any time. No mobile information
+                                    will be shared with third parties/affiliates for marketing/promotional purposes. All
+                                    the above categories exclude text messaging originator opt-in data and consent; this
+                                    information will not be shared with any third parties.
+                                </label>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit"
+                                    class="btn btn-orange rounded-pill text-white fw-bold shadow-sm text-uppercase border-0">SCHEDULE
+                                    A CONSULTATION</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="text-white py-5 small" style="background-color: #27392a !important;">
+        <div class="container pt-5">
+            <div class="row g-4 mb-5">
+                <!-- Column 1: Logo & Text -->
+                <div class="col-lg-4">
+                    <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none mb-3">
+                        <svg width="40" height="28" viewBox="0 0 70 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 12 Q 5 21 8 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
+                            <path d="M16 8 Q 10 21 16 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
+                            <ellipse cx="35" cy="21" rx="11" ry="16" fill="#c25e28" />
+                            <path d="M54 8 Q 60 21 54 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
+                            <path d="M62 12 Q 65 21 62 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                        <div class="d-flex flex-column align-items-start lh-1">
+                            <span class="text-white"
+                                style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.5rem; letter-spacing: -0.5px;">harmony</span>
+                            <span class="text-white text-uppercase"
+                                style="font-family: 'Lato', sans-serif; font-size: 0.5rem; letter-spacing: 2px; font-weight: 500;">NEUROCARE</span>
+                        </div>
+                    </a>
+                    <p class="text-white-50 small mb-4" style="font-size: 0.8rem; line-height: 1.6;">
+                        Harmony Neurocare provides hope-inspired mental health care in Castle Rock, CO, offering
+                        FDA-cleared TMS therapy, ketamine & SPRAVATO® treatments, and psychiatric support. With
+                        evidence-backed therapies, a judgment-free environment, and compassionate expertise, we help
+                        patients reclaim balance and find real transformation.
+                    </p>
+                </div>
+
+                <!-- Column 2: Quicklinks -->
+                <div class="col-lg-2 offset-lg-1">
+                    <h6 class="fw-bold mb-4 text-uppercase text-orange"
+                        style="font-size: 0.75rem; letter-spacing: 1px;">QUICKLINKS</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-2">
+                        <li><a href="tms.html" class="text-reset text-decoration-none hover-white">What is TMS
+                                Therapy?</a></li>
+                        <li><a href="ketamine.html" class="text-reset text-decoration-none hover-white">How Ketamine &
+                                SPRAVATO® Works</a></li>
+                        <li><a href="#" class="text-reset text-decoration-none hover-white">Patient Portal</a></li>
+                        <li><a href="#" class="text-reset text-decoration-none hover-white">Referring Providers</a></li>
+                        <li><a href="#" class="text-reset text-decoration-none hover-white">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact -->
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-4 text-uppercase text-orange"
+                        style="font-size: 0.75rem; letter-spacing: 1px;">CONTACT</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-2">
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>757 Maleta Lane, Suite 201<br>Castle Rock, CO 80108</span>
+                        </li>
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-phone mt-1"></i>
+                            <span>Phone: 303-409-7446</span>
+                        </li>
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-fax mt-1"></i>
+                            <span>Fax: 303-409-7443</span>
+                        </li>
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-envelope mt-1"></i>
+                            <span>info@harmonyneurocare.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Clinic Hours -->
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-4 text-uppercase text-orange"
+                        style="font-size: 0.75rem; letter-spacing: 1px;">CLINIC HOURS</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-1">
+                        <li class="d-flex justify-content-between"><span>Mon</span> <span>8:00AM - 6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Tues</span> <span>8:00AM - 6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Wed</span> <span>8:00AM - 6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Thu</span> <span>8:00AM - 6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Fri</span> <span>8:00AM - 6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Sat</span> <span>Closed</span></li>
+                        <li class="d-flex justify-content-between"><span>Sun</span> <span>Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top border-secondary opacity-25 pt-4 d-flex justify-content-between text-white-50 px-2"
+                style="font-size: 0.7rem;">
+                <span>&copy; 2026 Harmony Neurocare in Castle Rock, CO | All Rights Reserved</span>
+                <div>
+                    <a href="#" class="text-reset text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-reset text-decoration-none me-3">Terms & Conditions</a>
+                    <a href="#" class="text-reset text-decoration-none">Disclaimers</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

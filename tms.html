@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMS Therapy | Harmony Neurocare</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <!-- Custom SVG Logo matching reference (5 parts) -->
+                <svg width="60" height="42" viewBox="0 0 70 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Far Left Sliver -->
+                    <path d="M8 12 Q 5 21 8 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
+                    <!-- Inner Left Crescent -->
+                    <path d="M16 8 Q 10 21 16 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
+                    <!-- Center Oval (Filled) -->
+                    <ellipse cx="35" cy="21" rx="11" ry="16" fill="#c25e28" />
+                    <!-- Inner Right Crescent -->
+                    <path d="M54 8 Q 60 21 54 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
+                    <!-- Far Right Sliver -->
+                    <path d="M62 12 Q 65 21 62 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
+                </svg>
+
+                <div class="d-flex flex-column align-items-start lh-1 ps-1">
+                    <span class="brand-top text-white"
+                        style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 2.2rem; letter-spacing: -1px; line-height: 0.9;">harmony</span>
+                    <span class="brand-bottom text-white text-uppercase"
+                        style="font-family: 'Lato', sans-serif; font-size: 0.75rem; letter-spacing: 4px; font-weight: 500; margin-left: 2px;">NEUROCARE</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#treatment">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="insurance.html">INSURANCE & PRICING</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conditions.html">CONDITIONS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">RESOURCES</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="index.html#contact">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- TMS Hero Section -->
+    <section id="tms-hero"
+        class="d-flex align-items-center justify-content-start text-white position-relative bg-dark-green"
+        style="min-height: 500px; padding-top: 120px;">
+        <div class="container relative z-2">
+            <div class="row">
+                <div class="col-lg-8">
+                    <p class="text-uppercase small ls-2 mb-3 text-white-50 fw-bold">BRAINSWAY DEEP TMS™ EXPLAINED</p>
+                    <h1 class="display-3 serif-font mb-4">A non-invasive brain stimulation treatment<br>that helps
+                        restore balance, clarity, and hope</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Background Overlay/Image Placeholder -->
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: radial-gradient(circle at top right, rgba(46,74,51,0.5) 0%, rgba(26,47,32,1) 80%); z-index: 1;">
+        </div>
+    </section>
+
+    <!-- Intro Section: What Happens -->
+    <section class="py-5 bg-light-beige">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <!-- Image Placeholder -->
+                    <div class="rounded-5 overflow-hidden shadow-sm position-relative">
+                        <div class="d-flex align-items-center justify-content-center" style="height: 500px;">
+                            <img src="images/tms/tms-WhatActuallyHappens.jpg" alt="What Actually Happens"
+                                class="img-fluid h-100 w-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <h3 class="serif-font display-6 mb-4 text-dark">What actually happens to your brain during Deep TMS
+                        Therapy?</h3>
+                    <p class="text-muted mb-4 fw-light lh-lg">Deep TMS (Transcranial Magnetic Stimulation) uses magnetic
+                        fields to stimulate nerve cells in the brain that control mood. In depression, these specific
+                        regions are often underactive. Deep TMS wakes them up, restoring their ability to communicate
+                        properly and regulate mood effectively.</p>
+                    <p class="text-muted mb-4 fw-light lh-lg">Think of it like jump-starting a car battery or tuning
+                        an instrument—it helps the brain get back to its natural rhythm. Unlike medications, which
+                        travel through your entire body, TMS targets the source of the problem directly, with
+                        practically no systemic side effects.</p>
+                    <div class="d-flex align-items-center text-dark fw-bold gap-3 pt-2">
+                        <span class="small ls-1 text-uppercase">FDA-Cleared</span>
+                        <span class="small ls-1 text-uppercase">•</span>
+                        <span class="small ls-1 text-uppercase">Non-Invasive</span>
+                        <span class="small ls-1 text-uppercase">•</span>
+                        <span class="small ls-1 text-uppercase"> Proven Results</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-5 bg-dark-green text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h3 class="serif-font display-5 mb-4">Medication backed by clinical research and patient outcomes
+                    </h3>
+                    <p class="text-white-50 fw-light lh-lg mb-4">Clinical studies show that Deep TMS is highly
+                        effective, even for patients who have not found relief from antidepressants. Many patients
+                        experience significant reduction in symptoms, and a large percentage achieve full remission.</p>
+                    <p class="text-white-50 fw-light lh-lg mb-5">Our specialized Helmet technology (H-Coil) reaches
+                        deeper and broader structures of the brain than traditional TMS, ensuring the most comprehensive
+                        treatment possible.</p>
+                    <a href="#contact"
+                        class="btn btn-light-beige rounded-pill px-4 py-3 text-dark fw-bold small">SCHEDULE A
+                        CONSULTATION</a>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <!-- Chart Graphic (CSS/HTML representation) -->
+                    <div class="bg-dark rounded-5 p-5 border border-secondary border-opacity-25 position-relative"
+                        style="background: #112115;">
+                        <h5 class="serif-font mb-5 text-center">TMS Clinical Response Rates</h5>
+                        <div class="d-flex justify-content-around align-items-end" style="height: 250px;">
+                            <!-- Bar 1 -->
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <span class="fw-bold text-info">75%</span>
+                                <div class="bg-info rounded-top-2" style="width: 40px; height: 180px; opacity: 0.8;">
+                                </div>
+                                <span class="small text-white-50 text-uppercase"
+                                    style="font-size: 0.6rem;">Responded</span>
+                            </div>
+                            <!-- Bar 2 -->
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <span class="fw-bold text-info">51%</span>
+                                <div class="bg-info rounded-top-2" style="width: 40px; height: 120px; opacity: 0.6;">
+                                </div>
+                                <span class="small text-white-50 text-uppercase"
+                                    style="font-size: 0.6rem;">Remission</span>
+                            </div>
+                            <!-- Bar 3 (Comparison/Meds) -->
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <span class="fw-bold text-warning">~10-20%</span>
+                                <div class="bg-warning rounded-top-2" style="width: 40px; height: 40px; opacity: 0.8;">
+                                </div>
+                                <span class="small text-white-50 text-uppercase" style="font-size: 0.6rem;">Meds
+                                    Only</span>
+                            </div>
+                        </div>
+                        <p class="x-small text-white-50 text-center mt-4 fst-italic">*Representative data of response
+                            rates often seen in clinical practice.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Brain Section -->
+    <section class="py-5 position-relative bg-light-beige overflow-hidden">
+        <!-- Wavy Background -->
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: url('images/tms/AbstractWavyLines-2-Verdant.png') no-repeat left center; background-size: cover; opacity: 0.10;">
+        </div>
+
+        <div class="container py-5 text-center position-relative z-1">
+            <h2 class="serif-font display-4 mb-3 text-dark">See the Change Inside the Brain</h2>
+            <p class="text-uppercase small text-orange ls-2 fw-bold mb-5">BEFORE AND AFTER BRAINSWAY DEEP TMS™ COURSE OF
+                TREATMENT</p>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-10">
+                    <div class="bg-white rounded-5 p-5 shadow-sm border border-light">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 text-start">
+                                <h4 class="serif-font mb-3">A visual look at how H-Coil helps restore healthy brain
+                                    activity</h4>
+                                <p class="text-muted fw-light small lh-lg">These PET scans illustrate the metabolic
+                                    activity in the brain. The increase in color/brightness signifies restored activity
+                                    in regions that were previously dormant due to depression.</p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <img src="images/tms/BrainScan-Before.jpg" alt="Brain Scan Before"
+                                    class="img-fluid w-100 h-100 object-fit-cover">
+                            </div>
+                            <p class="small text-uppercase fw-bold text-muted">Before Treatment</p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="images/tms/BrainScan-After.jpg" alt="Brain Scan After"
+                                class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                        <p class="small text-uppercase fw-bold text-orange">After Treatment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Icons Row -->
+        <div class="row mt-5 pt-4 justify-content-center text-muted">
+            <div class="col-6 col-md-2 text-center mb-4">
+                <i class="fas fa-hourglass-half fs-2 mb-3 text-orange"></i>
+                <p class="x-small text-uppercase fw-bold">20-Min Sessions</p>
+            </div>
+            <div class="col-6 col-md-2 text-center mb-4">
+                <i class="fas fa-check-circle fs-2 mb-3 text-orange"></i>
+                <p class="x-small text-uppercase fw-bold">FDA Cleared</p>
+            </div>
+            <div class="col-6 col-md-2 text-center mb-4">
+                <i class="fas fa-umbrella fs-2 mb-3 text-orange"></i>
+                <p class="x-small text-uppercase fw-bold">Covered by Insurance</p>
+            </div>
+            <div class="col-6 col-md-2 text-center mb-4">
+                <i class="fas fa-user-md fs-2 mb-3 text-orange"></i>
+                <p class="x-small text-uppercase fw-bold">In-Office Treatment</p>
+            </div>
+            <div class="col-6 col-md-2 text-center mb-4">
+                <i class="fas fa-brain fs-2 mb-3 text-orange"></i>
+                <p class="x-small text-uppercase fw-bold">No Systemic Side Effects</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Deep TMS Difference -->
+    <section class="py-5 position-relative text-center text-white" style="min-height: 400px;">
+        <!-- Background Image -->
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: url('images/tms/BG-MacroMushroom.jpg') center/cover no-repeat; filter: brightness(0.7);">
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark-green opacity-50"></div>
+
+        <div class="container position-relative z-1 py-5">
+            <h2 class="serif-font display-4 mb-3">The Deep TMS Difference</h2>
+            <p class="text-uppercase small ls-2 mb-5">WHY WE CHOOSE BRAINSWAY TECHNOLOGY</p>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="glass-card p-5 rounded-4 text-start"
+                        style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+                        <p class="fw-light mb-4 lh-lg">Harmony NeuroCare utilizes the industry-leading BrainsWay H-Coil
+                            technology. This patented design allows magnetic stimulation to reach deeper and broader
+                            areas of the brain compared to traditional Figure-8 coils. This ensures that the relevant
+                            neural networks are effectively targeted, leading to higher response rates and better
+                            patient
+                            outcomes.</p>
+                        <div class="row mt-4">
+                            <div class="col-md-6 border-end border-white border-opacity-25">
+                                <h5 class="serif-font mb-2">Standard Deep TMS</h5>
+                                <ul class="list-unstyled fw-light small text-white-50">
+                                    <li>• FDA Cleared for Depression & OCD</li>
+                                    <li>• 20-Minute Sessions</li>
+                                    <li>• No Anesthesia Required</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 ps-md-4">
+                                <h5 class="serif-font mb-2">Accelerated Deep TMS</h5>
+                                <ul class="list-unstyled fw-light small text-white-50">
+                                    <li>• Multiple sessions per day</li>
+                                    <li>• Complete treatment in days vs weeks</li>
+                                    <li>• Ideal for traveling patients</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light-beige">
+        <div class="container py-5">
+            <h2 class="serif-font display-4 mb-5 text-center text-dark">Frequently Asked Deep TMS Therapy Questions</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="accordionTMS">
+                        <!-- Q1 -->
+                        <div class="accordion-item bg-transparent border-0 border-bottom border-dark border-opacity-10">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Is TMS Therapy Painful?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionTMS">
+                                <div class="accordion-body text-muted fw-light">
+                                    TMS is generally not painful. Patients may feel a tapping sensation on the head
+                                    during treatment, but anesthesia is not required, and there is no recovery time
+                                    needed after each session.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Q2 -->
+                        <div class="accordion-item bg-transparent border-0 border-bottom border-dark border-opacity-10">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Is it Covered by Insurance?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionTMS">
+                                <div class="accordion-body text-muted fw-light">
+                                    Yes, BrainsWay Deep TMS is covered by most major insurance providers, including
+                                    Medicare, for the treatment of Major Depressive Disorder and OCD. Our team helps
+                                    handle all prior authorizations.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Q3 -->
+                        <div class="accordion-item bg-transparent border-0 border-bottom border-dark border-opacity-10">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    How Long Does Treatment Take?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionTMS">
+                                <div class="accordion-body text-muted fw-light">
+                                    A standard course consists of daily 20-minute sessions over 4-6 weeks. We also offer
+                                    accelerated protocols for those who wish to complete treatment in a shorter
+                                    timeframe.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-dark-green text-center position-relative">
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: radial-gradient(circle at center, rgba(46,74,51,0.5) 0%, rgba(26,47,32,1) 100%);"></div>
+        <div class="container position-relative z-1 py-5">
+            <div class="bg-white rounded-5 p-5 d-inline-block shadow-lg" style="max-width: 700px;">
+                <h2 class="serif-font display-5 mb-3 text-dark">Why Patients Choose<br>Harmony Neurocare for TMS</h2>
+                <p class="text-muted fw-light lh-lg mb-4">From our expert staff of psychiatrists and TMS technicians to
+                    our warm, spa-like clinic environment, we prioritize your comfort and results above all else.</p>
+                <a href="index.html#contact"
+                    class="btn btn-dark-brown shadow-sm rounded-pill px-5 py-3 small fw-bold">SCHEDULE A
+                    CONSULTATION</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-5 small" style="background-color: #27392a !important;">
+        <div class="container pt-5">
+            <div class="row g-4 mb-5">
+                <!-- Column 1: Logo & Text -->
+                <div class="col-lg-4">
+                    <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none mb-3">
+                        <svg width="40" height="28" viewBox="0 0 70 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 12 Q 5 21 8 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
+                            <path d="M16 8 Q 10 21 16 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
+                            <ellipse cx="35" cy="21" rx="11" ry="16" fill="#c25e28" />
+                            <path d="M54 8 Q 60 21 54 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
+                            <path d="M62 12 Q 65 21 62 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                        <div class="d-flex flex-column align-items-start lh-1">
+                            <span class="text-white"
+                                style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.5rem; letter-spacing: -0.5px;">harmony</span>
+                            <span class="text-white text-uppercase"
+                                style="font-family: 'Lato', sans-serif; font-size: 0.5rem; letter-spacing: 2px; font-weight: 500;">NEUROCARE</span>
+                        </div>
+                    </a>
+                    <p class="text-white-50 small mb-4" style="font-size: 0.8rem; line-height: 1.6;">
+                        Harmony Neurocare provides hope-inspired mental health care in Castle Rock, CO, offering
+                        FDA-cleared TMS therapy, ketamine & SPRAVATO® treatments, and psychiatric support. With
+                        evidence-backed therapies, a judgment-free environment, and compassionate expertise, we help
+                        patients reclaim balance and find real transformation.
+                    </p>
+                </div>
+
+                <!-- Column 2: Quicklinks -->
+                <div class="col-lg-2 offset-lg-1">
+                    <h6 class="fw-bold mb-4 text-uppercase text-orange"
+                        style="font-size: 0.75rem; letter-spacing: 1px;">QUICKLINKS</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-2">
+                        <li><a href="tms.html" class="text-reset text-decoration-none hover-white">What is TMS
+                                Therapy?</a></li>
+                        <li><a href="ketamine.html" class="text-reset text-decoration-none hover-white">How Ketamine &
+                                SPRAVATO® Works</a></li>
+                        <li><a href="#" class="text-reset text-decoration-none hover-white">Patient Portal</a></li>
+                        <li><a href="#" class="text-reset text-decoration-none hover-white">Referring Providers</a></li>
+                        <li><a href="#" class="text-reset text-decoration-none hover-white">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact -->
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-4 text-uppercase text-orange"
+                        style="font-size: 0.75rem; letter-spacing: 1px;">CONTACT</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-2">
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>757 Maleta Lane, Suite 201<br>Castle Rock, CO 80108</span>
+                        </li>
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-phone mt-1"></i>
+                            <span>Phone: 303-409-7446</span>
+                        </li>
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-fax mt-1"></i>
+                            <span>Fax: 303-409-7443</span>
+                        </li>
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-envelope mt-1"></i>
+                            <span>info@harmonyneurocare.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Clinic Hours -->
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-4 text-uppercase text-orange"
+                        style="font-size: 0.75rem; letter-spacing: 1px;">CLINIC HOURS</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-1">
+                        <li class="d-flex justify-content-between"><span>Mon</span> <span>8:00AM - 6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Tues</span> <span>8:00AM - 6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Wed</span> <span>8:00AM - 6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Thu</span> <span>8:00AM - 6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Fri</span> <span>8:00AM - 6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Sat</span> <span>Closed</span></li>
+                        <li class="d-flex justify-content-between"><span>Sun</span> <span>Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top border-secondary opacity-25 pt-4 d-flex justify-content-between text-white-50 px-2"
+                style="font-size: 0.7rem;">
+                <span>&copy; 2026 Harmony Neurocare in Castle Rock, CO | All Rights Reserved</span>
+                <div>
+                    <a href="#" class="text-reset text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-reset text-decoration-none me-3">Terms & Conditions</a>
+                    <a href="#" class="text-reset text-decoration-none">Disclaimers</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

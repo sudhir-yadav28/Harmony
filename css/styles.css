@@ -1,0 +1,680 @@
+/* Fonts Setup */
+/* Imported in HTML head */
+
+:root {
+    --primary-green: #2e4a33;
+    --dark-green: #1a2f20;
+    --accent-orange: #d97706;
+    /* Fallback */
+    --accent-gradient: linear-gradient(135deg, #2e4a33 0%, #d97706 100%);
+    --light-beige: #f9f7f2;
+    --text-dark: #1f2937;
+    --text-light: #f3f4f6;
+    --serif-font: 'Cormorant Garamond', serif;
+    --sans-font: 'Lato', sans-serif;
+}
+
+/* Override text-white-50 to be pure white as requested */
+.text-white-50 {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+body {
+    font-family: var(--sans-font);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--serif-font);
+}
+
+.serif-font {
+    font-family: var(--serif-font);
+}
+
+.ls-1 {
+    letter-spacing: 1px;
+}
+
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+.navbar {
+    transition: all 0.3s ease;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: transparent;
+}
+
+.navbar.scrolled {
+    background: var(--dark-green);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+}
+
+.navbar-brand .leaf-icon {
+    color: #ffffff !important;
+}
+
+.navbar-brand .brand-top,
+.navbar-brand .brand-bottom,
+.navbar-brand .opacity-50 {
+    color: #ffffff !important;
+}
+
+/* Active Nav State */
+.navbar .nav-item .nav-link.active-home,
+.navbar .nav-item .nav-link.active {
+    background-color: #636b52 !important;
+    /* Olive/Moss Green match */
+    color: #ffffff !important;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem !important;
+    border: none;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Default Nav Link Style */
+.nav-link {
+    color: #ffffff !important;
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.condition-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.btn-nav-contact {
+    background-color: var(--accent-orange) !important;
+    color: #ffffff !important;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: none;
+    opacity: 1 !important;
+    font-size: 0.65rem !important;
+}
+
+.btn-nav-contact:hover {
+    background-color: #a0491d !important;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+#hero {
+    color: #a7f3d0;
+    height: 100vh;
+    min-height: 700px;
+    background: url('../images/BG-hero.jpg') center/cover no-repeat fixed;
+    position: relative;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+}
+
+/* Specific overlay to darken image */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(26, 47, 32, 0.6) 0%, rgba(26, 47, 32, 0.4) 50%, rgba(26, 47, 32, 0.9) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 0px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-family: var(--serif-font);
+    font-weight: 400;
+    line-height: 1.1;
+    font-size: 5rem;
+    /* Larger hero text */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Colors & Backgrounds */
+.bg-dark-green {
+    background-color: var(--primary-green);
+}
+
+/* Specific Welcome Section tweaks */
+#welcome hr {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    opacity: 1;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-light-beige {
+    background-color: #f0ebe3;
+    border: 1px solid #f0ebe3;
+    color: #c25e28;
+    /* Rust/Orange text color from reference */
+    transition: all 0.3s ease;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    padding: 1rem 2rem;
+}
+
+.btn-light-beige:hover {
+    background-color: #e6e0d6;
+    border-color: #e6e0d6;
+    color: #a0491d;
+}
+
+.btn-outline-light {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    padding: 1rem 2rem;
+    background: transparent;
+}
+
+.btn-outline-light:hover {
+    border-color: white;
+    background: white;
+    color: var(--dark-green);
+}
+
+/* Treatment Options Section */
+#treatment {
+    /* Wavy texture background from user */
+    background: url('../images/BG-TreatmentTexture.png') center/cover no-repeat;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#treatment h2 {
+    font-size: 3.5rem;
+    color: #1a1a1a;
+    /* Dark almost black */
+    margin-bottom: 0.5rem;
+}
+
+#treatment .text-orange {
+    color: #c25e28 !important;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+/* Treatment Cards - New Design */
+.treatment-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px;
+    /* No radius since g-0 grid */
+    padding: 3rem 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+
+.treatment-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Dark overlay */
+    z-index: -1;
+    transition: background 0.3s ease;
+}
+
+.treatment-card:hover .treatment-overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.treatment-card:hover {
+    transform: none;
+    /* No lift in grid */
+    z-index: 2;
+}
+
+/* Content Styling */
+.card-overlay-light {
+    background: transparent !important;
+    padding: 0 !important;
+    height: auto !important;
+}
+
+.treatment-card h3 {
+    font-family: var(--serif-font);
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.treatment-card p {
+    font-family: var(--sans-font);
+    font-size: 0.9rem;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+}
+
+.treatment-card .btn {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.treatment-card .btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Icons */
+.leaf-icon {
+    color: #d97706 !important;
+}
+
+/* Utilities */
+.text-orange {
+    color: var(--accent-orange) !important;
+}
+
+.x-small {
+    font-size: 0.75rem;
+}
+
+/* Buttons */
+.btn-orange {
+    background: #c25e28;
+    /* Adjust to match reference more closely - darker orange/brown */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-orange:hover {
+    background-color: #a0491d;
+}
+
+/* Forms */
+.form-control {
+    font-size: 0.9rem;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(194, 94, 40, 0.25);
+    border-color: #c25e28;
+}
+
+/* Conditions */
+.condition-card {
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.condition-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer link hover */
+.hover-white:hover {
+    color: white !important;
+    text-decoration: underline !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: var(--dark-green);
+        /* Always solid on mobile */
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .treatment-card {
+        height: auto;
+        min-height: 400px;
+    }
+}
+
+/* Contact Section Override */
+#contact {
+    /* Create the Orange-to-Green fade effect matching the reference */
+    /* Dark green gradient background fading to warm orange/amber at bottom */
+    background: linear-gradient(180deg, #1a2f20 0%, #1a2f20 60%, #c25e28 100%), url('../images/BG-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    padding-bottom: 0;
+}
+
+#contact p.text-uppercase {
+    color: #e3d3b6 !important;
+    /* Slightly lighter gold for visibility */
+}
+
+/* Form Styles */
+#contact .bg-light-beige {
+    background-color: #fcfbf9 !important;
+    /* Very light, almost white */
+    border-radius: 2rem !important;
+    padding: 3rem !important;
+}
+
+#contact form label {
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+#contact form .form-control {
+    border-radius: 50px !important;
+    padding: 0.8rem 1.5rem;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+#contact form textarea.form-control {
+    border-radius: 1.5rem !important;
+}
+
+#contact form .btn-orange {
+    width: 100%;
+    /* Full width button */
+    padding: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    background-color: #c25e28;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #27392a !important;
+    /* Specific dark olive green */
+    border-top: none !important;
+}
+
+footer h6 {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+footer ul li {
+    font-size: 0.8rem;
+    line-height: 1.8;
+}
+
+/* Meet Harmony Section Redesign */
+#meet-harmony {
+    position: relative;
+    background-color: #e6e2dd;
+    /* Light grey/beige background base */
+    overflow: hidden;
+    /* Ensure wave does not spill over */
+}
+
+.meet-harmony-wave {
+    position: absolute;
+    bottom: -100px;
+    /* Adjusted position */
+    left: -100px;
+    width: 100%;
+    /* Full width to stretch */
+    height: 100%;
+    /* Full height */
+    background: url('../images/AbstractWavyLines-1-Verdant.png') no-repeat;
+    background-size: cover;
+    /* Cover */
+    opacity: 0.6;
+    /* Subtle opacity */
+    z-index: 0;
+    pointer-events: none;
+    transform: rotate(-10deg) scale(1.2);
+    /* Slight rotation to match flow */
+}
+
+.meet-harmony-card {
+    /* Solid light beige per reference */
+    border-radius: 40px;
+    background-color: #ffffff;
+    /* White card */
+    /* Highly rounded */
+    /* Highly rounded */
+    padding: 4rem;
+    /* Generous padding */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    /* Soft shadow */
+    position: relative;
+    z-index: 1;
+    z-index: 1;
+    /* Above the wave */
+}
+
+/* Gradient Background for Meet Harmony on About Page */
+.bg-gradient-green-orange {
+    background: linear-gradient(135deg, #1a2f20 0%, #2e4a33 50%, #c25e28 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.meet-harmony-card h2 {
+    font-size: 3rem;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+}
+
+.meet-harmony-card .text-rust {
+    color: #c25e28;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+}
+
+.meet-harmony-card p {
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.8;
+}
+
+.btn-dark-brown {
+    background-color: #3e2b26;
+    color: white;
+    border: none;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn-dark-brown:hover {
+    background-color: #2a1d1a;
+    color: white;
+}
+
+.meet-harmony-img {
+    border-radius: 30px;
+    /* Match card rounding */
+    height: 100%;
+    min-height: 450px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Conditions Grid */
+#conditions {
+    background-color: #f7f6f2;
+    /* Match the off-white background */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.conditions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Mobile: 2 cols */
+}
+
+@media (min-width: 992px) {
+    .conditions-grid {
+        grid-template-columns: repeat(4, 1fr);
+        /* Desktop: 4 cols */
+    }
+}
+
+.condition-item {
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    /* Very subtle dividers */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    cursor: default;
+    min-height: 250px;
+}
+
+.condition-item:hover {
+    background-color: #e8e6df;
+    /* Beige highlighting on hover */
+}
+
+/* Specific borders for grid */
+@media (min-width: 992px) {
+    .condition-item:nth-child(4n) {
+        border-right: none;
+    }
+
+    .condition-item:nth-last-child(-n+4) {
+        border-bottom: none;
+    }
+}
+
+.condition-icon {
+    width: 80px;
+    /* Increased from 60px */
+    height: 80px;
+    /* Increased from 60px */
+    margin-bottom: 2rem;
+    color: #c25e28;
+    /* Rust Orange */
+}
+
+.condition-text {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    margin-top: 1rem;
+}
+
+.condition-icon svg {
+    width: 100%;
+    height: 100%;
+    stroke: #c25e28;
+    stroke-width: 1.5;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Logo Styling */
+.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-footer-img {
+    height: 70px;
+    /* Slightly larger for footer */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Team Section Texture */
+#team-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -150px;
+    transform: translateY(-50%) rotate(0deg);
+    width: 600px;
+    height: 800px;
+    background: url('../images/AbstractWavyLines-1-Verdant.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+}
+
+#team-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Ensure Team Grid Images fit nicely */
+#team-section .img-fluid {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}

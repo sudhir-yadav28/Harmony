@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Harmony Neurocare</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <!-- Custom SVG Logo matching reference (5 parts) -->
+                <svg width="60" height="42" viewBox="0 0 70 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Far Left Sliver -->
+                    <path d="M8 12 Q 5 21 8 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
+                    <!-- Inner Left Crescent -->
+                    <path d="M16 8 Q 10 21 16 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
+                    <!-- Center Oval (Filled) -->
+                    <ellipse cx="35" cy="21" rx="11" ry="16" fill="#c25e28" />
+                    <!-- Inner Right Crescent -->
+                    <path d="M54 8 Q 60 21 54 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
+                    <!-- Far Right Sliver -->
+                    <path d="M62 12 Q 65 21 62 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
+                </svg>
+
+                <div class="d-flex flex-column align-items-start lh-1 ps-1">
+                    <span class="brand-top text-white"
+                        style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 2.2rem; letter-spacing: -1px; line-height: 0.9;">harmony</span>
+                    <span class="brand-bottom text-white text-uppercase"
+                        style="font-family: 'Lato', sans-serif; font-size: 0.75rem; letter-spacing: 4px; font-weight: 500; margin-left: 2px;">NEUROCARE</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#treatment">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="insurance.html">INSURANCE & PRICING</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conditions.html">CONDITIONS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">RESOURCES</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="index.html#contact">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section id="about-hero"
+        class="d-flex align-items-center justify-content-center text-center text-white position-relative"
+        style="background-color: #27392a; min-height: 500px; padding-top: 100px;">
+        <div class="container relative z-2">
+            <p class="text-uppercase small ls-2 mb-3 text-white-50 fw-bold">ABOUT HARMONY NEUROCARE</p>
+            <h1 class="display-3 serif-font mb-4">Integrative psychiatry in Colorado rooted in<br>compassion, science,
+                and real human stories</h1>
+        </div>
+        <!-- Background Overlay/Image Placeholder -->
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: radial-gradient(circle at center, rgba(46,74,51,0.8) 0%, rgba(26,47,32,1) 100%); z-index: 1;">
+        </div>
+    </section>
+
+    <!-- Where Your Story Matters Section -->
+    <section class="py-5 bg-light-beige">
+        <div class="container py-5">
+            <div class="bg-white rounded-5 p-0 overflow-hidden shadow-sm">
+                <div class="row g-0 align-items-stretch">
+                    <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
+                        <h2 class="serif-font display-5 mb-4 text-dark">Where your story matters</h2>
+                        <p class="text-muted mb-4 fw-light lh-lg">At Harmony NeuroCare, we know that healing isn't
+                            linear and no two paths look the same. We created this clinic to be the place we wished
+                            existed: an environment where you are truly heard, validated, and offered tangible hope.</p>
+                        <p class="text-muted mb-4 fw-light lh-lg">Here, we combine advanced neuroscience—like Deep TMS
+                            and ketamine therapy—with the profound power of human connection. Whether you've tried
+                            everything else or are just starting to seek answers, we're here to walk alongside you with
+                            expertise, warmth, and a commitment to helping you find relief that lasts.</p>
+                        <a href="index.html#contact" class="btn btn-dark-brown mt-3 align-self-start shadow-sm">SCHEDULE
+                            A CONSULTATION</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Placeholder for Dandelion/Seed Image -->
+                        <div class="rounded-5 overflow-hidden shadow-sm h-100 position-relative">
+                            <img src="images/about/about-YourStoryMatters.jpg" alt="Where your story matters"
+                                class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Statement Divider -->
+    <section class="py-5 bg-dark-green text-white text-center">
+        <div class="container py-5">
+            <p class="text-uppercase small ls-2 mb-3 text-white-50">OUR MISSION</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="serif-font fs-3 fw-light lh-lg fst-italic">"There is no map for where we are going, but
+                        there is a way forward."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Harmony (Expanded) -->
+    <section class="py-5 position-relative bg-gradient-green-orange">
+        <div class="container py-5">
+            <div class="row align-items-center position-relative z-1">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <!-- Founder Image -->
+                    <img src="images/about/img-Harmony.jpg" alt="Harmony" class="img-fluid w-100 object-fit-cover"
+                        style="height: 500px;">
+                </div>
+            </div>
+            <!-- Wavy Background Specific to About Page -->
+            <div class="position-absolute top-0 end-0 w-100 h-100"
+                style="background: url('images/about/AbstractWavyLines-3-Verdant.png') no-repeat top right; background-size: contain; opacity: 0.15; pointer-events: none;">
+            </div>
+            <div class="col-lg-6 offset-lg-1 text-white">
+                <p class="text-uppercase small ls-2 mb-3 text-orange fw-bold">OUR STORY</p>
+                <h2 class="serif-font display-4 mb-4">Meet Harmony: The heart behind everything we do</h2>
+                <p class="fw-light mb-4 lh-lg text-white-50">Harmony was someone Rosana cared for deeply. She was
+                    warm, intelligent, compassionate, and quietly fighting a level of depression that traditional
+                    treatments never fully reached. Even after trying every recommended path, she was still left
+                    without hope, support, or real answers.</p>
+                <p class="fw-light mb-4 lh-lg text-white-50">Losing Harmony changed everything. It opened Rosana's
+                    eyes to how many people are suffering in silence, doing everything they can, yet still not
+                    getting the help they deserve.</p>
+                <p class="fw-bold mb-4 lh-lg text-white">No one should ever feel like their struggle is a personal
+                    failure.</p>
+                <p class="fw-light mb-4 lh-lg text-white-50">Harmony Neurocare was created to honor her life by
+                    building something that did not exist for her. A place where people are met with compassion,
+                    given access to evidence-based treatments, and supported by a team who believes that healing is
+                    possible. Harmony's story became the foundation for a clinic devoted to seeing people fully and
+                    helping them find their way back to themselves.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Why We Exist (Values) -->
+    <section class="py-5 bg-light-beige">
+        <div class="container py-5 text-center">
+            <p class="text-uppercase small ls-2 mb-2 text-orange fw-bold">CORE VALUES</p>
+            <h2 class="serif-font display-4 mb-5 text-dark">Why We Exist</h2>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Value 1 -->
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <div class="mb-3 d-flex justify-content-center" style="height: 60px;">
+                            <img src="images/icons/Icon_Revive-1.png" alt="Compassion First"
+                                class="img-fluid h-100 w-auto">
+                        </div>
+                        <h5 class="serif-font mb-2">Compassion First</h5>
+                        <p class="small text-muted">Every person deserves to feel seen, understood, and supported.</p>
+                    </div>
+                </div>
+                <!-- Value 2 -->
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <div class="mb-3 d-flex justify-content-center" style="height: 60px;">
+                            <img src="images/icons/Icon_Revive-2.png" alt="Science With Humanity"
+                                class="img-fluid h-100 w-auto">
+                        </div>
+                        <h5 class="serif-font mb-2">Science With Humanity</h5>
+                        <p class="small text-muted">We use evidence-based treatments delivered with warmth and genuine
+                            care.</p>
+                    </div>
+                </div>
+                <!-- Value 3 -->
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <div class="mb-3 d-flex justify-content-center" style="height: 60px;">
+                            <img src="images/icons/Icon_Revive-3.png" alt="Individualized Healing"
+                                class="img-fluid h-100 w-auto">
+                        </div>
+                        <h5 class="serif-font mb-2">Individualized Healing</h5>
+                        <p class="small text-muted">Your story informs your treatment plan because no two experiences
+                            are the same.</p>
+                    </div>
+                </div>
+                <!-- Value 4 -->
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <div class="mb-3 d-flex justify-content-center" style="height: 60px;">
+                            <img src="images/icons/Icon_Revive-4.png" alt="Accessibility"
+                                class="img-fluid h-100 w-auto">
+                        </div>
+                        <h5 class="serif-font mb-2">Accessibility</h5>
+                        <p class="small text-muted">Healing should not be limited by finances or lack of options.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 text-center text-muted small fst-italic">
+                <span class="d-inline-block px-2">~ EST. 2026 ~</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section (Rosana) -->
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="images/about/img-Rosana.jpg" alt="Rosana Graves" class="img-fluid w-100 object-fit-cover"
+                        style="height: 350px;">
+                </div>
+            </div>
+            <div class="col-md-7 offset-md-1">
+                <p class="text-uppercase small ls-2 mb-2 text-muted fw-bold">VISIONARY LEADERSHIP</p>
+                <h3 class="serif-font display-5 mb-4 text-dark">Rosana Graves, Founder & CEO</h3>
+                <p class="text-muted fw-light lh-lg mb-4">"I founded Harmony Neurocare with a simple belief: that
+                    every patient deserves to feel truly heard. Combining clinical expertise with deep compassion,
+                    we've created a space where healing is not just a medical procedure, but a human experience."
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Team Grid -->
+    <section id="team-section" class="py-5 bg-light-beige position-relative overflow-hidden">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0 pe-lg-5">
+                    <p class="text-uppercase small ls-2 mb-2 text-orange fw-bold">OUR PROVIDERS</p>
+                    <h2 class="serif-font display-4 mb-4 text-dark">Compassionate providers dedicated to your healing
+                    </h2>
+                    <p class="text-muted fw-light lh-lg mb-5">Our team brings together decades of experience in
+                        psychiatry, TMS therapy, and nursing. But more importantly, we bring our hearts to work every
+                        single day.</p>
+
+                    <div class="bg-white rounded-5 p-4 shadow-sm mb-4 border border-light">
+                        <p class="small text-uppercase ls-1 fw-bold mb-1 text-dark">DR. MEGAN BOWERS, MD, PHD</p>
+                        <p class="small text-muted fw-light mb-3">Child, Adolescent, and Adult Integrative Psychiatrist
+                        </p>
+                        <h5 class="serif-font mb-2 fs-6">Clinical Focus</h5>
+                        <ul class="list-unstyled small text-muted mb-0">
+                            <li class="mb-1">• Integrative Psychiatry</li>
+                            <li class="mb-1">• TMS Specialist</li>
+                            <li>• Patient Advocacy</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Grid -->
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="row g-3">
+                        <!-- Team Member 1 (Marjorie) -->
+                        <div class="col-6">
+                            <img src="images/about/img-Marjorie.jpg" alt="Marjorie"
+                                class="img-fluid w-100 object-fit-cover" style="height: 250px;">
+                        </div>
+                        <h6 class="serif-font mb-0 text-dark">Marjorie</h6>
+                        <p class="x-small text-muted text-uppercase ls-1">Role Title</p>
+                    </div>
+                    <!-- Team Member 2 (Megan) -->
+                    <div class="col-6">
+                        <img src="images/about/img-Megan.jpg" alt="Megan" class="img-fluid w-100 object-fit-cover"
+                            style="height: 250px;">
+                    </div>
+                    <h6 class="serif-font mb-0 text-dark">Megan</h6>
+                    <p class="x-small text-muted text-uppercase ls-1">Role Title</p>
+                </div>
+                <!-- Team Member 3 (Placeholder) -->
+                <div class="col-6">
+                    <div class="position-relative rounded-4 overflow-hidden mb-2">
+                        <div
+                            style="background-color: #eee; height: 250px; width: 100%; display: flex; align-items: center; justify-content: center;">
+                            <span class="text-muted small">Join Us</span>
+                        </div>
+                    </div>
+                    <h6 class="serif-font mb-0 text-dark">Open Position</h6>
+                    <p class="x-small text-muted text-uppercase ls-1">We are hiring</p>
+                </div>
+                <!-- Team Member 4 (Placeholder) -->
+                <div class="col-6">
+                    <div class="position-relative rounded-4 overflow-hidden mb-2">
+                        <div
+                            style="background-color: #eee; height: 250px; width: 100%; display: flex; align-items: center; justify-content: center;">
+                            <span class="text-muted small">Join Us</span>
+                        </div>
+                    </div>
+                    <h6 class="serif-font mb-0 text-dark">Open Position</h6>
+                    <p class="x-small text-muted text-uppercase ls-1">We are hiring</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Scholarship Section -->
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="bg-light-beige rounded-5 overflow-hidden shadow-sm position-relative">
+                        <div class="row g-0">
+                            <img src="images/about/about-HarmonyScholarship.jpg" alt="Harmony Scholarships"
+                                class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="col-md-6 p-5 d-flex flex-column justify-content-center order-md-2">
+                            <p class="text-uppercase small ls-2 mb-2 text-muted fw-bold">MAKING MENTAL HEALTH
+                                ACCESSIBLE</p>
+                            <h3 class="serif-font text-dark mb-3">Harmony Scholarships</h3>
+                            <p class="text-muted fw-light small mb-4 lh-lg">We believe finances should never be the
+                                barrier to life-changing care. Our specific scholarship fund helps cover the cost of
+                                TMS and Ketamine treatments for patients demonstrating financial need. Ask us how to
+                                apply or donate.</p>
+                            <a href="index.html#contact"
+                                class="btn btn-dark-brown align-self-start shadow-sm small fw-bold">CONTACT TO LEARN
+                                MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-5 small" style="background-color: #27392a !important;">
+        <div class="container pt-5">
+            <div class="row g-4 mb-5">
+                <!-- Column 1: Logo & Text -->
+                <div class="col-lg-4">
+                    <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none mb-3">
+                        <svg width="40" height="28" viewBox="0 0 70 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 12 Q 5 21 8 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
+                            <path d="M16 8 Q 10 21 16 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
+                            <ellipse cx="35" cy="21" rx="11" ry="16" fill="#c25e28" />
+                            <path d="M54 8 Q 60 21 54 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
+                            <path d="M62 12 Q 65 21 62 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                        <div class="d-flex flex-column align-items-start lh-1">
+                            <span class="text-white"
+                                style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.5rem; letter-spacing: -0.5px;">harmony</span>
+                            <span class="text-white text-uppercase"
+                                style="font-family: 'Lato', sans-serif; font-size: 0.5rem; letter-spacing: 2px; font-weight: 500;">NEUROCARE</span>
+                        </div>
+                    </a>
+                    <p class="text-white-50 small mb-4" style="font-size: 0.8rem; line-height: 1.6;">
+                        Harmony Neurocare provides hope-inspired mental health care in Castle Rock, CO, offering
+                        FDA-cleared TMS therapy, ketamine & SPRAVATO® treatments, and psychiatric support. With
+                        evidence-backed therapies, a judgment-free environment, and compassionate expertise, we help
+                        patients reclaim balance and find real transformation.
+                    </p>
+                </div>
+
+                <!-- Column 2: Quicklinks -->
+                <div class="col-lg-2 offset-lg-1">
+                    <h6 class="fw-bold mb-4 text-uppercase text-orange"
+                        style="font-size: 0.75rem; letter-spacing: 1px;">QUICKLINKS</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-2">
+                        <li><a href="tms.html" class="text-reset text-decoration-none hover-white">What is TMS
+                                Therapy?</a></li>
+                        <li><a href="ketamine.html" class="text-reset text-decoration-none hover-white">How Ketamine &
+                                SPRAVATO® Works</a></li>
+                        <li><a href="#" class="text-reset text-decoration-none hover-white">Patient Portal</a></li>
+                        <li><a href="#" class="text-reset text-decoration-none hover-white">Referring Providers</a></li>
+                        <li><a href="#" class="text-reset text-decoration-none hover-white">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact -->
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-4 text-uppercase text-orange"
+                        style="font-size: 0.75rem; letter-spacing: 1px;">CONTACT</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-2">
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>757 Maleta Lane, Suite 201<br>Castle Rock, CO 80108</span>
+                        </li>
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-phone mt-1"></i>
+                            <span>Phone: 303-409-7446</span>
+                        </li>
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-fax mt-1"></i>
+                            <span>Fax: 303-409-7443</span>
+                        </li>
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-envelope mt-1"></i>
+                            <span>info@harmonyneurocare.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Clinic Hours -->
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-4 text-uppercase text-orange"
+                        style="font-size: 0.75rem; letter-spacing: 1px;">CLINIC HOURS</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-1">
+                        <li class="d-flex justify-content-between"><span>Mon</span> <span>8:00AM - 6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Tues</span> <span>8:00AM - 6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Wed</span> <span>8:00AM - 6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Thu</span> <span>8:00AM - 6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Fri</span> <span>8:00AM - 6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Sat</span> <span>Closed</span></li>
+                        <li class="d-flex justify-content-between"><span>Sun</span> <span>Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top border-secondary opacity-25 pt-4 d-flex justify-content-between text-white-50 px-2"
+                style="font-size: 0.7rem;">
+                <span>&copy; 2026 Harmony Neurocare in Castle Rock, CO | All Rights Reserved</span>
+                <div>
+                    <a href="#" class="text-reset text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-reset text-decoration-none me-3">Terms & Conditions</a>
+                    <a href="#" class="text-reset text-decoration-none">Disclaimers</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
