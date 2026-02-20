@@ -53,7 +53,16 @@
                 <ul class="navbar-nav align-items-center gap-3">
                     <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#treatment">SERVICES</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            SERVICES
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-3 overflow-hidden">
+                            <li><a class="dropdown-item small py-2" href="tms.html">TMS Therapy</a></li>
+                            <li><a class="dropdown-item small py-2" href="ketamine.html">Ketamine & Spravato</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="insurance.html">INSURANCE & PRICING</a></li>
                     <li class="nav-item"><a class="nav-link" href="conditions.html">CONDITIONS</a></li>
                     <li class="nav-item"><a class="nav-link" href="resources.html">RESOURCES</a></li>
@@ -68,19 +77,20 @@
     <!-- TMS Hero Section -->
     <section id="tms-hero"
         class="d-flex align-items-center justify-content-start text-white position-relative bg-dark-green"
-        style="min-height: 500px; padding-top: 120px;">
-        <div class="container relative z-2">
+        style="min-height: 600px; padding-top: 120px;">
+        <div class="container position-relative z-2">
             <div class="row">
-                <div class="col-lg-8">
-                    <p class="text-uppercase small ls-2 mb-3 text-white-50 fw-bold">BRAINSWAY DEEP TMS™ EXPLAINED</p>
+                <div class="col-lg-10">
+                    <p class="text-uppercase small ls-2 mb-4 fw-bold opacity-75">BRAINSWAY DEEP TMS THERAPY IN CASTLE
+                        ROCK, CO</p>
                     <h1 class="display-3 serif-font mb-4">A non-invasive brain stimulation treatment<br>that helps
                         restore balance, clarity, and hope</h1>
                 </div>
             </div>
         </div>
-        <!-- Background Overlay/Image Placeholder -->
+        <!-- Background Image -->
         <div class="position-absolute top-0 start-0 w-100 h-100"
-            style="background: radial-gradient(circle at top right, rgba(46,74,51,0.5) 0%, rgba(26,47,32,1) 80%); z-index: 1;">
+            style="background: url('images/tms/BG-Hero-TMS-Final-2.png') center/cover no-repeat; z-index: 1;">
         </div>
     </section>
 
@@ -89,10 +99,10 @@
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
-                    <!-- Image Placeholder -->
+                    <!-- Image -->
                     <div class="rounded-5 overflow-hidden shadow-sm position-relative">
-                        <div class="d-flex align-items-center justify-content-center" style="height: 500px;">
-                            <img src="images/tms/tms-WhatActuallyHappens.jpg" alt="What Actually Happens"
+                        <div class="d-flex align-items-center justify-content-center" style="height: 550px;">
+                            <img src="images/tms/tms-WhatActuallyHappens.jpg" alt="Woman looking out window"
                                 class="img-fluid h-100 w-100 object-fit-cover">
                         </div>
                     </div>
@@ -100,76 +110,141 @@
                 <div class="col-lg-5 offset-lg-1">
                     <h3 class="serif-font display-6 mb-4 text-dark">What actually happens to your brain during Deep TMS
                         Therapy?</h3>
-                    <p class="text-muted mb-4 fw-light lh-lg">Deep TMS (Transcranial Magnetic Stimulation) uses magnetic
-                        fields to stimulate nerve cells in the brain that control mood. In depression, these specific
-                        regions are often underactive. Deep TMS wakes them up, restoring their ability to communicate
-                        properly and regulate mood effectively.</p>
-                    <p class="text-muted mb-4 fw-light lh-lg">Think of it like jump-starting a car battery or tuning
-                        an instrument—it helps the brain get back to its natural rhythm. Unlike medications, which
-                        travel through your entire body, TMS targets the source of the problem directly, with
-                        practically no systemic side effects.</p>
-                    <div class="d-flex align-items-center text-dark fw-bold gap-3 pt-2">
-                        <span class="small ls-1 text-uppercase">FDA-Cleared</span>
-                        <span class="small ls-1 text-uppercase">•</span>
-                        <span class="small ls-1 text-uppercase">Non-Invasive</span>
-                        <span class="small ls-1 text-uppercase">•</span>
-                        <span class="small ls-1 text-uppercase"> Proven Results</span>
+                    <p class="text-muted mb-4 fw-light lh-lg">BrainsWay Deep TMS is an advanced, non-invasive brain
+                        stimulation treatment that gently activates underactive areas of the brain involved in mood,
+                        motivation, and emotional regulation. Unlike medication, which works systemically, Deep TMS
+                        targets the neurological source of symptoms with precision and without drugs or sedation.</p>
+                    <p class="text-muted mb-4 fw-light lh-lg">This technology uses magnetic pulses (similar to those
+                        used in MRI machines) to stimulate deeper and broader regions of the brain than traditional
+                        figure-eight TMS devices. For many people living with depression, anxious-depression, or OCD,
+                        Deep TMS offers a science-backed path to relief when other treatments have not helped enough.
+                    </p>
+
+                    <p class="text-dark fw-bold mb-5 small">It is FDA cleared, evidence-based, and safe for adults and
+                        adolescents ages fifteen and older.</p>
+
+                    <!-- Navigation Arrows (Static Visual) -->
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fas fa-arrow-left text-muted fw-light" style="font-size: 1.5rem;"></i>
+                        <span class="small fw-bold ls-2 text-dark">01 OF 06</span>
+                        <i class="fas fa-arrow-right text-dark fw-light" style="font-size: 1.5rem;"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Statistics Section -->
+    <!-- Research & Results (Chart Section) -->
     <section class="py-5 bg-dark-green text-white">
         <div class="container py-5">
-            <div class="row align-items-center">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-12">
+                    <p class="text-uppercase small ls-2 mb-4 text-white-50 fw-bold">PROVEN RESULTS WHEN OTHER TREATMENTS
+                        FALL SHORT</p>
+                    <hr class="border-secondary opacity-25 mb-5 w-100">
+                </div>
                 <div class="col-lg-5 mb-5 mb-lg-0">
-                    <h3 class="serif-font display-5 mb-4">Medication backed by clinical research and patient outcomes
-                    </h3>
-                    <p class="text-white-50 fw-light lh-lg mb-4">Clinical studies show that Deep TMS is highly
-                        effective, even for patients who have not found relief from antidepressants. Many patients
-                        experience significant reduction in symptoms, and a large percentage achieve full remission.</p>
-                    <p class="text-white-50 fw-light lh-lg mb-5">Our specialized Helmet technology (H-Coil) reaches
-                        deeper and broader structures of the brain than traditional TMS, ensuring the most comprehensive
-                        treatment possible.</p>
+                    <h2 class="serif-font display-4 mb-4">Real relief backed by clinical research and patient outcomes
+                    </h2>
+                    <p class="text-white-50 fw-light lh-lg mb-4">For many people, TMS is the turning point after years
+                        of trying medications,
+                        therapy, or lifestyle changes without lasting improvement. Research shows
+                        that TMS is four times more likely to achieve remission compared to
+                        placebo treatments, and it consistently outperforms traditional
+                        antidepressants in both effectiveness and long-term stability.</p>
+                    <p class="text-white-50 fw-light lh-lg mb-5">Most patients begin noticing improvements within a few
+                        weeks, with
+                        benefits that often last many months or even a year or more. Providers
+                        nationwide report response rates between 70 and 80 percent, and nearly
+                        half of patients achieve full remission with no remaining symptoms. These
+                        outcomes make Deep TMS one of the most successful treatments available
+                        in modern mental health care.</p>
                     <a href="contact.html"
-                        class="btn btn-light-beige rounded-pill px-4 py-3 text-dark fw-bold small">SCHEDULE A
-                        CONSULTATION</a>
+                        class="btn btn-light-beige rounded-pill px-4 py-3 text-dark fw-bold small text-uppercase">SCHEDULE
+                        A DISCOVERY CALL</a>
                 </div>
                 <div class="col-lg-6 offset-lg-1">
-                    <!-- Chart Graphic (CSS/HTML representation) -->
-                    <div class="bg-dark rounded-5 p-5 border border-secondary border-opacity-25 position-relative"
-                        style="background: #112115;">
-                        <h5 class="serif-font mb-5 text-center">TMS Clinical Response Rates</h5>
-                        <div class="d-flex justify-content-around align-items-end" style="height: 250px;">
-                            <!-- Bar 1 -->
-                            <div class="d-flex flex-column align-items-center gap-2">
-                                <span class="fw-bold text-info">75%</span>
-                                <div class="bg-info rounded-top-2" style="width: 40px; height: 180px; opacity: 0.8;">
-                                </div>
-                                <span class="small text-white-50 text-uppercase"
-                                    style="font-size: 0.6rem;">Responded</span>
+                    <!-- Chart Graphic -->
+                    <div class="rounded-5 p-5 position-relative shadow-lg"
+                        style="background-color: #151e2d; border: 1px solid rgba(255,255,255,0.05);">
+                        <h4 class="serif-font mb-5 text-center text-white">TMS vs Antidepressants</h4>
+
+                        <div class="row justify-content-center" style="height: 300px;">
+                            <!-- Y-Axis Line -->
+                            <div class="col-1 border-end border-secondary border-opacity-25 d-flex flex-column justify-content-between text-end pe-2 py-4"
+                                style="height: 100%;">
+                                <!-- Ticks can go here if needed -->
                             </div>
-                            <!-- Bar 2 -->
-                            <div class="d-flex flex-column align-items-center gap-2">
-                                <span class="fw-bold text-info">51%</span>
-                                <div class="bg-info rounded-top-2" style="width: 40px; height: 120px; opacity: 0.6;">
+
+                            <!-- Bars Area -->
+                            <div
+                                class="col-10 d-flex justify-content-around align-items-end pb-4 border-bottom border-white border-opacity-25 ps-4">
+                                <!-- Group 1: TMS -->
+                                <div class="d-flex gap-3 align-items-end">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <span
+                                            class="fw-bold text-white small mb-2 bg-info rounded-circle d-flex align-items-center justify-content-center"
+                                            style="width: 45px; height: 45px; font-size: 0.8rem; background: #00A9B0 !important;">80%</span>
+                                        <div
+                                            style="width: 30px; height: 180px; background: #00A9B0; border-radius: 4px 4px 0 0;">
+                                        </div>
+                                        <span class="x-small text-white-50 mt-2 text-uppercase"
+                                            style="font-size: 0.6rem;">Response</span>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <span
+                                            class="fw-bold text-white small mb-2 bg-info rounded-circle d-flex align-items-center justify-content-center"
+                                            style="width: 45px; height: 45px; font-size: 0.8rem; background: #00939A !important;">60%</span>
+                                        <div
+                                            style="width: 30px; height: 130px; background: #00939A; border-radius: 4px 4px 0 0;">
+                                        </div>
+                                        <span class="x-small text-white-50 mt-2 text-uppercase"
+                                            style="font-size: 0.6rem;">Remission</span>
+                                    </div>
                                 </div>
-                                <span class="small text-white-50 text-uppercase"
-                                    style="font-size: 0.6rem;">Remission</span>
-                            </div>
-                            <!-- Bar 3 (Comparison/Meds) -->
-                            <div class="d-flex flex-column align-items-center gap-2">
-                                <span class="fw-bold text-warning">~10-20%</span>
-                                <div class="bg-warning rounded-top-2" style="width: 40px; height: 40px; opacity: 0.8;">
+
+                                <!-- Group 2: Medications -->
+                                <div class="d-flex gap-3 align-items-end ms-4">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <span
+                                            class="fw-bold text-white small mb-2 bg-orange rounded-circle d-flex align-items-center justify-content-center"
+                                            style="width: 45px; height: 45px; font-size: 0.7rem;">14.6%</span>
+                                        <div
+                                            style="width: 30px; height: 40px; background: #E57E48; border-radius: 4px 4px 0 0;">
+                                        </div>
+                                        <span class="x-small text-white-50 mt-2 text-uppercase"
+                                            style="font-size: 0.6rem;">Response</span>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <span
+                                            class="fw-bold text-white small mb-2 bg-orange rounded-circle d-flex align-items-center justify-content-center"
+                                            style="width: 45px; height: 45px; font-size: 0.8rem;">11%</span>
+                                        <div
+                                            style="width: 30px; height: 30px; background: #C96632; border-radius: 4px 4px 0 0;">
+                                        </div>
+                                        <span class="x-small text-white-50 mt-2 text-uppercase"
+                                            style="font-size: 0.6rem;">Remission</span>
+                                    </div>
                                 </div>
-                                <span class="small text-white-50 text-uppercase" style="font-size: 0.6rem;">Meds
-                                    Only</span>
                             </div>
                         </div>
-                        <p class="x-small text-white-50 text-center mt-4 fst-italic">*Representative data of response
-                            rates often seen in clinical practice.</p>
+
+                        <!-- X-Axis Labels -->
+                        <div class="row pt-2 ps-5">
+                            <div class="col-6 text-center ps-5">
+                                <p class="x-small text-white fw-bold mb-0">TMS + Medication</p>
+                            </div>
+                            <div class="col-6 text-center ps-4">
+                                <p class="x-small text-white fw-bold mb-0">3rd Medication Trial<br>Alone</p>
+                            </div>
+                        </div>
+
+                        <p class="x-small text-white-50 mt-4 fst-italic lh-sm" style="font-size: 0.5rem;">
+                            1. Star*D Report (2006). Efficacy of repetitive transcranial magnetic stimulation using a
+                            figure-8 coil in treatment of major depressive disorder. A randomized controlled trial.
+                            Journal of Psychiatric Research.</br>
+                            *Representative data of response rates often seen in clinical practice.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -177,108 +252,176 @@
     </section>
 
     <!-- Visual Brain Section -->
-    <section class="py-5 position-relative bg-light-beige overflow-hidden">
-        <!-- Wavy Background -->
-        <div class="position-absolute top-0 start-0 w-100 h-100"
-            style="background: url('images/tms/AbstractWavyLines-2-Verdant.png') no-repeat left center; background-size: cover; opacity: 0.10;">
-        </div>
+    <section class="py-5 position-relative" style="background-color: #F7F6F2;">
 
         <div class="container py-5 text-center position-relative z-1">
-            <h2 class="serif-font display-4 mb-3 text-dark">See the Change Inside the Brain</h2>
-            <p class="text-uppercase small text-orange ls-2 fw-bold mb-5">BEFORE AND AFTER BRAINSWAY DEEP TMS™ COURSE OF
-                TREATMENT</p>
+            <!-- Main White Card -->
+            <div class="bg-white rounded-5 p-5 shadow-lg border border-light mx-auto" style="max-width: 1100px;">
+                <div class="row align-items-center text-start">
+                    <!-- Left Column: Text -->
+                    <div class="col-lg-5 pe-lg-5 mb-5 mb-lg-0">
+                        <p class="text-uppercase x-small fw-bold text-orange mb-3 ls-2">HEALING YOU CAN SEE</p>
+                        <hr class="border-secondary opacity-25 mb-4" style="width: 100%;">
+                        <h3 class="serif-font mb-4 text-dark display-6">A visual look at how Deep TMS helps restore
+                            healthy neural activity</h3>
+                        <p class="text-muted fw-light lh-lg">Deep TMS can awaken underactive regions of the brain that
+                            influence mood, motivation, and emotional regulation. Before and after brain scans showcase
+                            the measurable shifts in activity that support meaningful, long-term healing.</p>
+                    </div>
 
-            <div class="row justify-content-center g-4">
-                <div class="col-lg-10">
-                    <div class="bg-white rounded-5 p-5 shadow-sm border border-light">
-                        <div class="row align-items-center">
-                            <div class="col-md-4 text-start">
-                                <h4 class="serif-font mb-3">A visual look at how H-Coil helps restore healthy brain
-                                    activity</h4>
-                                <p class="text-muted fw-light small lh-lg">These PET scans illustrate the metabolic
-                                    activity in the brain. The increase in color/brightness signifies restored activity
-                                    in regions that were previously dormant due to depression.</p>
+                    <!-- Right Column: Brain Scans -->
+                    <div class="col-lg-7">
+                        <div class="row justify-content-center g-4">
+                            <!-- Before -->
+                            <div class="col-md-6 text-center">
+                                <div class="rounded-4 overflow-hidden mb-3 bg-black shadow-lg mx-auto"
+                                    style="width: 100%; max-width: 300px; aspect-ratio: 1/1;">
+                                    <img src="images/tms/BrainScan-Before.jpg" alt="Brain Scan Before"
+                                        class="img-fluid w-100 h-100 object-fit-cover opacity-75">
+                                </div>
+                                <p class="x-small text-uppercase fw-bold text-muted ls-1 mt-3">BEFORE TMS THERAPY</p>
                             </div>
-                            <div class="col-md-4 text-center">
-                                <img src="images/tms/BrainScan-Before.jpg" alt="Brain Scan Before"
-                                    class="img-fluid w-100 h-100 object-fit-cover">
+
+                            <!-- After -->
+                            <div class="col-md-6 text-center">
+                                <div class="rounded-4 overflow-hidden mb-3 bg-black shadow-lg mx-auto"
+                                    style="width: 100%; max-width: 300px; aspect-ratio: 1/1;">
+                                    <img src="images/tms/BrainScan-After.jpg" alt="Brain Scan After"
+                                        class="img-fluid w-100 h-100 object-fit-cover">
+                                </div>
+                                <p class="x-small text-uppercase fw-bold text-orange ls-1 mt-3">AFTER TMS THERAPY</p>
                             </div>
-                            <p class="small text-uppercase fw-bold text-muted">Before Treatment</p>
                         </div>
-                        <div class="col-md-4 text-center">
-                            <img src="images/tms/BrainScan-After.jpg" alt="Brain Scan After"
-                                class="img-fluid w-100 h-100 object-fit-cover">
-                        </div>
-                        <p class="small text-uppercase fw-bold text-orange">After Treatment</p>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
 
-        <!-- Icons Row -->
-        <div class="row mt-5 pt-4 justify-content-center text-muted">
-            <div class="col-6 col-md-2 text-center mb-4">
-                <i class="fas fa-hourglass-half fs-2 mb-3 text-orange"></i>
-                <p class="x-small text-uppercase fw-bold">20-Min Sessions</p>
+            <!-- Icons Row (Below Card) -->
+            <div class="row justify-content-center text-muted g-4 mt-5 pt-4">
+                <div class="col-6 col-md-2 text-center">
+                    <!-- Hourglass Icon -->
+                    <div class="mb-3 d-flex justify-content-center">
+                        <svg width="80" height="80" viewBox="0 0 60 60" fill="none" stroke="#C25C2A" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 10 L45 10 L30 30 L15 50 L45 50 L30 30 Z" fill="none" />
+                            <!-- Adjusted to look more like two triangles meeting -->
+                            <path d="M15 10 L45 10 L30 30 L45 50 L15 50 L30 30 Z" />
+                        </svg>
+                    </div>
+                    <p class="x-small text-muted lh-sm text-center">Highly effective,<br>Cutting-edge Technology</p>
+                </div>
+                <div class="col-6 col-md-2 text-center">
+                    <!-- Overlapping Circles Icon -->
+                    <div class="mb-3 d-flex justify-content-center">
+                        <svg width="80" height="80" viewBox="0 0 70 60" fill="none" stroke="#C25C2A" stroke-width="1.5">
+                            <circle cx="20" cy="30" r="14" />
+                            <circle cx="35" cy="30" r="14" />
+                            <circle cx="50" cy="30" r="14" />
+                        </svg>
+                    </div>
+                    <p class="x-small text-muted lh-sm text-center">Covered by most major<br>insurance</p>
+                </div>
+                <div class="col-6 col-md-2 text-center">
+                    <!-- Vertical Wavy Lines Icon -->
+                    <div class="mb-3 d-flex justify-content-center">
+                        <svg width="80" height="80" viewBox="0 0 60 60" fill="none" stroke="#C25C2A" stroke-width="1.5"
+                            stroke-linecap="round">
+                            <path d="M20 15 Q 25 25 20 35 T 20 55" />
+                            <path d="M30 15 Q 35 25 30 35 T 30 55" />
+                            <path d="M40 15 Q 45 25 40 35 T 40 55" />
+                        </svg>
+                    </div>
+                    <p class="x-small text-muted lh-sm text-center">Safe, Non-invasive, FDA<br>Approved</p>
+                </div>
+                <div class="col-6 col-md-2 text-center">
+                    <!-- 5 Dots Ring Icon -->
+                    <div class="mb-3 d-flex justify-content-center">
+                        <svg width="80" height="80" viewBox="0 0 60 60" fill="none" stroke="#C25C2A" stroke-width="1.5">
+                            <circle cx="30" cy="15" r="2.5" />
+                            <circle cx="43" cy="23" r="2.5" />
+                            <circle cx="38" cy="38" r="2.5" />
+                            <circle cx="22" cy="38" r="2.5" />
+                            <circle cx="17" cy="23" r="2.5" />
+                        </svg>
+                    </div>
+                    <p class="x-small text-muted lh-sm text-center">80% of patients see<br>improvement</p>
+                </div>
+                <div class="col-6 col-md-2 text-center">
+                    <!-- Parentheses Icon -->
+                    <div class="mb-3 d-flex justify-content-center">
+                        <svg width="80" height="80" viewBox="0 0 60 60" fill="none" stroke="#C25C2A" stroke-width="1.5"
+                            stroke-linecap="round">
+                            <path d="M25 20 C 15 30 15 40 25 50" />
+                            <path d="M35 20 C 45 30 45 40 35 50" />
+                        </svg>
+                    </div>
+                    <p class="x-small text-muted lh-sm text-center">60% of patients achieve<br>full remission</p>
+                </div>
+                <div class="col-6 col-md-2 text-center">
+                    <!-- Vertical Straight Lines Icon -->
+                    <div class="mb-3 d-flex justify-content-center">
+                        <svg width="80" height="80" viewBox="0 0 60 60" fill="none" stroke="#C25C2A" stroke-width="1.5"
+                            stroke-linecap="round">
+                            <line x1="20" y1="15" x2="20" y2="45" />
+                            <line x1="30" y1="15" x2="30" y2="45" />
+                            <line x1="40" y1="15" x2="40" y2="45" />
+                            <line x1="50" y1="15" x2="50" y2="45" />
+                        </svg>
+                    </div>
+                    <p class="x-small text-muted lh-sm text-center">On-site, Board Certified<br>Psychiatrists</p>
+                </div>
             </div>
-            <div class="col-6 col-md-2 text-center mb-4">
-                <i class="fas fa-check-circle fs-2 mb-3 text-orange"></i>
-                <p class="x-small text-uppercase fw-bold">FDA Cleared</p>
-            </div>
-            <div class="col-6 col-md-2 text-center mb-4">
-                <i class="fas fa-umbrella fs-2 mb-3 text-orange"></i>
-                <p class="x-small text-uppercase fw-bold">Covered by Insurance</p>
-            </div>
-            <div class="col-6 col-md-2 text-center mb-4">
-                <i class="fas fa-user-md fs-2 mb-3 text-orange"></i>
-                <p class="x-small text-uppercase fw-bold">In-Office Treatment</p>
-            </div>
-            <div class="col-6 col-md-2 text-center mb-4">
-                <i class="fas fa-brain fs-2 mb-3 text-orange"></i>
-                <p class="x-small text-uppercase fw-bold">No Systemic Side Effects</p>
-            </div>
-        </div>
-        </div>
+        </div> <!-- Close Container for Brain Scan -->
     </section>
 
     <!-- Deep TMS Difference -->
-    <section class="py-5 position-relative text-center text-white" style="min-height: 400px;">
-        <!-- Background Image -->
+    <section class="py-5 position-relative">
+        <!-- Wavy Background -->
         <div class="position-absolute top-0 start-0 w-100 h-100"
-            style="background: url('images/tms/BG-MacroMushroom.jpg') center/cover no-repeat; filter: brightness(0.7);">
+            style="background: url('images/tms/BG-TMS-Texture.png') no-repeat center center; background-size: cover;">
         </div>
-        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark-green opacity-50"></div>
 
         <div class="container position-relative z-1 py-5">
-            <h2 class="serif-font display-4 mb-3">The Deep TMS Difference</h2>
-            <p class="text-uppercase small ls-2 mb-5">WHY WE CHOOSE BRAINSWAY TECHNOLOGY</p>
 
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="glass-card p-5 rounded-4 text-start"
-                        style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
-                        <p class="fw-light mb-4 lh-lg">Harmony NeuroCare utilizes the industry-leading BrainsWay H-Coil
-                            technology. This patented design allows magnetic stimulation to reach deeper and broader
-                            areas of the brain compared to traditional Figure-8 coils. This ensures that the relevant
-                            neural networks are effectively targeted, leading to higher response rates and better
-                            patient
-                            outcomes.</p>
-                        <div class="row mt-4">
-                            <div class="col-md-6 border-end border-white border-opacity-25">
-                                <h5 class="serif-font mb-2">Standard Deep TMS</h5>
-                                <ul class="list-unstyled fw-light small text-white-50">
-                                    <li>• FDA Cleared for Depression & OCD</li>
-                                    <li>• 20-Minute Sessions</li>
-                                    <li>• No Anesthesia Required</li>
+                <div class="col-lg-10">
+                    <div class="glass-card p-5 rounded-5 text-center shadow-lg boarder border-white"
+                        style="background: rgba(239, 237, 230, 0.45); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.7); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);">
+                        <h2 class="serif-font display-4 mb-3 text-dark">The Deep TMS Difference</h2>
+                        <p class="text-uppercase small ls-2 mb-5 fw-bold text-uppercase" style="color: #606C39;">FINDING
+                            THE RIGHT APPROACH FOR YOUR BRAIN AND YOUR GOALS</p>
+
+                        <div class="row justify-content-center mb-5">
+                            <div class="col-lg-9">
+                                <p class="text-muted fw-light lh-lg">BrainsWay Deep TMS improves depression, anxiety,
+                                    and OCD symptoms more substantially than standard TMS using a figure-8 coil. This
+                                    design enables deeper and broader stimulation than First-Generation TMS coils,
+                                    resulting in greater activation of neurons, less likelihood of targeting errors, and
+                                    powerful efficacy.</p>
+                                <p class="text-muted fw-light lh-lg mt-3">Deep TMS shows superior results for the
+                                    treatment of depression, anxious-depression, OCD, and late-life depression in those
+                                    aged 15 and up.</p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-5">
+                            <div class="col-md-6 border-end border-dark border-opacity-10">
+                                <h4 class="serif-font mb-4 text-dark">Standard Deep TMS</h4>
+                                <ul class="list-unstyled fw-light small text-muted lh-lg text-start mx-auto"
+                                    style="max-width: 300px;">
+                                    <li>• 20 minute sessions</li>
+                                    <li>• 36 session completed over 6-12 weeks</li>
+                                    <li>• Covered by most insurance plans</li>
                                 </ul>
                             </div>
                             <div class="col-md-6 ps-md-4">
-                                <h5 class="serif-font mb-2">Accelerated Deep TMS</h5>
-                                <ul class="list-unstyled fw-light small text-white-50">
-                                    <li>• Multiple sessions per day</li>
-                                    <li>• Complete treatment in days vs weeks</li>
-                                    <li>• Ideal for traveling patients</li>
+                                <h4 class="serif-font mb-4 text-dark">Accelerated Deep TMS</h4>
+                                <ul class="list-unstyled fw-light small text-muted lh-lg text-start mx-auto"
+                                    style="max-width: 350px;">
+                                    <li>• 10 minutes sessions</li>
+                                    <li>• 30 sessions completed in 6 days with a taper</li>
+                                    <li>• Fast-track to relief without compromising effectiveness</li>
+                                    <li>• Not usually covered by insurance plans</li>
                                 </ul>
                             </div>
                         </div>
@@ -293,55 +436,198 @@
         <div class="container py-5">
             <h2 class="serif-font display-4 mb-5 text-center text-dark">Frequently Asked Deep TMS Therapy Questions</h2>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="accordion" id="accordionTMS">
+            <div class="row justify-content-center g-4">
+                <!-- Column 1 -->
+                <div class="col-lg-6">
+                    <p class="text-uppercase x-small fw-bold text-orange mb-3 ls-1">ELIGIBILITY AND SAFETY</p>
+                    <div class="accordion" id="accordionTMSLeft">
                         <!-- Q1 -->
-                        <div class="accordion-item bg-transparent border-0 border-bottom border-dark border-opacity-10">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                                    Is TMS Therapy Painful?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionTMS">
-                                <div class="accordion-body text-muted fw-light">
-                                    TMS is generally not painful. Patients may feel a tapping sensation on the head
-                                    during treatment, but anesthesia is not required, and there is no recovery time
-                                    needed after each session.
-                                </div>
+                        <div class="mb-2">
+                            <button
+                                class="btn btn-light w-100 text-start py-3 px-4 rounded-pill shadow-sm d-flex justify-content-between align-items-center fw-bold text-dark small"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                Is TMS Right for You? <i class="fas fa-chevron-down text-muted"></i>
+                            </button>
+                            <div class="collapse mt-2 px-3" id="faq1">
+                                <div class="card card-body border-0 bg-transparent text-muted small fw-light">TMS is
+                                    ideal for adults and adolescents (15+) struggling with depression, anxiety, or OCD
+                                    who haven't found sufficient relief from medication.</div>
                             </div>
                         </div>
                         <!-- Q2 -->
-                        <div class="accordion-item bg-transparent border-0 border-bottom border-dark border-opacity-10">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                                    Is it Covered by Insurance?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionTMS">
-                                <div class="accordion-body text-muted fw-light">
-                                    Yes, BrainsWay Deep TMS is covered by most major insurance providers, including
-                                    Medicare, for the treatment of Major Depressive Disorder and OCD. Our team helps
-                                    handle all prior authorizations.
-                                </div>
+                        <div class="mb-2">
+                            <button
+                                class="btn btn-light w-100 text-start py-3 px-4 rounded-pill shadow-sm d-flex justify-content-between align-items-center fw-bold text-dark small"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                Is TMS Safe? <i class="fas fa-chevron-down text-muted"></i>
+                            </button>
+                            <div class="collapse mt-2 px-3" id="faq2">
+                                <div class="card card-body border-0 bg-transparent text-muted small fw-light">Yes, it is
+                                    FDA-cleared and considered very safe with minimal side effects.</div>
                             </div>
                         </div>
                         <!-- Q3 -->
-                        <div class="accordion-item bg-transparent border-0 border-bottom border-dark border-opacity-10">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                                    How Long Does Treatment Take?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionTMS">
-                                <div class="accordion-body text-muted fw-light">
-                                    A standard course consists of daily 20-minute sessions over 4-6 weeks. We also offer
-                                    accelerated protocols for those who wish to complete treatment in a shorter
-                                    timeframe.
+                        <div class="mb-2">
+                            <button
+                                class="btn btn-light w-100 text-start py-3 px-4 rounded-pill shadow-sm d-flex justify-content-between align-items-center fw-bold text-dark small"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                What Risks or Side Effects Should I Expect? <i
+                                    class="fas fa-chevron-down text-muted"></i>
+                            </button>
+                            <div class="collapse mt-2 px-3" id="faq3">
+                                <div class="card card-body border-0 bg-transparent text-muted small fw-light">Most
+                                    common side effects are mild scalp discomfort or headache, which typically go away
+                                    after the first few sessions.</div>
+                            </div>
+                        </div>
+
+                        <p class="text-uppercase x-small fw-bold text-orange mb-3 mt-5 ls-1">EFFECTIVENESS AND RESULTS
+                        </p>
+                        <!-- Q4 -->
+                        <div class="mb-2">
+                            <button
+                                class="btn btn-light w-100 text-start py-3 px-4 rounded-pill shadow-sm d-flex justify-content-between align-items-center fw-bold text-dark small"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                How Effective Is TMS? <i class="fas fa-chevron-down text-muted"></i>
+                            </button>
+                            <div class="collapse mt-2 px-3" id="faq4">
+                                <div class="card card-body border-0 bg-transparent text-muted small fw-light">It is
+                                    highly effective, with response rates around 70-80% and remission rates near 50% for
+                                    treatment-resistant patients.</div>
+                            </div>
+                        </div>
+                        <!-- Q5 -->
+                        <div class="mb-2">
+                            <button
+                                class="btn btn-light w-100 text-start py-3 px-4 rounded-pill shadow-sm d-flex justify-content-between align-items-center fw-bold text-dark small"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                How Soon Will I See Results? <i class="fas fa-chevron-down text-muted"></i>
+                            </button>
+                            <div class="collapse mt-2 px-3" id="faq5">
+                                <div class="card card-body border-0 bg-transparent text-muted small fw-light">Most
+                                    patients notice improvements within 2-3 weeks of daily treatment.</div>
+                            </div>
+                        </div>
+                        <!-- Q6 -->
+                        <div class="mb-2">
+                            <button
+                                class="btn btn-light w-100 text-start py-3 px-4 rounded-pill shadow-sm d-flex justify-content-between align-items-center fw-bold text-dark small"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                How Long Do the Benefits Last? <i class="fas fa-chevron-down text-muted"></i>
+                            </button>
+                            <div class="collapse mt-2 px-3" id="faq6">
+                                <div class="card card-body border-0 bg-transparent text-muted small fw-light">Benefits
+                                    are durable and can last for a year or more. Some maintenance may be needed.</div>
+                            </div>
+                        </div>
+                        <!-- Q7 -->
+                        <div class="mb-2">
+                            <button
+                                class="btn btn-light w-100 text-start py-3 px-4 rounded-pill shadow-sm d-flex justify-content-between align-items-center fw-bold text-dark small"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                                Why is Deep TMS considered more effective? <i
+                                    class="fas fa-chevron-down text-muted"></i>
+                            </button>
+                            <div class="collapse mt-2 px-3" id="faq7">
+                                <div class="card card-body border-0 bg-transparent text-muted small fw-light">The H-Coil
+                                    technology reaches deeper and broader brain structures than traditional coils.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-lg-6">
+                    <p class="text-uppercase x-small fw-bold text-orange mb-3 ls-1">THE TREATMENT EXPERIENCE</p>
+                    <div class="accordion" id="accordionTMSRight">
+                        <!-- Q8 -->
+                        <div class="mb-2">
+                            <button
+                                class="btn btn-light w-100 text-start py-3 px-4 rounded-pill shadow-sm d-flex justify-content-between align-items-center fw-bold text-dark small"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                                What Does TMS Feel Like? <i class="fas fa-chevron-down text-muted"></i>
+                            </button>
+                            <div class="collapse mt-2 px-3" id="faq8">
+                                <div class="card card-body border-0 bg-transparent text-muted small fw-light">You'll
+                                    feel a tapping sensation on the head. It is generally well-tolerated.</div>
+                            </div>
+                        </div>
+                        <!-- Q9 -->
+                        <div class="mb-2">
+                            <button
+                                class="btn btn-light w-100 text-start py-3 px-4 rounded-pill shadow-sm d-flex justify-content-between align-items-center fw-bold text-dark small"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
+                                Is Deep TMS comfortable? <i class="fas fa-chevron-down text-muted"></i>
+                            </button>
+                            <div class="collapse mt-2 px-3" id="faq9">
+                                <div class="card card-body border-0 bg-transparent text-muted small fw-light">Yes, the
+                                    H-Coil helmet is cushioned and designed for patient comfort.</div>
+                            </div>
+                        </div>
+                        <!-- Q10 -->
+                        <div class="mb-2">
+                            <button
+                                class="btn btn-light w-100 text-start py-3 px-4 rounded-pill shadow-sm d-flex justify-content-between align-items-center fw-bold text-dark small"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq10">
+                                How Long Does Treatment Take? <i class="fas fa-chevron-down text-muted"></i>
+                            </button>
+                            <div class="collapse mt-2 px-3" id="faq10">
+                                <div class="card card-body border-0 bg-transparent text-muted small fw-light">Each
+                                    session is about 20 minutes. A full course is typically 4-6 weeks.</div>
+                            </div>
+                        </div>
+                        <!-- Q11 -->
+                        <div class="mb-2">
+                            <button
+                                class="btn btn-light w-100 text-start py-3 px-4 rounded-pill shadow-sm d-flex justify-content-between align-items-center fw-bold text-dark small"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq11">
+                                Can I Continue My Current Medication While Doing TMS? <i
+                                    class="fas fa-chevron-down text-muted"></i>
+                            </button>
+                            <div class="collapse mt-2 px-3" id="faq11">
+                                <div class="card card-body border-0 bg-transparent text-muted small fw-light">Yes, TMS
+                                    can be safely combined with medication.</div>
+                            </div>
+                        </div>
+
+                        <p class="text-uppercase x-small fw-bold text-orange mb-3 mt-5 ls-1">MAINTENANCE, ACCESS, AND
+                            CHOOSING HARMONY</p>
+                        <!-- Q12 -->
+                        <div class="mb-2">
+                            <button
+                                class="btn btn-light w-100 text-start py-3 px-4 rounded-pill shadow-sm d-flex justify-content-between align-items-center fw-bold text-dark small"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq12">
+                                Can I Come Back for More TMS? <i class="fas fa-chevron-down text-muted"></i>
+                            </button>
+                            <div class="collapse mt-2 px-3" id="faq12">
+                                <div class="card card-body border-0 bg-transparent text-muted small fw-light">Yes,
+                                    booster or maintenance sessions are available if symptoms return.</div>
+                            </div>
+                        </div>
+                        <!-- Q13 -->
+                        <div class="mb-2">
+                            <button
+                                class="btn btn-light w-100 text-start py-3 px-4 rounded-pill shadow-sm d-flex justify-content-between align-items-center fw-bold text-dark small"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq13">
+                                Can TMS be part of a larger treatment plan? <i
+                                    class="fas fa-chevron-down text-muted"></i>
+                            </button>
+                            <div class="collapse mt-2 px-3" id="faq13">
+                                <div class="card card-body border-0 bg-transparent text-muted small fw-light">
+                                    Absolutely. It works well alongside therapy, psychiatry, and lifestyle changes.
                                 </div>
+                            </div>
+                        </div>
+                        <!-- Q14 -->
+                        <div class="mb-2">
+                            <button
+                                class="btn btn-light w-100 text-start py-3 px-4 rounded-pill shadow-sm d-flex justify-content-between align-items-center fw-bold text-dark small"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq14">
+                                What Does the Investment Look Like? <i class="fas fa-chevron-down text-muted"></i>
+                            </button>
+                            <div class="collapse mt-2 px-3" id="faq14">
+                                <div class="card card-body border-0 bg-transparent text-muted small fw-light">Using
+                                    insurance significantly reduces the cost. We also check benefits for you.</div>
                             </div>
                         </div>
                     </div>
@@ -405,7 +691,8 @@
                         <li><a href="ketamine.html" class="text-reset text-decoration-none hover-white">How Ketamine &
                                 SPRAVATO® Works</a></li>
                         <li><a href="#" class="text-reset text-decoration-none hover-white">Patient Portal</a></li>
-                        <li><a href="referring-providers.html" class="text-reset text-decoration-none hover-white">Referring Providers</a></li>
+                        <li><a href="referring-providers.html"
+                                class="text-reset text-decoration-none hover-white">Referring Providers</a></li>
                         <li><a href="#" class="text-reset text-decoration-none hover-white">Careers</a></li>
                     </ul>
                 </div>

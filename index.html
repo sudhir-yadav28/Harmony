@@ -53,7 +53,16 @@
                 <ul class="navbar-nav align-items-center gap-3">
                     <li class="nav-item"><a class="nav-link active-home" href="#">HOME</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#treatment">SERVICES</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            SERVICES
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-3 overflow-hidden">
+                            <li><a class="dropdown-item small py-2" href="tms.html">TMS Therapy</a></li>
+                            <li><a class="dropdown-item small py-2" href="ketamine.html">Ketamine & Spravato</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="insurance.html">INSURANCE & PRICING</a></li>
                     <li class="nav-item"><a class="nav-link" href="conditions.html">CONDITIONS</a></li>
                     <li class="nav-item"><a class="nav-link" href="resources.html">RESOURCES</a></li>
@@ -488,12 +497,14 @@
 
     <!-- Footer -->
     <!-- Footer -->
-    <footer class="text-white py-5 small" style="background-color: #27392a !important;">
+    <!-- Footer -->
+    <footer class="text-white py-5 small" style="background-color: #2A371E !important;">
         <div class="container pt-5">
             <div class="row g-4 mb-5">
                 <!-- Column 1: Logo & Text -->
                 <div class="col-lg-4">
                     <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none mb-3">
+                        <!-- Logo Icon -->
                         <svg width="40" height="28" viewBox="0 0 70 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8 12 Q 5 21 8 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
                             <path d="M16 8 Q 10 21 16 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
@@ -503,12 +514,16 @@
                         </svg>
                         <div class="d-flex flex-column align-items-start lh-1">
                             <span class="text-white"
-                                style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.5rem; letter-spacing: -0.5px;">harmony</span>
-                            <span class="text-white text-uppercase"
-                                style="font-family: 'Lato', sans-serif; font-size: 0.5rem; letter-spacing: 2px; font-weight: 500;">NEUROCARE</span>
+                                style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.8rem; letter-spacing: -0.5px; line-height: 1;">harmony
+                                <span
+                                    style="font-family: 'Inter', sans-serif; font-size: 1.1rem; letter-spacing: 0px; font-weight: 400; text-transform: uppercase;">NEUROCARE</span></span>
+                            <span class="text-white text-uppercase mt-1"
+                                style="font-family: 'Inter', sans-serif; font-size: 0.55rem; letter-spacing: 2px; font-weight: 400; color: #EEECE5;">TMS
+                                & MENTAL WELLNESS CENTER</span>
                         </div>
                     </a>
-                    <p class="text-white-50 small mb-4" style="font-size: 0.8rem; line-height: 1.6;">
+                    <p class="text-white-50 small mb-4 pe-lg-4"
+                        style="font-size: 0.85rem; line-height: 1.6; font-weight: 300;">
                         Harmony Neurocare provides hope-inspired mental health care in Castle Rock, CO, offering
                         FDA-cleared TMS therapy, ketamine & SPRAVATO® treatments, and psychiatric support. With
                         evidence-backed therapies, a judgment-free environment, and compassionate expertise, we help
@@ -518,38 +533,36 @@
 
                 <!-- Column 2: Quicklinks -->
                 <div class="col-lg-2 offset-lg-1">
-                    <h6 class="fw-bold mb-4 text-uppercase text-orange"
-                        style="font-size: 0.75rem; letter-spacing: 1px;">QUICKLINKS</h6>
-                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-2">
+                    <h6 class="fw-bold mb-4 text-uppercase text-white-50"
+                        style="font-size: 0.75rem; letter-spacing: 1px; color: #606C39 !important;">QUICKLINKS</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-2" style="font-weight: 300;">
                         <li><a href="tms.html" class="text-reset text-decoration-none hover-white">What is TMS
                                 Therapy?</a></li>
                         <li><a href="ketamine.html" class="text-reset text-decoration-none hover-white">How Ketamine &
                                 SPRAVATO® Works</a></li>
                         <li><a href="#" class="text-reset text-decoration-none hover-white">Patient Portal</a></li>
-                        <li><a href="referring-providers.html" class="text-reset text-decoration-none hover-white">Referring Providers</a></li>
+                        <li><a href="referring-providers.html"
+                                class="text-reset text-decoration-none hover-white">Referring Providers</a></li>
                         <li><a href="#" class="text-reset text-decoration-none hover-white">Careers</a></li>
                     </ul>
                 </div>
 
                 <!-- Column 3: Contact -->
                 <div class="col-lg-2">
-                    <h6 class="fw-bold mb-4 text-uppercase text-orange"
-                        style="font-size: 0.75rem; letter-spacing: 1px;">CONTACT</h6>
-                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-2">
+                    <h6 class="fw-bold mb-4 text-uppercase text-white-50"
+                        style="font-size: 0.75rem; letter-spacing: 1px; color: #606C39 !important;">CONTACT</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-4" style="font-weight: 300;">
                         <li class="d-flex gap-2">
-                            <i class="fas fa-map-marker-alt mt-1"></i>
-                            <span>757 Maleta Lane, Suite 201<br>Castle Rock, CO 80108</span>
+                            <i class="fas fa-map-marker-alt mt-1 text-white"></i>
+                            <span style="line-height: 1.4;">757 Maleta Lane, Suite 201<br>Castle Rock, CO 80108</span>
+                        </li>
+                        <li class="d-flex flex-column gap-1">
+                            <div class="d-flex gap-2"><i class="fas fa-phone mt-1 text-white"></i> <span>Phone:
+                                    303-409-7446</span></div>
+                            <div class="d-flex gap-2"><span class="ms-4">Fax: 303-409-7443</span></div>
                         </li>
                         <li class="d-flex gap-2">
-                            <i class="fas fa-phone mt-1"></i>
-                            <span>Phone: 303-409-7446</span>
-                        </li>
-                        <li class="d-flex gap-2">
-                            <i class="fas fa-fax mt-1"></i>
-                            <span>Fax: 303-409-7443</span>
-                        </li>
-                        <li class="d-flex gap-2">
-                            <i class="fas fa-envelope mt-1"></i>
+                            <i class="fas fa-envelope mt-1 text-white"></i>
                             <span>info@harmonyneurocare.com</span>
                         </li>
                     </ul>
@@ -557,26 +570,35 @@
 
                 <!-- Column 4: Clinic Hours -->
                 <div class="col-lg-3">
-                    <h6 class="fw-bold mb-4 text-uppercase text-orange"
-                        style="font-size: 0.75rem; letter-spacing: 1px;">CLINIC HOURS</h6>
-                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-1">
-                        <li class="d-flex justify-content-between"><span>Mon</span> <span>8:00AM - 6:00PM</span></li>
-                        <li class="d-flex justify-content-between"><span>Tues</span> <span>8:00AM - 6:00PM</span></li>
-                        <li class="d-flex justify-content-between"><span>Wed</span> <span>8:00AM - 6:00PM</span></li>
-                        <li class="d-flex justify-content-between"><span>Thu</span> <span>8:00AM - 6:00PM</span></li>
-                        <li class="d-flex justify-content-between"><span>Fri</span> <span>8:00AM - 6:00PM</span></li>
-                        <li class="d-flex justify-content-between"><span>Sat</span> <span>Closed</span></li>
-                        <li class="d-flex justify-content-between"><span>Sun</span> <span>Closed</span></li>
+                    <h6 class="fw-bold mb-4 text-uppercase text-white-50"
+                        style="font-size: 0.75rem; letter-spacing: 1px; color: #606C39 !important;">CLINIC HOURS</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-2" style="font-weight: 300;">
+                        <li class="d-flex justify-content-between"><span>Mon</span> <span>---------- 8:00AM -
+                                6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Tues</span> <span>---------- 8:00AM -
+                                6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Wed</span> <span>---------- 8:00AM -
+                                6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Thu</span> <span>---------- 8:00AM -
+                                6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Fri</span> <span>---------- 8:00AM -
+                                6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Sat</span> <span>----------------------
+                                Closed</span></li>
+                        <li class="d-flex justify-content-between"><span>Sun</span> <span>----------------------
+                                Closed</span></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-top border-secondary opacity-25 pt-4 d-flex justify-content-between text-white-50 px-2"
-                style="font-size: 0.7rem;">
+
+            <!-- Bottom Copyright -->
+            <div class="pt-4 d-flex justify-content-between text-white-50 px-0"
+                style="font-size: 0.75rem; font-weight: 300;">
                 <span>&copy; 2026 Harmony Neurocare in Castle Rock, CO | All Rights Reserved</span>
                 <div>
-                    <a href="#" class="text-reset text-decoration-none me-3">Privacy Policy</a>
-                    <a href="#" class="text-reset text-decoration-none me-3">Terms & Conditions</a>
-                    <a href="#" class="text-reset text-decoration-none">Disclaimers</a>
+                    <a href="#" class="text-reset text-decoration-none me-2">Privacy Policy</a> |
+                    <a href="#" class="text-reset text-decoration-none mx-2">Terms & Conditions</a> |
+                    <a href="#" class="text-reset text-decoration-none ms-2">Disclaimers</a>
                 </div>
             </div>
         </div>

@@ -2,16 +2,27 @@
 /* Imported in HTML head */
 
 :root {
-    --primary-green: #2e4a33;
-    --dark-green: #1a2f20;
-    --accent-orange: #d97706;
+    --primary-green: #2A371E;
+    /* VERDANT */
+    --dark-green: #2A371E;
+    /* VERDANT */
+    --accent-orange: #C25C2A;
+    /* REVIVE */
+    --renewal-green: #606C39;
+    /* RENEWAL GREEN */
+    --deep-brown: #381B1A;
+    /* DEEP COGNITION */
     /* Fallback */
-    --accent-gradient: linear-gradient(135deg, #2e4a33 0%, #d97706 100%);
-    --light-beige: #f9f7f2;
-    --text-dark: #1f2937;
-    --text-light: #f3f4f6;
+    --accent-gradient: linear-gradient(135deg, #2A371E 0%, #C25C2A 100%);
+    --light-beige: #EEECE5;
+    /* SERENITY */
+    --text-dark: #2A371E;
+    /* VERDANT */
+    --text-light: #EEECE5;
+    /* SERENITY */
     --serif-font: 'Cormorant Garamond', serif;
-    --sans-font: 'Lato', sans-serif;
+    --sans-font: 'Inter', sans-serif;
+    /* Changed to Inter per request */
 }
 
 /* Override text-white-50 to be pure white as requested */
