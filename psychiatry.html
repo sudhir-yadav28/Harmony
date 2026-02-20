@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psychiatry | Harmony Neurocare</title>
+    <title>Psychiatry & Medication Management | Harmony Neurocare</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +47,16 @@
                 <ul class="navbar-nav align-items-center gap-3">
                     <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="index.html#treatment">SERVICES</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            SERVICES
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-3 overflow-hidden">
+                            <li><a class="dropdown-item small py-2" href="tms.html">TMS Therapy</a></li>
+                            <li><a class="dropdown-item small py-2" href="ketamine.html">Ketamine & Spravato</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="insurance.html">INSURANCE & PRICING</a></li>
                     <li class="nav-item"><a class="nav-link" href="conditions.html">CONDITIONS</a></li>
                     <li class="nav-item"><a class="nav-link" href="resources.html">RESOURCES</a></li>
@@ -61,195 +70,229 @@
 
     <!-- Hero Section -->
     <section class="d-flex align-items-center justify-content-start text-white position-relative bg-dark-green"
-        style="min-height: 500px; padding-top: 120px;">
+        style="min-height: 50vh; padding-top: 150px; padding-bottom: 80px; background-color: #2b3928; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px;">
         <div class="container relative z-2">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <!-- Placeholder Silhouette/Image -->
-                    <div class="rounded-5 overflow-hidden shadow-sm position-relative" style="height: 400px;">
-                        <!-- Using existing harmony image dimmed -->
-                        <img src="images/psychiatry/psych-TheRoleMedication-blur.jpg" alt="Medication Management"
-                            class="img-fluid h-100 w-100 object-fit-cover" style="filter: brightness(0.8);">
-                    </div>
-                </div>
-                <div class="col-lg-6 offset-lg-1">
-                    <p class="text-uppercase small ls-2 mb-3 text-white-50 fw-bold">MEDICATION & LIFESTYLE MANAGEMENT
-                    </p>
-                    <h1 class="display-3 serif-font mb-4">Personalized psychiatric care that supports your<br>healing
-                        and helps you feel more like yourself</h1>
-                </div>
-            </div>
+            <p class="text-uppercase small ls-2 mb-4 text-white-50 fw-bold">PSYCHIATRY & MEDICATION MANAGEMENT IN
+                COLORADO
+            </p>
+            <h1 class="display-3 serif-font mb-4">Personalized psychiatric care that supports your<br>healing and helps
+                you feel more like yourself</h1>
+        </div>
+        <!-- Background Overlay / Gradient -->
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: url('images/psychiatry/BG-hero.jpg') center/cover no-repeat; z-index: 0; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px;">
         </div>
         <div class="position-absolute top-0 start-0 w-100 h-100"
-            style="background: url('images/psychiatry/BG-hero.jpg') center/cover no-repeat; z-index: 1; filter: brightness(0.5);">
+            style="background: linear-gradient(180deg, rgba(43,57,40,0.6) 0%, rgba(43,57,40,0.85) 100%); z-index: 1; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px;">
         </div>
     </section>
 
-    <!-- Intro text: Role of Medication -->
+    <!-- Role of Medication Section -->
     <section class="py-5 bg-light-beige">
         <div class="container py-5">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Placeholder for Window/Light image -->
-                    <img src="images/psychiatry/psych-TheRoleMedication.jpg" alt="Window Light"
-                        class="img-fluid rounded-4 shadow-sm w-100 object-fit-cover"
-                        style="height: 400px; opacity: 1.0;">
+                <!-- Left Image -->
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="position-relative">
+                        <!-- Main Image (Man Stretching) -->
+                        <div class="rounded-5 overflow-hidden shadow-lg position-relative" style="height: 500px;">
+                            <!-- Using a blurred version as background/overlay if needed, but main image is key -->
+                            <img src="images/psychiatry/psych-TheRoleMedication.jpg" alt="Man stretching in sun"
+                                class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-5 offset-lg-1">
-                    <h3 class="serif-font display-6 mb-4 text-dark">The Role of Medication in Mental Health Care</h3>
-                    <p class="text-muted mb-4 fw-light lh-lg">Medication can be a powerful tool for stabilizing
-                        symptoms, clearing the fog of depression, and creating a foundation for growth. But it is rarely
-                        the whole answer. We believe in "minimum effective dose" strategies that prioritize your
-                        long-term health over quick fixes.</p>
-                    <p class="text-dark fw-bold mb-4">Your wellness journey is about more than just a prescription.</p>
+
+                <!-- Right Content -->
+                <div class="col-lg-6 offset-lg-1">
+                    <h2 class="serif-font display-5 mb-4 text-dark">The Role of Medication in Mental Health Care</h2>
+                    <p class="text-muted fw-light lh-lg mb-4">Medication can be a powerful tool, but it is never the
+                        whole
+                        story. At Harmony NeuroCare, medication management is designed to support your overall wellness,
+                        reduce symptoms, and create the stability needed for deeper healing. We focus on the minimum
+                        effective dose and tailor every plan to your personal history, comfort level, and goals.</p>
+                    <p class="text-muted fw-light lh-lg mb-4">You will never be pressured into medication, and you will
+                        never be left to navigate treatment on your own.</p>
+                    <p class="fw-bold small text-dark">Your well-being guides every decision we make together.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Dark Green Quote/Statement -->
+    <!-- Comprehensive Evaluations Section -->
     <section class="py-5 bg-dark-green text-white">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h3 class="serif-font display-5 mb-4">Clear answers and a treatment plan<br>that reflects your
-                        unique experience</h3>
+        <div class="container py-5">
+            <p class="text-uppercase small ls-2 mb-4 text-white-50 fw-bold">COMPREHENSIVE PSYCHIATRIC EVALUATIONS</p>
+            <hr class="border-secondary opacity-25 mb-5 w-100">
+
+            <div class="row align-items-start">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="serif-font display-5 mb-5">Clear answers and a treatment plan that reflects your unique
+                        experience</h2>
                     <a href="contact.html"
-                        class="btn btn-light-beige rounded-pill px-4 py-2 text-dark fw-bold small text-uppercase">SCHEDULE
-                        A CONSULTATION</a>
+                        class="btn btn-light-beige rounded-pill px-4 py-3 text-dark fw-bold small text-uppercase">SCHEDULE
+                        A
+                        DISCOVERY CALL</a>
                 </div>
-                <div class="col-lg-4 text-white-50 fw-light text-end d-flex align-items-end justify-content-end">
-                    <p class="small lh-lg mb-0 text-start">Many patients come to us feeling unheard or over-medicated.
-                        We take the time to understand your full history, lifestyle, and goals before recommending any
-                        path forward.</p>
+                <div class="col-lg-6 offset-lg-1">
+                    <p class="text-white-50 fw-light lh-lg mb-4">Every treatment plan begins with an in-depth
+                        psychiatric
+                        evaluation. Your provider takes time to understand your emotional patterns, health history,
+                        daily
+                        challenges, and long-term goals. This evaluation provides clarity about what you are
+                        experiencing
+                        and guides the next steps in your care.</p>
+                    <p class="text-white-50 fw-light lh-lg">You can expect a thoughtful, judgment-free conversation and
+                        a
+                        plan that makes sense for your life, not just your symptoms.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Large Feature Cards Section -->
-    <section class="py-5 bg-light-beige position-relative overflow-hidden">
-        <!-- Wavy background top left -->
-        <div class="position-absolute top-0 start-0 w-50 h-50"
-            style="background: url('images/psychiatry/AbstractWavyLines-1-Verdant.png') no-repeat top left; background-size: contain; opacity: 0.1;">
-        </div>
-
+    <!-- Treatment Cards Section -->
+    <section class="py-5 bg-light-beige position-relative">
         <div class="container py-5 position-relative z-1">
 
-            <!-- Card 1: Combining Deep TMS -->
+            <!-- Card 1: Deep TMS -->
             <div class="bg-white rounded-5 p-5 shadow-sm mb-5">
                 <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <h3 class="serif-font display-6 mb-3">Combining BrainsWay Deep TMS<br>with Therapy and
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <h3 class="serif-font display-6 mb-4 text-dark">Combining BrainsWay Deep TMS with Therapy and
                             Medication</h3>
-                        <p class="text-orange text-uppercase fw-bold small mb-4">HOW A COMBINED TREATMENT PROTOCOL
-                            OFFERS BEST RESULTS</p>
-                        <p class="text-muted fw-light lh-lg mb-4">Many patients find that combining treatments creates a
-                            synergistic effect. While medication works on neurochemistry, TMS works on electrical
-                            pathways. Addressing both can lead to faster, more robust remission rates than either
-                            treatment alone.</p>
+                        <hr class="border-secondary opacity-25 mb-4 w-100">
+                        <p class="text-uppercase x-small fw-bold text-orange mb-3 ls-1">HOW COMBINED TREATMENTS CREATE
+                            STRONGER RESULTS</p>
+                        <p class="text-muted fw-light lh-lg mb-4">Medication can ease symptoms, therapy helps you
+                            process
+                            and build insight, and BrainsWay Deep TMS works directly with the brain to support healthier
+                            function. When these treatments are used together, they amplify each other and create a more
+                            stable path forward. If medication alone has not brought the relief you hoped for, this
+                            combined
+                            approach may offer the support you need.</p>
                         <a href="tms.html"
-                            class="btn btn-dark-brown shadow-sm rounded-pill px-4 py-2 small fw-bold text-uppercase">LEARN
-                            MORE ABOUT DEEP TMS</a>
+                            class="btn btn-dark-brown rounded-pill text-white fw-bold shadow-sm text-uppercase border-0 py-3 small ls-1 px-4"
+                            style="background-color: #3e2b26;">LEARN ABOUT DEEP TMS THERAPY</a>
                     </div>
                     <div class="col-lg-6 offset-lg-1">
-                        <!-- Brain Scan Visuals Placeholder from TMS page -->
-                        <div class="row g-2">
-                            <div class="row g-2">
-                                <div class="col-6">
-                                    <img src="images/psychiatry/BrainScan-Before.jpg" alt="Brain Scan Before"
-                                        class="img-fluid rounded-4 w-100 h-100 object-fit-cover">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="rounded-4 overflow-hidden bg-black shadow-lg">
+                                    <img src="images/psychiatry/BrainScan-Before.jpg" alt="Before TMS"
+                                        class="img-fluid w-100">
                                 </div>
-                                <div class="col-6">
-                                    <img src="images/psychiatry/BrainScan-After.jpg" alt="Brain Scan After"
-                                        class="img-fluid rounded-4 w-100 h-100 object-fit-cover"
-                                        style="border: 2px solid #d97706;">
+                                <p class="text-center x-small fw-bold text-uppercase text-muted mt-3 mb-0">BEFORE TMS
+                                    THERAPY</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="rounded-4 overflow-hidden bg-black shadow-lg">
+                                    <img src="images/psychiatry/BrainScan-After.jpg" alt="After TMS"
+                                        class="img-fluid w-100">
                                 </div>
+                                <p class="text-center x-small fw-bold text-uppercase text-dark mt-3 mb-0">AFTER TMS
+                                    THERAPY</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 2: Ketamine Options -->
+            <!-- Card 2: Ketamine -->
             <div class="bg-white rounded-5 p-5 shadow-sm mb-5">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 order-lg-2 offset-lg-1">
-                        <h3 class="serif-font display-6 mb-3">Ketamine and SPRAVATO®<br>Treatment Options</h3>
-                        <p class="text-orange text-uppercase fw-bold small mb-4">RAPID RELIEF FOR DEEP DEPRESSION
-                            WHEN<br>MEDS HAVEN'T WORKED</p>
-                        <p class="text-muted fw-light lh-lg mb-4">Sometimes, standard medications just aren't enough to
-                            break the cycle of severe depression. Ketamine offers a different mechanism of action that
-                            can provide relief in hours. We offer both FDA-approved SPRAVATO® and intramuscular ketamine
-                            in our comfortable clinic.</p>
-                        <div class="d-flex gap-2">
-                            <a href="ketamine.html"
-                                class="btn btn-dark-brown shadow-sm rounded-pill px-4 py-2 small fw-bold text-uppercase">KETAMINE
-                                DETAILS</a>
-                            <a href="ketamine.html"
-                                class="btn btn-outline-dark rounded-pill px-4 py-2 small fw-bold text-uppercase">SPRAVATO
-                                INFO</a>
+                    <div class="col-lg-5 mb-4 mb-lg-0 order-lg-last offset-lg-1">
+                        <!-- Image -->
+                        <div class="rounded-4 overflow-hidden shadow-lg" style="height: 350px;">
+                            <img src="images/psychiatry/psych-Ketamine.jpg" alt="Ketamine Treatment"
+                                class="img-fluid w-100 h-100 object-fit-cover">
                         </div>
                     </div>
-                    <div class="col-lg-5 order-lg-1">
-                        <!-- Placeholder Patient Reclining -->
-                        <img src="images/psychiatry/psych-Ketamine.jpg" alt="Patient Relaxing"
-                            class="img-fluid rounded-4 w-100 object-fit-cover" style="height: 300px;">
+                    <div class="col-lg-6 order-lg-first">
+                        <h3 class="serif-font display-6 mb-4 text-dark">Ketamine and SPRAVATO®<br>Treatment Options</h3>
+                        <hr class="border-secondary opacity-25 mb-4 w-100">
+                        <p class="text-uppercase x-small fw-bold text-orange mb-3 ls-1">RAPID-RELIEF DEPRESSION
+                            TREATMENT FOR WHEN SYMPTOMS FEEL UNMANAGEABLE</p>
+                        <p class="text-muted fw-light lh-lg mb-4">Ketamine and SPRAVATO® offer fast improvement for
+                            individuals who have not responded well to traditional medications. These treatments work
+                            through different brain pathways and can help ease severe or persistent symptoms. Your
+                            provider will help determine which option fits your needs and how it can support your
+                            overall treatment plan.</p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="ketamine.html"
+                                class="btn btn-dark-brown rounded-pill text-white fw-bold shadow-sm text-uppercase border-0 py-3 small ls-1 px-4"
+                                style="background-color: #3e2b26;">MORE ABOUT KETAMINE</a>
+                            <a href="ketamine.html"
+                                class="btn btn-dark-brown rounded-pill text-white fw-bold shadow-sm text-uppercase border-0 py-3 small ls-1 px-4"
+                                style="background-color: #3e2b26;">MORE ABOUT SPRAVATO®</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 3: Integrative Approach -->
+            <!-- Card 3: Integrated Approach -->
             <div class="bg-white rounded-5 p-5 shadow-sm">
                 <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <h3 class="serif-font display-6 mb-3">A Truly Integrative Treatment Approach</h3>
-                        <p class="text-orange text-uppercase fw-bold small mb-4">SUPPORT FOR YOUR WHOLE HEALTH:
-                            SLEEP,<br>NUTRITION, AND MOVEMENT</p>
-                        <p class="text-muted fw-light lh-lg mb-4">Healing isn't just about what you take; it's about how
-                            you live. Our providers look at the big picture—including sleep hygiene, nutrition, physical
-                            activity, and stress management—to help you build a lifestyle that supports your mental
-                            health recovery.</p>
-                        <a href="about.html"
-                            class="btn btn-dark-brown shadow-sm rounded-pill px-4 py-2 small fw-bold text-uppercase">MEET
-                            OUR PROVIDERS</a>
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <h3 class="serif-font display-6 mb-4 text-dark">A Fully Integrated Treatment Approach</h3>
+                        <hr class="border-secondary opacity-25 mb-4 w-100">
+                        <p class="text-uppercase x-small fw-bold text-orange mb-3 ls-1">SUPPORT THAT BRINGS MEDICATION,
+                            THERAPY, AND ADVANCED TREATMENTS TOGETHER</p>
+                        <p class="text-muted fw-light lh-lg mb-4">Healing is often strongest when multiple treatments
+                            work in harmony. Medication can steady symptoms, therapy provides space to process and grow,
+                            and options like Deep TMS or ketamine can offer support when progress slows. Your provider
+                            helps combine these approaches into one cohesive plan so you feel supported and never left
+                            to navigate care on your own.</p>
+                        <a href="contact.html"
+                            class="btn btn-dark-brown rounded-pill text-white fw-bold shadow-sm text-uppercase border-0 py-3 small ls-1 px-4"
+                            style="background-color: #3e2b26;">SCHEDULE A DISCOVERY CALL</a>
                     </div>
                     <div class="col-lg-6 offset-lg-1">
-                        <!-- Placeholder Portrait -->
-                        <!-- Placeholder Portrait -->
-                        <img src="images/psychiatry/psych-FullyIntegrated.jpg" alt="Smiling Patient"
-                            class="img-fluid rounded-4 w-100 object-fit-cover" style="height: 300px;">
+                        <div class="rounded-4 overflow-hidden shadow-lg" style="height: 350px;">
+                            <img src="images/psychiatry/psych-FullyIntegrated.jpg" alt="Integrated Treatment"
+                                class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
                     </div>
                 </div>
             </div>
 
+        </div>
+        <!-- Background Decorations (Wavy Lines) -->
+        <div class="position-absolute bottom-0 end-0 w-100 h-50"
+            style="background: url('images/psychiatry/AbstractWavyLines-1-Verdant.png') no-repeat bottom right; background-size: contain; opacity: 0.5; z-index: 0; pointer-events: none;">
         </div>
     </section>
 
-    <!-- Footer CTA -->
-    <section class="py-5 bg-dark-green text-center position-relative">
+    <!-- Start Journey CTA Section -->
+    <section class="py-5 position-relative text-center d-flex align-items-center justify-content-center"
+        style="min-height: 500px;">
+        <!-- Background Image -->
         <div class="position-absolute top-0 start-0 w-100 h-100"
-            style="background: radial-gradient(circle at center, rgba(194, 94, 40, 0.2) 0%, rgba(26,47,32,1) 80%);">
-        </div>
-        <div class="container position-relative z-1 py-5">
-            <div class="bg-white rounded-5 p-5 d-inline-block shadow-lg" style="max-width: 700px;">
-                <h2 class="serif-font display-5 mb-3 text-dark">Start Your Medication<br>Management Journey</h2>
-                <p class="text-muted fw-light lh-lg mb-4">Our initial psychiatric evaluation allows us to get to know
-                    you deeply. From there, we build a plan together—whether that involves medication, TMS, ketamine, or
-                    lifestyle changes.</p>
+            style="background: url('images/psychiatry/BG-MacroGreenLeaf.jpg') center/cover no-repeat;"></div>
+        <!-- Overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(43,57,40,0.7);"></div>
+
+        <div class="container position-relative z-1">
+            <div class="bg-light-beige rounded-5 p-5 d-inline-block shadow-lg mx-auto"
+                style="max-width: 750px; background-color: #F0EEE9;">
+                <h2 class="serif-font display-5 mb-4 text-dark">Start Your Medication<br>Management Journey</h2>
+                <p class="text-muted fw-light lh-lg mb-5 px-lg-5">Finding the right treatment should feel clear,
+                    supported, and empowering. If you are beginning medication for the first time, exploring advanced
+                    treatments, or adjusting what you currently take, we are here to walk with you every step of the
+                    way.</p>
                 <a href="contact.html"
-                    class="btn btn-dark-brown shadow-sm rounded-pill px-5 py-3 small fw-bold">SCHEDULE EVALUATION</a>
+                    class="btn btn-dark-brown rounded-pill text-white fw-bold shadow-sm text-uppercase border-0 py-3 px-5 small ls-1"
+                    style="background-color: #3e2b26;">SCHEDULE A DISCOVERY CALL</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="text-white py-5 small" style="background-color: #27392a !important;">
+    <footer class="text-white py-5 small" style="background-color: #2b3928 !important; border-top: 5px solid #3e4b35;">
         <div class="container pt-5">
             <div class="row g-4 mb-5">
                 <!-- Column 1: Logo & Text -->
-                <div class="col-lg-4">
-                    <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none mb-3">
+                <div class="col-lg-5 pe-lg-5">
+                    <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none mb-4">
                         <svg width="40" height="28" viewBox="0 0 70 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8 12 Q 5 21 8 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
                             <path d="M16 8 Q 10 21 16 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
@@ -259,53 +302,62 @@
                         </svg>
                         <div class="d-flex flex-column align-items-start lh-1">
                             <span class="text-white"
-                                style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.5rem; letter-spacing: -0.5px;">harmony</span>
+                                style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.8rem; letter-spacing: -0.5px;">harmony</span>
                             <span class="text-white text-uppercase"
-                                style="font-family: 'Lato', sans-serif; font-size: 0.5rem; letter-spacing: 2px; font-weight: 500;">NEUROCARE</span>
+                                style="font-family: 'Lato', sans-serif; font-size: 0.65rem; letter-spacing: 1px; font-weight: 400;">TMS
+                                & MENTAL WELLNESS CENTER</span>
                         </div>
                     </a>
-                    <p class="text-white-50 small mb-4" style="font-size: 0.8rem; line-height: 1.6;">
+                    <p class="text-white-50 small mb-5 fst-italic"
+                        style="font-size: 0.85rem; line-height: 1.6; max-width: 450px;">
                         Harmony Neurocare provides hope-inspired mental health care in Castle Rock, CO, offering
                         FDA-cleared TMS therapy, ketamine & SPRAVATO® treatments, and psychiatric support. With
                         evidence-backed therapies, a judgment-free environment, and compassionate expertise, we help
                         patients reclaim balance and find real transformation.
                     </p>
+                    <div class="text-white-50" style="font-size: 0.7rem;">
+                        &copy; 2026 Harmony Neurocare in Castle Rock, CO | All Rights Reserved<br>
+                        <a href="#" class="text-reset text-decoration-none">Privacy Policy</a> | <a href="#"
+                            class="text-reset text-decoration-none">Terms & Conditions</a> | <a href="#"
+                            class="text-reset text-decoration-none">Disclaimers</a>
+                    </div>
                 </div>
 
                 <!-- Column 2: Quicklinks -->
-                <div class="col-lg-2 offset-lg-1">
-                    <h6 class="fw-bold mb-4 text-uppercase text-orange"
-                        style="font-size: 0.75rem; letter-spacing: 1px;">QUICKLINKS</h6>
-                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-2">
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-4 text-uppercase"
+                        style="color: #6a7f60; font-size: 0.75rem; letter-spacing: 1px;">QUICKLINKS</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-2" style="font-size: 0.85rem;">
                         <li><a href="tms.html" class="text-reset text-decoration-none hover-white">What is TMS
                                 Therapy?</a></li>
                         <li><a href="ketamine.html" class="text-reset text-decoration-none hover-white">How Ketamine &
                                 SPRAVATO® Works</a></li>
                         <li><a href="#" class="text-reset text-decoration-none hover-white">Patient Portal</a></li>
-                        <li><a href="referring-providers.html" class="text-reset text-decoration-none hover-white">Referring Providers</a></li>
+                        <li><a href="referring-providers.html"
+                                class="text-reset text-decoration-none hover-white">Referring Providers</a></li>
                         <li><a href="#" class="text-reset text-decoration-none hover-white">Careers</a></li>
                     </ul>
                 </div>
 
                 <!-- Column 3: Contact -->
                 <div class="col-lg-2">
-                    <h6 class="fw-bold mb-4 text-uppercase text-orange"
-                        style="font-size: 0.75rem; letter-spacing: 1px;">CONTACT</h6>
-                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-2">
+                    <h6 class="fw-bold mb-4 text-uppercase"
+                        style="color: #6a7f60; font-size: 0.75rem; letter-spacing: 1px;">CONTACT</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-3" style="font-size: 0.85rem;">
                         <li class="d-flex gap-2">
-                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <i class="fas fa-map-marker-alt mt-1 text-white opacity-50"></i>
                             <span>757 Maleta Lane, Suite 201<br>Castle Rock, CO 80108</span>
                         </li>
                         <li class="d-flex gap-2">
-                            <i class="fas fa-phone mt-1"></i>
+                            <i class="fas fa-phone mt-1 text-white opacity-50"></i>
                             <span>Phone: 303-409-7446</span>
                         </li>
                         <li class="d-flex gap-2">
-                            <i class="fas fa-fax mt-1"></i>
-                            <span>Fax: 303-409-7443</span>
+                            <span class="ms-4 ps-1">Fax: 303-409-7443</span>
                         </li>
-                        <li class="d-flex gap-2">
-                            <i class="fas fa-envelope mt-1"></i>
+
+                        <li class="d-flex gap-2 mt-2">
+                            <i class="fas fa-envelope mt-1 text-white opacity-50"></i>
                             <span>info@harmonyneurocare.com</span>
                         </li>
                     </ul>
@@ -313,31 +365,58 @@
 
                 <!-- Column 4: Clinic Hours -->
                 <div class="col-lg-3">
-                    <h6 class="fw-bold mb-4 text-uppercase text-orange"
-                        style="font-size: 0.75rem; letter-spacing: 1px;">CLINIC HOURS</h6>
-                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-1">
-                        <li class="d-flex justify-content-between"><span>Mon</span> <span>8:00AM - 6:00PM</span></li>
-                        <li class="d-flex justify-content-between"><span>Tues</span> <span>8:00AM - 6:00PM</span></li>
-                        <li class="d-flex justify-content-between"><span>Wed</span> <span>8:00AM - 6:00PM</span></li>
-                        <li class="d-flex justify-content-between"><span>Thu</span> <span>8:00AM - 6:00PM</span></li>
-                        <li class="d-flex justify-content-between"><span>Fri</span> <span>8:00AM - 6:00PM</span></li>
-                        <li class="d-flex justify-content-between"><span>Sat</span> <span>Closed</span></li>
-                        <li class="d-flex justify-content-between"><span>Sun</span> <span>Closed</span></li>
+                    <h6 class="fw-bold mb-4 text-uppercase"
+                        style="color: #6a7f60; font-size: 0.75rem; letter-spacing: 1px;">CLINIC HOURS</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-2" style="font-size: 0.85rem;">
+                        <li class="d-flex justify-content-between align-items-center">
+                            <span>Mon</span>
+                            <span class="flex-grow-1 border-bottom border-secondary opacity-25 mx-2"
+                                style="height: 1px; transform: translateY(4px); border-style: dashed !important;"></span>
+                            <span>8:00AM - 6:00PM</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <span>Tues</span>
+                            <span class="flex-grow-1 border-bottom border-secondary opacity-25 mx-2"
+                                style="height: 1px; transform: translateY(4px); border-style: dashed !important;"></span>
+                            <span>8:00AM - 6:00PM</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <span>Wed</span>
+                            <span class="flex-grow-1 border-bottom border-secondary opacity-25 mx-2"
+                                style="height: 1px; transform: translateY(4px); border-style: dashed !important;"></span>
+                            <span>8:00AM - 6:00PM</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <span>Thu</span>
+                            <span class="flex-grow-1 border-bottom border-secondary opacity-25 mx-2"
+                                style="height: 1px; transform: translateY(4px); border-style: dashed !important;"></span>
+                            <span>8:00AM - 6:00PM</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <span>Fri</span>
+                            <span class="flex-grow-1 border-bottom border-secondary opacity-25 mx-2"
+                                style="height: 1px; transform: translateY(4px); border-style: dashed !important;"></span>
+                            <span>8:00AM - 6:00PM</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <span>Sat</span>
+                            <span class="flex-grow-1 border-bottom border-secondary opacity-25 mx-2"
+                                style="height: 1px; transform: translateY(4px); border-style: dashed !important;"></span>
+                            <span>Closed</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <span>Sun</span>
+                            <span class="flex-grow-1 border-bottom border-secondary opacity-25 mx-2"
+                                style="height: 1px; transform: translateY(4px); border-style: dashed !important;"></span>
+                            <span>Closed</span>
+                        </li>
                     </ul>
-                </div>
-            </div>
-            <div class="border-top border-secondary opacity-25 pt-4 d-flex justify-content-between text-white-50 px-2"
-                style="font-size: 0.7rem;">
-                <span>&copy; 2026 Harmony Neurocare in Castle Rock, CO | All Rights Reserved</span>
-                <div>
-                    <a href="#" class="text-reset text-decoration-none me-3">Privacy Policy</a>
-                    <a href="#" class="text-reset text-decoration-none me-3">Terms & Conditions</a>
-                    <a href="#" class="text-reset text-decoration-none">Disclaimers</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
