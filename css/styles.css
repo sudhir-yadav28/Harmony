@@ -143,31 +143,22 @@ h6 {
 /* Hero Section */
 #hero {
     color: #a7f3d0;
-    height: 100vh;
-    min-height: 700px;
-    background: url('../images/BG-hero.jpg') center/cover no-repeat fixed;
+    height: 70vh;
+    min-height: 200px;
+    background: url('../images/image\ copy.png') center bottom/cover no-repeat;
     position: relative;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     overflow: hidden;
 }
 
-/* Specific overlay to darken image */
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(26, 47, 32, 0.6) 0%, rgba(26, 47, 32, 0.4) 50%, rgba(26, 47, 32, 0.9) 100%);
-    z-index: 1;
-}
+
 
 .hero-content {
     position: relative;
     z-index: 2;
-    padding-top: 0px;
-    max-width: 900px;
+    padding-top: 200px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -688,4 +679,87 @@ footer ul li {
     height: 250px;
     object-fit: cover;
     width: 100%;
+}
+
+/* -------------------------------------------------------------------------
+   GLOBAL TYPOGRAPHY OVERRIDES (Based on Design Specs) 
+   ------------------------------------------------------------------------- */
+
+/* Large Heading Style */
+h1,
+h2,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6,
+.hero-title,
+.meet-harmony-card h2 {
+    font-family: var(--serif-font) !important;
+    font-size: 30pt !important;
+    line-height: 35pt !important;
+    text-transform: capitalize !important;
+    letter-spacing: 0px !important;
+}
+
+/* Medium Heading Style */
+h3,
+h4,
+h5,
+h6,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: var(--serif-font) !important;
+    font-size: 16pt !important;
+    line-height: 20pt !important;
+    text-transform: none !important;
+    letter-spacing: 0px !important;
+}
+
+/* Paragraph Text */
+p,
+.fw-light,
+.text-muted,
+.text-white-50,
+li,
+.small,
+.fs-5 {
+    font-family: var(--sans-font) !important;
+    font-size: 11pt !important;
+    line-height: 13pt !important;
+    text-transform: none !important;
+    letter-spacing: 0px !important;
+}
+
+/* Small Heading Style */
+.text-uppercase.small,
+.ls-2,
+.text-orange.small,
+.text-rust,
+footer h6,
+.condition-text,
+.text-orange {
+    font-family: var(--sans-font) !important;
+    font-size: 10pt !important;
+    line-height: 12pt !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    font-weight: 700 !important;
+}
+
+/* Button Style */
+.btn,
+.btn-nav-contact,
+.nav-link,
+button {
+    font-family: var(--sans-font) !important;
+    font-size: 8pt !important;
+    line-height: 10pt !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    font-weight: 700 !important;
 }

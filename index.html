@@ -25,26 +25,18 @@
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container-fluid px-5">
             <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-                <!-- Custom SVG Logo matching reference (5 parts) -->
                 <svg width="60" height="42" viewBox="0 0 70 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Far Left Sliver -->
                     <path d="M8 12 Q 5 21 8 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
-                    <!-- Inner Left Crescent -->
                     <path d="M16 8 Q 10 21 16 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
-                    <!-- Center Oval (Filled) -->
                     <ellipse cx="35" cy="21" rx="11" ry="16" fill="#c25e28" />
-                    <!-- Inner Right Crescent -->
                     <path d="M54 8 Q 60 21 54 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
-                    <!-- Far Right Sliver -->
                     <path d="M62 12 Q 65 21 62 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
                 </svg>
-
                 <div class="d-flex flex-column align-items-start lh-1 ps-1">
-                    <span class="brand-top text-white"
-                        style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 2.2rem; letter-spacing: -1px; line-height: 0.9;">harmony</span>
-                    <span class="brand-bottom text-white text-uppercase"
-                        style="font-family: 'Lato', sans-serif; font-size: 0.75rem; letter-spacing: 4px; font-weight: 500; margin-left: 2px;">NEUROCARE</span>
+                    <span class="brand-top text-white" style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 2.2rem; letter-spacing: -1px; line-height: 0.9;">harmony</span>
+                    <span class="brand-bottom text-white text-uppercase" style="font-family: 'Lato', sans-serif; font-size: 0.75rem; letter-spacing: 4px; font-weight: 500; margin-left: 2px;">NEUROCARE</span>
                 </div>
+
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -80,7 +72,6 @@
             <h1 class="display-1 hero-title serif-font">Where neuroscience<br>and compassionate care<br>work together
             </h1>
         </div>
-        <div class="hero-overlay"></div>
     </section>
 
     <!-- Welcome Section -->
@@ -120,132 +111,129 @@
     </section>
 
     <!-- Treatment Options Section -->
-    <section id="treatment" class="py-5 bg-light-beige position-relative text-center">
-        <!-- Background wavy lines might be needed here if visual shows it crossing sections -->
-        <div class="container py-5 position-relative z-1">
-            <h2 class="serif-font display-3 mb-3">Our Treatment Options</h2>
-            <p class="text-uppercase small text-orange ls-2 fw-bold mb-5">INNOVATIVE THERAPIES DESIGNED TO HELP YOU HEAL
-                AND THRIVE</p>
+    <section id="treatment" class="py-5 position-relative text-center"
+        style="background-image: url('images/BG-TreatmentTexture.png'); background-size: cover; background-position: center;">
+        <div class="container py-5 position-relative z-1 my-3">
+            <h2 class="serif-font display-4 mb-3" style="font-weight: 400;">Our Treatment Options</h2>
+            <p class="text-uppercase small text-orange fw-bold mb-5" style="letter-spacing: 1px; color: #c25e28;">
+                INNOVATIVE THERAPIES DESIGNED TO HELP YOU HEAL AND THRIVE
+            </p>
         </div>
 
-        <div class="container-fluid px-0 pb-5">
-            <div class="row g-2 justify-content-center"> <!-- Reduced gap to g-2 for tight look -->
+        <div class="container-fluid pb-5 d-flex justify-content-center">
+            <div class="d-flex flex-wrap justify-content-center align-items-stretch"
+                style="gap: 24px; max-width: 1400px;">
                 <!-- Card 1 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="treatment-card rounded-4 overflow-hidden position-relative h-100 text-white shadow-sm">
-                        <div class="treatment-bg"
-                            style="background-image: url('images/home/BG-MacroMushroom.jpg'); filter: brightness(0.9);">
-                        </div> <!-- Using mushroom/light texture for light appearance -->
-                        <div
-                            class="card-overlay-light d-flex flex-column justify-content-center align-items-center p-4 h-100 position-relative z-1 text-center">
-                            <h3 class="serif-font h2 text-dark mb-4">TMS Therapy</h3>
-                            <p class="small mb-4 text-dark px-2">Featuring BrainsWay Deep TMS technology that reaches
-                                deeper brain regions and offers higher success rates for depression, anxiety, and OCD.
-                                Safe, non-invasive, and covered by most insurance plans.</p>
-                            <a href="tms.html"
-                                class="btn btn-light-beige rounded-pill px-4 py-2 text-dark small fw-bold ls-1 text-uppercase">LEARN
-                                MORE</a>
-                        </div>
-                    </div>
+                <div class="treatment-card flex-shrink-0"
+                    style="width: 310px; border-radius: 30px; background: rgba(230, 230, 222, 0.55); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.25); padding: 50px 30px; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 8px 32px rgba(0,0,0,0.02);">
+                    <h3 class="serif-font mb-4" style="color: #1a1a1a; font-size: 1.6rem; font-weight: 400;">TMS Therapy
+                    </h3>
+                    <p class="mb-5"
+                        style="color: #5d6356; font-size: 0.85rem; line-height: 1.6; font-weight: 300; flex-grow: 1; letter-spacing: 0.2px;">
+                        Featuring BrainsWay Deep TMS technology that reaches deeper brain regions and offers higher
+                        success rates for depression, anxiety, and OCD. Safe, non-invasive, and covered by most
+                        insurance plans.</p>
+                    <a href="tms.html"
+                        class="btn rounded-pill mt-auto fw-bold text-uppercase d-flex align-items-center justify-content-center shadow-sm"
+                        style="background-color: #f0ebe3; color: #5a6652; font-size: 0.75rem; letter-spacing: 1px; padding: 12px 35px; min-width: 160px; border: none;">LEARN
+                        MORE</a>
                 </div>
                 <!-- Card 2 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="treatment-card rounded-4 overflow-hidden position-relative h-100 text-white shadow-sm">
-                        <div class="treatment-bg"
-                            style="background-image: url('images/home/BG-MacroGreenLeaf.jpg'); filter: brightness(0.8) sepia(0.2);">
-                        </div>
-                        <div
-                            class="card-overlay-light d-flex flex-column justify-content-center align-items-center p-4 h-100 position-relative z-1 text-center">
-                            <h3 class="serif-font h2 text-dark mb-4">Ketamine Therapy</h3>
-                            <p class="small mb-4 text-dark px-2">Rapid-relief treatment used for depression and related
-                                conditions when traditional approaches have not provided enough improvement. Available
-                                through in-clinic ketamine care with personalized dosing and careful monitoring.</p>
-                            <a href="ketamine.html"
-                                class="btn btn-light-beige rounded-pill px-4 py-2 text-dark small fw-bold ls-1 text-uppercase">LEARN
-                                MORE</a>
-                        </div>
-                    </div>
+                <div class="treatment-card flex-shrink-0"
+                    style="width: 310px; border-radius: 30px; background: rgba(230, 230, 222, 0.55); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.25); padding: 50px 30px; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 8px 32px rgba(0,0,0,0.02);">
+                    <h3 class="serif-font mb-4" style="color: #1a1a1a; font-size: 1.6rem; font-weight: 400;">Ketamine
+                        Therapy</h3>
+                    <p class="mb-5"
+                        style="color: #5d6356; font-size: 0.85rem; line-height: 1.6; font-weight: 300; flex-grow: 1; letter-spacing: 0.2px;">
+                        Rapid-relief treatment used for depression and related conditions when traditional approaches
+                        have not provided enough improvement. Available through in-clinic ketamine care with
+                        personalized dosing and careful monitoring.</p>
+                    <a href="ketamine.html"
+                        class="btn rounded-pill mt-auto fw-bold text-uppercase d-flex align-items-center justify-content-center shadow-sm"
+                        style="background-color: #f0ebe3; color: #5a6652; font-size: 0.75rem; letter-spacing: 1px; padding: 12px 35px; min-width: 160px; border: none;">LEARN
+                        MORE</a>
                 </div>
                 <!-- Card 3 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="treatment-card rounded-4 overflow-hidden position-relative h-100 text-white shadow-sm">
-                        <div class="treatment-bg"
-                            style="background-image: url('images/home/BG-MacroMushroom.jpg'); filter: brightness(0.9);">
-                        </div>
-                        <div
-                            class="card-overlay-light d-flex flex-column justify-content-center align-items-center p-4 h-100 position-relative z-1 text-center">
-                            <h3 class="serif-font h2 text-dark mb-4">SPRAVATO®</h3>
-                            <p class="small mb-4 text-dark px-2">An FDA-approved option for treatment-resistant
-                                depression that can provide faster symptom relief when standard antidepressants have not
-                                worked well enough. Administered in-clinic with supervision.</p>
-                            <a href="ketamine.html"
-                                class="btn btn-light-beige rounded-pill px-4 py-2 text-dark small fw-bold ls-1 text-uppercase">LEARN
-                                MORE</a>
-                        </div>
-                    </div>
+                <div class="treatment-card flex-shrink-0"
+                    style="width: 310px; border-radius: 30px; background: rgba(230, 230, 222, 0.55); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.25); padding: 50px 30px; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 8px 32px rgba(0,0,0,0.02);">
+                    <h3 class="serif-font mb-4" style="color: #1a1a1a; font-size: 1.6rem; font-weight: 400;">SPRAVATO®
+                    </h3>
+                    <p class="mb-5"
+                        style="color: #5d6356; font-size: 0.85rem; line-height: 1.6; font-weight: 300; flex-grow: 1; letter-spacing: 0.2px;">
+                        An FDA-approved option for treatment-resistant depression that can provide faster symptom relief
+                        when standard antidepressants have not worked well enough. Administered in-clinic with
+                        supervision.</p>
+                    <a href="ketamine.html"
+                        class="btn rounded-pill mt-auto fw-bold text-uppercase d-flex align-items-center justify-content-center shadow-sm"
+                        style="background-color: #f0ebe3; color: #5a6652; font-size: 0.75rem; letter-spacing: 1px; padding: 12px 35px; min-width: 160px; border: none;">LEARN
+                        MORE</a>
                 </div>
                 <!-- Card 4 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="treatment-card rounded-4 overflow-hidden position-relative h-100 text-white shadow-sm">
-                        <div class="treatment-bg"
-                            style="background-image: url('images/home/BG-MacroGreenLeaf.jpg'); filter: brightness(0.8) sepia(0.2);">
-                        </div>
-                        <div
-                            class="card-overlay-light d-flex flex-column justify-content-center align-items-center p-4 h-100 position-relative z-1 text-center">
-                            <h3 class="serif-font h2 text-dark mb-4">Med Management</h3>
-                            <p class="small mb-4 text-dark px-2">Compassionate evaluations and medication management
-                                designed to stabilize symptoms and support long-term wellness with a minimum effective
-                                dose approach.</p>
-                            <a href="psychiatry.html"
-                                class="btn btn-light-beige rounded-pill px-4 py-2 text-dark small fw-bold ls-1 text-uppercase">LEARN
-                                MORE</a>
-                        </div>
-                    </div>
+                <div class="treatment-card flex-shrink-0"
+                    style="width: 310px; border-radius: 30px; background: rgba(230, 230, 222, 0.55); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.25); padding: 50px 30px; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 8px 32px rgba(0,0,0,0.02);">
+                    <h3 class="serif-font mb-4" style="color: #1a1a1a; font-size: 1.6rem; font-weight: 400;">Med
+                        Management</h3>
+                    <p class="mb-5"
+                        style="color: #5d6356; font-size: 0.85rem; line-height: 1.6; font-weight: 300; flex-grow: 1; letter-spacing: 0.2px;">
+                        Compassionate evaluations and medication management designed to stabilize symptoms and support
+                        long-term wellness with a minimum effective dose approach.</p>
+                    <a href="psychiatry.html"
+                        class="btn rounded-pill mt-auto fw-bold text-uppercase d-flex align-items-center justify-content-center shadow-sm"
+                        style="background-color: #f0ebe3; color: #5a6652; font-size: 0.75rem; letter-spacing: 1px; padding: 12px 35px; min-width: 160px; border: none;">LEARN
+                        MORE</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Section (Formerly Path) -->
-    <section id="why-choose" class="py-5 bg-dark-green text-white position-relative overflow-hidden">
-        <div class="wavy-bg position-absolute top-0 start-0 w-100 h-100"
-            style="background-image: url('images/home/AbstractWavyLines-1-Verdant.png'); opacity: 0.15; background-size: cover; background-position: center;">
-        </div>
-        <div class="container position-relative z-1 py-5">
+    <!-- Why Choose Section -->
+    <section id="why-choose" class="position-relative overflow-hidden"
+        style="background-color: #2a371e; padding-top: 5rem; padding-bottom: 5rem;">
+        <div class="container position-relative z-1">
             <div class="row">
-                <div class="col-12 mb-4">
-                    <p class="text-uppercase small ls-2 fw-bold text-white-50">WHY CHOOSE HARMONY NEUROCARE</p>
-                    <hr class="border-secondary opacity-50 my-4">
+                <div class="col-12 mb-3">
+                    <p class="text-uppercase fw-bold mb-4"
+                        style="color: #f2efe9; font-size: 0.75rem; letter-spacing: 1px;">WHY CHOOSE HARMONY NEUROCARE
+                    </p>
+                    <hr class="mb-5" style="border-top: 1px solid rgba(255,255,255,0.4); margin-bottom: 4rem;">
                 </div>
             </div>
-            <div class="row mt-3">
-                <div class="col-lg-5 mb-5 mb-lg-0 pe-lg-5">
-                    <h2 class="display-3 serif-font mb-4">A clinic built with humanity, science, and accessibility in
-                        mind</h2>
-                    <p class="fw-light text-white-50 mb-5 lh-lg">Harmony NeuroCare was created to bring world-class
-                        treatments to people who have felt unheard or overlooked in traditional mental health care.
-                        Here, your story guides the plan. Your comfort guides the experience. And your results guide the
-                        ongoing care you receive.</p>
-                    <a href="#welcome"
-                        class="btn btn-light-beige rounded-pill text-dark px-4 py-3 fw-bold text-uppercase ls-1 small">ABOUT
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
+                    <h2 class="serif-font mb-4"
+                        style="color: #f2efe9; font-size: 2.3rem; line-height: 1.15; font-weight: 400; max-width: 480px;">
+                        A clinic built with humanity, science, and accessibility in mind</h2>
+                    <p class="mb-5 lh-lg"
+                        style="color: rgba(242, 239, 233, 0.75); font-weight: 300; font-size: 0.95rem; max-width: 450px;">
+                        Harmony NeuroCare was created to bring world-class treatments to people who have felt unheard or
+                        overlooked in traditional mental health care. Here, your story guides the plan. Your comfort
+                        guides the experience. And your results guide the ongoing care you receive.</p>
+                    <a href="about.html"
+                        class="btn rounded-pill fw-bold text-uppercase d-inline-flex align-items-center justify-content-center shadow-sm"
+                        style="background-color: #f2efe9; color: #c25e28; font-size: 0.75rem; letter-spacing: 1.5px; padding: 14px 35px; border: none;">ABOUT
                         HARMONY NEUROCARE</a>
                 </div>
-                <div class="col-lg-6 offset-lg-1">
-                    <p class="text-white-50 mb-4 fw-light">Patients choose Harmony because they value:</p>
-                    <ul class="list-unstyled text-white-50 fw-light lh-lg">
-                        <li class="mb-2 d-flex"><span class="me-2">•</span> A clinic that collaborates with your care
-                            team and is dedicated to community</li>
-                        <li class="mb-2 d-flex"><span class="me-2">•</span> Personalized, integrative treatment plans
-                        </li>
-                        <li class="mb-2 d-flex"><span class="me-2">•</span> BrainsWay Deep TMS for stronger and deeper
-                            stimulation</li>
-                        <li class="mb-2 d-flex"><span class="me-2">•</span> Ketamine and SPRAVATO® options for rapid,
-                            research-backed relief</li>
-                        <li class="mb-2 d-flex"><span class="me-2">•</span> Insurance-friendly mental health care</li>
-                        <li class="mb-2 d-flex"><span class="me-2">•</span> Innovative therapies supported by evidence
-                        </li>
-                        <li class="mb-2 d-flex"><span class="me-2">•</span> A clinic environment that feels warm, safe,
-                            and genuinely supportive</li>
+                <!-- Right Column -->
+                <div class="col-lg-6 ps-lg-5 pt-lg-2">
+                    <p class="mb-4" style="color: rgba(242, 239, 233, 0.75); font-weight: 300; font-size: 0.95rem;">
+                        Patients choose Harmony because they value:</p>
+                    <ul class="list-unstyled lh-lg"
+                        style="color: rgba(242, 239, 233, 0.75); font-weight: 300; font-size: 0.95rem;">
+                        <li class="mb-1 d-flex"><span class="me-2 text-white opacity-50">•</span> A clinic that
+                            collaborates with your care team and is dedicated to community</li>
+                        <li class="mb-1 d-flex"><span class="me-2 text-white opacity-50">•</span> Personalized,
+                            integrative treatment plans</li>
+                        <li class="mb-1 d-flex"><span class="me-2 text-white opacity-50">•</span> BrainsWay Deep TMS for
+                            stronger and deeper stimulation</li>
+                        <li class="mb-1 d-flex"><span class="me-2 text-white opacity-50">•</span> Ketamine and SPRAVATO®
+                            options for rapid, research-backed relief</li>
+                        <li class="mb-1 d-flex"><span class="me-2 text-white opacity-50">•</span> Insurance-friendly
+                            mental health care</li>
+                        <li class="mb-1 d-flex"><span class="me-2 text-white opacity-50">•</span> Innovative therapies
+                            supported by evidence</li>
+                        <li class="mb-1 d-flex"><span class="me-2 text-white opacity-50">•</span> A clinic environment
+                            that feels warm, safe, and genuinely supportive</li>
                     </ul>
                 </div>
             </div>
@@ -330,151 +318,228 @@
     </section>
 
     <!-- Meet Harmony Section -->
-    <section id="meet-harmony" class="py-5">
-        <div class="meet-harmony-wave"></div>
+    <section id="meet-harmony" class="py-5 position-relative overflow-hidden" style="background-color: #e5e3dc;">
+        <div class="container py-5 position-relative z-1 d-flex justify-content-center">
+            <div class="d-flex flex-column flex-lg-row align-items-center rounded-5 overflow-hidden shadow"
+                style="background-color: #f2efe9; height: 90%; max-width: 900px; width: 100%; border: 1px solid rgba(0,0,0,0.05); border-radius: 40px !important;">
 
-        <div class="container py-5 position-relative z-1">
-            <div class="meet-harmony-card">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 px-lg-5 mb-5 mb-lg-0">
-                        <p class="text-rust mb-3">WHERE OUR MISSION BEGAN</p>
-                        <h2 class="serif-font mb-4">Meet Harmony</h2>
-                        <p class="text-muted mb-4 fw-light lh-lg">Harmony NeuroCare began with one person: Harmony
-                            herself.
-                            After years of navigating depression with little lasting relief, she found hope through Deep
-                            TMS
-                            and the compassionate providers who finally understood her experience. Her transformation
-                            inspired a vision for a clinic built on empathy, science, and access to care. Today,
-                            Harmony’s
-                            journey continues to guide everything we do, reminding us that healing is possible and every
-                            story deserves to be heard.</p>
-                        <a href="about.html" class="btn btn-dark-brown shadow-sm mt-2">MORE ABOUT HARMONY</a>
-                    </div>
-                    <div class="col-lg-6 px-lg-4 text-center">
-                        <!-- Image container -->
-                        <div class="rounded-5 overflow-hidden shadow-sm position-relative">
-                            <img src="images/home/img-Harmony.jpg" alt="Harmony Founder"
-                                class="img-fluid object-fit-cover meet-harmony-img w-100" style="max-height: 500px;">
-                        </div>
+                <!-- Text Content -->
+                <div class="col-lg-6 p-5 pe-lg-4"
+                    style="padding-top: 4rem !important; padding-bottom: 4rem !important;">
+                    <p class="text-uppercase fw-bold small mb-3"
+                        style="color: #c25e28; letter-spacing: 1px; font-size: 0.70rem;">WHERE OUR MISSION BEGAN</p>
+                    <h2 class="serif-font mb-4" style="font-weight: 400; font-size: 2.2rem; color: #1a1a1a;">Meet
+                        Harmony</h2>
+                    <p class="fw-light lh-lg pe-3"
+                        style="color: #5d6356; font-size: 0.9rem; margin-bottom: 2.5rem; letter-spacing: 0.2px;">Harmony
+                        NeuroCare
+                        began with one person: Harmony herself. After years of navigating depression with little lasting
+                        relief, she found hope through Deep TMS and the compassionate providers who finally understood
+                        her experience. Her transformation inspired a vision for a clinic built on empathy, science, and
+                        access to care. Today, Harmony’s journey continues to guide everything we do, reminding us that
+                        healing is possible and every story deserves to be heard.</p>
+                    <a href="about.html" class="btn rounded-pill px-4 py-3 fw-bold text-uppercase text-white shadow-sm"
+                        style="background-color: #381b1a; letter-spacing: 1px; font-size: 0.75rem; border: none; min-width: 220px;">MORE
+                        ABOUT HARMONY</a>
+                </div>
+
+                <!-- Image Content -->
+                <div class="col-lg-6 p-4 h-100 d-flex align-items-center justify-content-center">
+                    <div style="width: 100%; height: 100%; padding: 1rem;">
+                        <img src="images/home/img-Harmony.jpg" alt="Harmony Founder"
+                            class="img-fluid object-fit-cover w-100 h-100"
+                            style="border-radius: 35px; min-height: 450px;">
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Wavy Lines Graphic stretching across background (Now explicitly AB0VE the card!) -->
+        <div class="position-absolute d-none d-md-block"
+            style="z-index: 2; left: -225px; bottom: -40px; top: 70.3%;  transform: translateY(-50%); pointer-events: none;">
+            <img src="../harmony-replica/images/icons/AbstractWavyLines-1-Verdant.png" alt="Wavy Lines Texture Overlay"
+                style="width: 800px; height: auto; object-fit: contain; opacity: 1; transform: rotate(33deg); ">
+        </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-5 bg-light-beige">
-        <div class="container text-center py-5">
-            <h2 class="serif-font display-3 mb-3">Hear From Others</h2>
-            <p class="text-uppercase small text-orange ls-2 fw-bold mb-5">REAL EXPERIENCES FROM PEOPLE WHO FOUND HOPE
+    <section id="testimonials" class="py-5" style="background-color: #f2efe9; overflow: hidden;">
+        <div class="container-fluid text-center py-5">
+            <h2 class="serif-font mb-3" style="font-size: 3rem; font-weight: 400;">Hear From Others</h2>
+            <p class="text-uppercase fw-bold mb-5" style="color: #68705b; letter-spacing: 1px; font-size: 0.75rem;">
+                REAL EXPERIENCES FROM PEOPLE WHO FOUND HOPE
             </p>
 
-            <div class="row g-4 align-items-stretch">
+            <div class="d-flex justify-content-center align-items-stretch"
+                style="gap: 40px; margin-top: 3.5rem; margin-bottom: 2.5rem;">
                 <!-- Card 1 (Left) -->
-                <div class="col-md-4">
-                    <div
-                        class="testimonial-card p-4 h-100 d-flex flex-column align-items-center justify-content-center bg-white rounded-4 shadow-sm border border-light">
-                        <p class="serif-font text-muted mb-4 small">"Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                            ut aliquip ex ea commodo consequat."</p>
-                        <p class="serif-font text-muted mb-0 small">— Name Goes Here</p>
-                    </div>
+                <div class="testimonial-card flex-shrink-0 rounded-5"
+                    style="width: 500px; background-color: #f7f6f2; border: 1px solid #e2dfd5; padding: 50px 40px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <p class="mb-4 text-center px-3"
+                        style="color: #555c4d; font-size: 0.95rem; line-height: 1.8; font-weight: 300;">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p class="mb-0 fw-bold" style="color: #1a1a1a; font-size: 0.85rem;">— Name Goes Here</p>
                 </div>
+
                 <!-- Card 2 (Center - Video) -->
-                <div class="col-md-4">
-                    <div
-                        class="testimonial-card h-100 rounded-4 overflow-hidden position-relative shadow-sm bg-white border border-light d-flex align-items-center justify-content-center">
-                        <div class="p-3 w-100">
-                            <div class="video-thumbnail rounded-4 position-relative overflow-hidden"
-                                style="height: 200px; background-color: #ddd;">
-                                <img src="images/img-Harmony.jpg" alt="Video Thumbnail"
-                                    class="w-100 h-100 object-fit-cover grayscale" style="filter: grayscale(100%);">
-                                <div class="position-absolute top-50 start-50 translate-middle">
-                                    <div class="play-button bg-danger rounded-3"
-                                        style="width: 40px; height: 30px; display: flex; align-items: center; justify-content: center;">
-                                        <i class="fas fa-play text-white small"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="serif-font text-muted mt-4 mb-2 small px-2">Ut wisi enim ad minim veniam, quis
-                                nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                                consequat.</p>
-                            <p class="serif-font text-muted fw-bold small">— Name Goes Here</p>
+                <div class="testimonial-card flex-shrink-0 rounded-5"
+                    style="width: 600px; background-color: #f7f6f2; border: 1px solid #e2dfd5; padding: 60px 60px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <div class="position-relative w-100 mb-5 rounded-4 overflow-hidden"
+                        style="height: 240px; max-width: 440px;">
+                        <img src="images/home/img-Harmony.jpg" alt="Video Thumbnail"
+                            class="w-100 h-100 object-fit-cover shadow-sm">
+                        <!-- Red Play Button -->
+                        <div class="position-absolute top-50 start-50 translate-middle"
+                            style="background-color: #da251d; width: 60px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);">
+                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" style="margin-left: 4px;">
+                                <path
+                                    d="M17 9.5C17.5 9.8 17.5 10.2 17 10.5L2 19C1.5 19.3 1 19 1 18.5V1.5C1 1 1.5 0.7 2 1L17 9.5Z"
+                                    fill="white" />
+                            </svg>
                         </div>
                     </div>
+                    <p class="mb-4 text-center px-4"
+                        style="color: #555c4d; font-size: 0.95rem; line-height: 1.8; font-weight: 300;">
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                        aliquip ex ea commodo consequat.
+                    </p>
+                    <p class="mb-0 fw-bold" style="color: #1a1a1a; font-size: 0.85rem;">— Name Goes Here</p>
                 </div>
+
                 <!-- Card 3 (Right) -->
-                <div class="col-md-4">
-                    <div
-                        class="testimonial-card p-4 h-100 d-flex flex-column align-items-center justify-content-center bg-white rounded-4 shadow-sm border border-light">
-                        <div class="mb-4">
-                            <img src="images/home/img-Harmony.jpg" alt="Person" class="rounded-circle object-fit-cover"
-                                style="width: 80px; height: 80px;">
-                        </div>
-                        <p class="serif-font text-muted mb-4 small">"Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                            ut aliquip ex ea commodo consequat."</p>
-                        <p class="serif-font text-muted mb-0 small">— Name Goes Here</p>
-                    </div>
+                <div class="testimonial-card flex-shrink-0 rounded-5"
+                    style="width: 500px; background-color: #f7f6f2; border: 1px solid #e2dfd5; padding: 60px 40px; display: flex; flex-direction: column; justify-content: start; align-items: center;">
+                    <img src="images/home/img-Harmony.jpg" alt="Person" class="rounded-circle object-fit-cover mb-4"
+                        style="width: 110px; height: 110px;">
+                    <p class="mb-4 text-center px-3"
+                        style="color: #555c4d; font-size: 0.95rem; line-height: 1.8; font-weight: 300;">
+                        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+                    </p>
+                    <p class="mb-0 fw-bold" style="color: #1a1a1a; font-size: 0.85rem;">— Name Goes Here</p>
                 </div>
             </div>
 
-            <div class="mt-5 d-flex align-items-center justify-content-center gap-3">
-                <i class="fas fa-arrow-left text-muted fw-light"></i>
-                <span class="text-dark fw-bold small ls-2">01 OF 04</span>
-                <i class="fas fa-arrow-right text-muted fw-light"></i>
+            <div class="mt-4 d-flex align-items-center justify-content-center gap-4">
+                <!-- Left Arrow -->
+                <svg width="50" height="12" viewBox="0 0 50 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    style="cursor: pointer;">
+                    <path d="M50 6H1 M7 1L1 6L7 11" stroke="#2b3928" stroke-width="1.2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
+                <span class="fw-bold"
+                    style="color: #1a1a1a; font-family: 'Lato', sans-serif; font-size: 0.8rem; letter-spacing: 1px;">01
+                    OF 04</span>
+
+                <!-- Right Arrow -->
+                <svg width="50" height="12" viewBox="0 0 50 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    style="cursor: pointer;">
+                    <path d="M0 6H49 M43 1L49 6L43 11" stroke="#2b3928" stroke-width="1.2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 position-relative text-white">
-        <div class="container py-5">
-            <div class="row align-items-center">
+    <section id="contact" class="position-relative text-white"
+        style="background-image: url('images/home/bg-conditions.png'); background-size: cover; background-position: center; border-bottom: 30px solid #2b3928;">
+        <!-- Using bg-conditions.png and overlaying a gradient to mimic the yellow/green look from the screenshot -->
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: linear-gradient(90deg, rgba(168,112,0,0.85) 0%, rgba(47,60,40,0.9) 50%, rgba(30,40,25,0.95) 100%); mix-blend-mode: overlay;">
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: linear-gradient(90deg, rgba(200,120,0,0.6) 0%, rgba(43,57,40,0.85) 45%, rgba(20,30,20,0.9) 100%);">
+        </div>
+
+        <div class="container py-5 position-relative z-1"
+            style="padding-top: 100px !important; padding-bottom: 150px !important;">
+            <div class="row align-items-start">
                 <!-- Left Side Content -->
-                <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
-                    <p class="text-uppercase small ls-2 mb-4 fw-bold" style="color: #e3d3b6;">YOUR PATH FORWARD STARTS
-                        HERE</p>
-                    <hr class="border-white opacity-50 mb-4" style="width: 100%;">
-                    <h2 class="display-4 serif-font mb-4">Schedule a consultation or<br>visit our Castle Rock clinic
-                    </h2>
-                    <p class="fw-light mb-4 text-white-50 fs-5">During this no-obligation consultation, we'll:</p>
-                    <ul class="list-unstyled text-white-50 fw-light lh-lg fs-5">
-                        <li class="mb-2"><span class="me-2">•</span> Listen to your unique experience</li>
-                        <li class="mb-2"><span class="me-2">•</span> Explain how TMS might help your specific condition
-                        </li>
-                        <li class="mb-2"><span class="me-2">•</span> Answer all your questions about treatment</li>
-                        <li class="mb-2"><span class="me-2">•</span> Discuss practical matters like insurance and
-                            scheduling</li>
+                <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5 pt-3">
+                    <p class="text-uppercase mb-4 fw-bold"
+                        style="color: #f2efe9; font-size: 0.8rem; letter-spacing: 1px;">YOUR PATH FORWARD STARTS HERE
+                    </p>
+                    <hr class="mb-5"
+                        style="width: 100%; border-top: 1px solid rgba(255,255,255,0.3); margin-top: 2rem;">
+                    <h2 class="serif-font mb-4"
+                        style="color: #f2efe9; font-size: 2.2rem; line-height: 1.2; font-weight: 400; max-width: 400px;">
+                        Schedule a consultation or<br>visit our Castle Rock clinic</h2>
+                    <p class="mb-4"
+                        style="color: rgba(242, 239, 233, 0.7); font-size: 1rem; font-weight: 300; margin-top: 2rem;">
+                        During this no-obligation consultation, we'll:</p>
+                    <ul class="list-unstyled fw-light lh-lg"
+                        style="color: rgba(242, 239, 233, 0.7); font-size: 0.95rem;">
+                        <li class="mb-1"><span class="me-2 text-white opacity-50">•</span> Listen to your unique
+                            experience</li>
+                        <li class="mb-1"><span class="me-2 text-white opacity-50">•</span> Explain how TMS might help
+                            your specific condition</li>
+                        <li class="mb-1"><span class="me-2 text-white opacity-50">•</span> Answer all your questions
+                            about treatment</li>
+                        <li class="mb-1"><span class="me-2 text-white opacity-50">•</span> Discuss practical matters
+                            like insurance and scheduling</li>
                     </ul>
                 </div>
+
                 <!-- Right Side Form -->
-                <div class="col-lg-5 offset-lg-1">
-                    <div class="bg-light-beige rounded-4 p-5 text-dark shadow-lg">
+                <div class="col-lg-5 offset-lg-1" style="margin-top: -30px;">
+                    <!-- Added a custom style block within the section to handle specific form inputs to match the image precisely -->
+                    <style>
+                        #contact .form-control {
+                            background-color: transparent;
+                            border: 1px solid #c9c3b8;
+                            border-radius: 20px;
+                            padding: 12px 15px;
+                            color: #1a1a1a;
+                        }
+
+                        #contact .form-control:focus {
+                            border-color: #c25e28;
+                            box-shadow: none;
+                            background-color: white;
+                        }
+
+                        #contact label {
+                            font-size: 0.65rem;
+                            letter-spacing: 1px;
+                            color: #1a1a1a;
+                            font-weight: 800;
+                        }
+                    </style>
+                    <div class="rounded-5 shadow-lg"
+                        style="background-color: #f2efe9; border: 1px solid #e5e3dc; padding: 3.5rem !important; margin-bottom: -150px; z-index: 10; position: relative;">
                         <form>
-                            <div class="mb-3">
-                                <label for="name" class="form-label text-uppercase mb-1">NAME*</label>
-                                <input type="text" class="form-control" id="name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label text-uppercase mb-1">EMAIL*</label>
-                                <input type="email" class="form-control" id="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="phone" class="form-label text-uppercase mb-1">PHONE*</label>
-                                <input type="tel" class="form-control" id="phone">
+                            <div class="mb-4">
+                                <label for="name" class="form-label text-uppercase mb-2">NAME*</label>
+                                <input type="text" class="form-control" id="name" required
+                                    style="height: 40px; background-color: #fff;">
                             </div>
                             <div class="mb-4">
-                                <label for="comments" class="form-label text-uppercase mb-1">COMMENTS*</label>
-                                <textarea class="form-control" id="comments" rows="6" required></textarea>
+                                <label for="email" class="form-label text-uppercase mb-2">EMAIL*</label>
+                                <input type="email" class="form-control" id="email" required
+                                    style="height: 40px; background-color: #fff;">
                             </div>
-                            <div class="mb-4 form-check d-flex align-items-start">
-                                <input type="checkbox" class="form-check-input me-2 mt-1" id="consent"
-                                    style="border-radius: 2px; min-width: 16px;">
-                                <label class="form-check-label x-small text-muted lh-sm" for="consent"
-                                    style="font-size: 0.65rem;">
+                            <div class="mb-4">
+                                <label for="phone" class="form-label text-uppercase mb-2">PHONE*</label>
+                                <input type="tel" class="form-control" id="phone"
+                                    style="height: 40px; background-color: #fff;">
+                            </div>
+                            <div class="mb-4">
+                                <label for="comments" class="form-label text-uppercase mb-2">COMMENTS*</label>
+                                <textarea class="form-control" id="comments" rows="6" required
+                                    style="background-color: #fff;"></textarea>
+                            </div>
+                            <div class="mb-4 form-check d-flex flex-row align-items-start mt-4 pt-2">
+                                <input type="checkbox" class="form-check-input me-3 mt-1 shadow-sm" id="consent"
+                                    style="border-radius: 2px; width: 14px; height: 14px; background-color: transparent; border-color: #b0aba1; flex-shrink: 0;">
+                                <label class="form-check-label text-muted lh-sm" for="consent"
+                                    style="font-size: 0.55rem; color: #8a8d86 !important; font-weight: 400; letter-spacing: 0;">
                                     I consent to receive SMS notifications, alerts from Harmony Neurocare. Message
                                     frequency varies. Message & data rates may apply. Text HELP to 720-410-6741 for
                                     assistance. You can reply STOP to unsubscribe at any time. No mobile information
@@ -483,10 +548,11 @@
                                     information will not be shared with any third parties.
                                 </label>
                             </div>
-                            <div class="d-grid">
+                            <div class="d-grid mt-4 pt-3 text-center">
                                 <button type="submit"
-                                    class="btn btn-orange rounded-pill text-white fw-bold shadow-sm text-uppercase border-0">SCHEDULE
-                                    A CONSULTATION</button>
+                                    class="btn rounded-pill text-white fw-bold shadow-sm text-uppercase border-0 py-3 mx-auto"
+                                    style="background-color: #c25e28; font-size: 0.75rem; letter-spacing: 1px; min-width: 250px;">SCHEDULE
+                                    A DISCOVERY CALL</button>
                             </div>
                         </form>
                     </div>
@@ -511,12 +577,9 @@
                             <path d="M54 8 Q 60 21 54 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
                             <path d="M62 12 Q 65 21 62 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
                         </svg>
-                        <div class="d-flex flex-column align-items-start lh-1">
-                            <span class="text-white"
-                                style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.8rem; letter-spacing: -0.5px;">harmony</span>
-                            <span class="text-white text-uppercase"
-                                style="font-family: 'Lato', sans-serif; font-size: 0.65rem; letter-spacing: 1px; font-weight: 400;">TMS
-                                & MENTAL WELLNESS CENTER</span>
+                        <div class="d-flex flex-column align-items-start lh-1 ps-1">
+                            <span class="brand-top text-white" style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.8rem; letter-spacing: -0.5px; line-height: 0.9;">harmony</span>
+                            <span class="brand-bottom text-white text-uppercase" style="font-family: 'Lato', sans-serif; font-size: 0.65rem; letter-spacing: 3px; font-weight: 500; margin-left: 2px;">NEUROCARE</span>
                         </div>
                     </a>
                     <p class="text-white-50 small mb-5 fst-italic"
