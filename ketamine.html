@@ -24,21 +24,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container-fluid px-5">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-                <svg width="60" height="42" viewBox="0 0 70 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 12 Q 5 21 8 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
-                    <path d="M16 8 Q 10 21 16 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
-                    <ellipse cx="35" cy="21" rx="11" ry="16" fill="#c25e28" />
-                    <path d="M54 8 Q 60 21 54 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
-                    <path d="M62 12 Q 65 21 62 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
-                </svg>
-                <div class="d-flex flex-column align-items-start lh-1 ps-1">
-                    <span class="brand-top text-white"
-                        style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 2.2rem; letter-spacing: -1px; line-height: 0.9;">harmony</span>
-                    <span class="brand-bottom text-white text-uppercase"
-                        style="font-family: 'Lato', sans-serif; font-size: 0.75rem; letter-spacing: 4px; font-weight: 500; margin-left: 2px;">NEUROCARE</span>
-                </div>
-
+            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html">
+                <img src="images/logo-full1.png" alt="Harmony Neurocare Logo" class="img-fluid"
+                    style="height: auto; max-width: 220px; object-fit: contain;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -187,7 +175,7 @@
         </div>
 
         <div class="container pt-5 pb-2 text-center position-relative z-1">
-            <p class="text-uppercase x-small fw-bold mb-3 ls-1" style="color: #6a7f60;">HOW KETAMINE THERAPY WORKS</p>
+            <p class="text-uppercase x-small fw-bold mb-3 ls-1" style="color: #606C39;">HOW KETAMINE THERAPY WORKS</p>
             <h2 class="serif-font display-6 mb-4 text-dark mx-auto" style="max-width: 800px; line-height: 1.2;">A
                 guided, medically supervised process designed<br>for rapid relief and long-lasting change.</h2>
             <p class="text-muted fw-light lh-lg mb-5 mx-auto small" style="max-width: 650px;">
@@ -206,11 +194,11 @@
             <div class="bg-white rounded-5 p-5 shadow-sm text-center">
                 <h3 class="serif-font mb-5 text-dark" style="font-size: 2.2rem;">Your Ketamine Treatment Journey</h3>
 
-                <div class="row g-4 justify-content-center px-lg-3">
+                <div id="ketamineJourneySlider" class="d-flex flex-nowrap gap-4 px-3 pb-3 overflow-auto hide-scrollbar"
+                    style="scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none;">
                     <!-- Step 1 -->
-                    <div class="col-lg-4 d-flex">
-                        <div class="rounded-4 p-4 p-lg-5 text-start d-flex flex-column w-100"
-                            style="background-color: #edebea;">
+                    <div class="flex-shrink-0 d-flex text-start" style="width: 85vw; max-width: 320px;">
+                        <div class="rounded-4 p-4 p-lg-5 d-flex flex-column w-100" style="background-color: #edebea;">
                             <p class="text-uppercase fw-bold text-orange ls-1 mb-3"
                                 style="font-size: 0.75rem; color: #c25e28;">STEP 1: INITIAL CONSULT</p>
                             <hr class="border-secondary opacity-25 mb-4" style="width: 100%;">
@@ -226,9 +214,8 @@
                         </div>
                     </div>
                     <!-- Step 2 -->
-                    <div class="col-lg-4 d-flex">
-                        <div class="rounded-4 p-4 p-lg-5 text-start d-flex flex-column w-100"
-                            style="background-color: #edebea;">
+                    <div class="flex-shrink-0 d-flex text-start" style="width: 85vw; max-width: 320px;">
+                        <div class="rounded-4 p-4 p-lg-5 d-flex flex-column w-100" style="background-color: #edebea;">
                             <p class="text-uppercase fw-bold text-orange ls-1 mb-3"
                                 style="font-size: 0.75rem; color: #c25e28;">STEP 2: PREPARATION AND SAFETY REVIEW</p>
                             <hr class="border-secondary opacity-25 mb-4" style="width: 100%;">
@@ -244,9 +231,8 @@
                         </div>
                     </div>
                     <!-- Step 3 -->
-                    <div class="col-lg-4 d-flex">
-                        <div class="rounded-4 p-4 p-lg-5 text-start d-flex flex-column w-100"
-                            style="background-color: #edebea;">
+                    <div class="flex-shrink-0 d-flex text-start" style="width: 85vw; max-width: 320px;">
+                        <div class="rounded-4 p-4 p-lg-5 d-flex flex-column w-100" style="background-color: #edebea;">
                             <p class="text-uppercase fw-bold text-orange ls-1 mb-3"
                                 style="font-size: 0.75rem; color: #c25e28;">STEP 3: TREATMENT SESSION</p>
                             <hr class="border-secondary opacity-25 mb-4" style="width: 100%;">
@@ -261,23 +247,111 @@
                             </p>
                         </div>
                     </div>
+
+                    <!-- Step 4 (Duplicate 1) -->
+                    <div class="flex-shrink-0 d-flex text-start" style="width: 85vw; max-width: 320px;">
+                        <div class="rounded-4 p-4 p-lg-5 d-flex flex-column w-100" style="background-color: #edebea;">
+                            <p class="text-uppercase fw-bold text-orange ls-1 mb-3"
+                                style="font-size: 0.75rem; color: #c25e28;">STEP 4: INTEGRATION THERAPY</p>
+                            <hr class="border-secondary opacity-25 mb-4" style="width: 100%;">
+                            <p class="text-muted fw-light small lh-lg mb-4">
+                                Optional integration sessions help you process the insights and experiences from your
+                                ketamine
+                                therapy, grounding the rapid changes into lasting shifts in perspective and mood.
+                            </p>
+                            <p class="text-muted fw-light small lh-lg fst-italic mt-auto mb-0">
+                                Patients often find these sessions maximize their clinical outcomes.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Step 5 (Duplicate 2) -->
+                    <div class="flex-shrink-0 d-flex text-start" style="width: 85vw; max-width: 320px;">
+                        <div class="rounded-4 p-4 p-lg-5 d-flex flex-column w-100" style="background-color: #edebea;">
+                            <p class="text-uppercase fw-bold text-orange ls-1 mb-3"
+                                style="font-size: 0.75rem; color: #c25e28;">STEP 5: ONGOING ASSESSMENTS</p>
+                            <hr class="border-secondary opacity-25 mb-4" style="width: 100%;">
+                            <p class="text-muted fw-light small lh-lg mb-4">
+                                We regularly check in with scaling metrics to scientifically track your depression or
+                                anxiety scores,
+                                making sure the treatment protocol aligns with your goals and progress.
+                            </p>
+                            <p class="text-muted fw-light small lh-lg fst-italic mt-auto mb-0">
+                                This keeps your care grounded in tangible evidence.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Step 6 (Duplicate 3) -->
+                    <div class="flex-shrink-0 d-flex text-start" style="width: 85vw; max-width: 320px;">
+                        <div class="rounded-4 p-4 p-lg-5 d-flex flex-column w-100" style="background-color: #edebea;">
+                            <p class="text-uppercase fw-bold text-orange ls-1 mb-3"
+                                style="font-size: 0.75rem; color: #c25e28;">STEP 6: MAINTENANCE PLAN</p>
+                            <hr class="border-secondary opacity-25 mb-4" style="width: 100%;">
+                            <p class="text-muted fw-light small lh-lg mb-4">
+                                Once you have completed the acute phase and feel better, we will build a long-term
+                                maintenance
+                                plan, including lifestyle coaching or occasional "booster" treatments to keep you
+                                feeling well.
+                            </p>
+                            <p class="text-muted fw-light small lh-lg fst-italic mt-auto mb-0">
+                                Healing is an ongoing journey, and we're here for it.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Navigation Arrows UI (Static) -->
-                <div class="d-flex justify-content-center align-items-center mt-5 pt-3 gap-4">
-                    <svg width="30" height="15" viewBox="0 0 40 15" fill="none" stroke="#6c757d" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
+                <!-- Navigation Arrows UI -->
+                <div class="d-flex justify-content-center align-items-center mt-4 pt-3 gap-4">
+                    <svg id="prevKetamineStep" width="30" height="15" viewBox="0 0 40 15" fill="none"
+                        class="opacity-75 hover-opacity-100" stroke="#6c757d" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" style="cursor: pointer; transition: opacity 0.2s;"
+                        onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.75'">
                         <path d="M10 1 L1 7.5 L10 14" />
                         <line x1="2" y1="7.5" x2="40" y2="7.5" />
                     </svg>
-                    <span class="small fw-bold text-dark ls-2" style="font-size: 0.75rem; color: #36422b !important;">01
-                        OF 06</span>
-                    <svg width="30" height="15" viewBox="0 0 40 15" fill="none" stroke="#36422b" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
+                    <span id="ketamineFractionStr" class="small fw-bold text-dark ls-2"
+                        style="font-size: 0.75rem; color: #36422b !important;">01 OF 06</span>
+                    <svg id="nextKetamineStep" width="30" height="15" viewBox="0 0 40 15" fill="none"
+                        class="opacity-75 hover-opacity-100" stroke="#36422b" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" style="cursor: pointer; transition: opacity 0.2s;"
+                        onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.75'">
                         <path d="M30 1 L39 7.5 L30 14" />
                         <line x1="0" y1="7.5" x2="38" y2="7.5" />
                     </svg>
                 </div>
+
+                <style>
+                    #ketamineJourneySlider::-webkit-scrollbar {
+                        display: none;
+                    }
+                </style>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const slider = document.getElementById("ketamineJourneySlider");
+                        const prevBtn = document.getElementById("prevKetamineStep");
+                        const nextBtn = document.getElementById("nextKetamineStep");
+                        const fractionText = document.getElementById("ketamineFractionStr");
+
+                        const itemsCount = 6;
+                        let currentIndex = 0;
+
+                        function updateFraction() {
+                            fractionText.textContent = `0${currentIndex + 1} OF 0${itemsCount}`;
+                        }
+
+                        prevBtn.addEventListener("click", () => {
+                            slider.scrollBy({ left: -344, behavior: 'smooth' }); // card width + gap
+                            currentIndex = (currentIndex > 0) ? currentIndex - 1 : 0;
+                            updateFraction();
+                        });
+
+                        nextBtn.addEventListener("click", () => {
+                            slider.scrollBy({ left: 344, behavior: 'smooth' });
+                            currentIndex = (currentIndex < itemsCount - 1) ? currentIndex + 1 : itemsCount - 1;
+                            updateFraction();
+                        });
+                    });
+                </script>
             </div>
         </div>
     </section>
@@ -551,40 +625,25 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-5 small" style="background-color: #36422b !important; color: #f0ebd8;">
+        <!-- Footer -->
+    <footer class="py-5 small" style="background-color: #2A371E !important; color: #f0ebd8;">
         <div class="container pt-5">
             <div class="row g-4 mb-2">
                 <!-- Column 1: Logo & Text -->
-                <div class="col-lg-5 pe-lg-5">
-                    <a href="index.html" class="d-flex align-items-center gap-3 text-decoration-none mb-4">
-                        <svg width="45" height="32" viewBox="0 0 70 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 12 Q 5 21 8 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
-                            <path d="M16 8 Q 10 21 16 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
-                            <ellipse cx="35" cy="21" rx="11" ry="16" fill="#c25e28" />
-                            <path d="M54 8 Q 60 21 54 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
-                            <path d="M62 12 Q 65 21 62 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
-                        </svg>
-                        <div class="d-flex flex-column align-items-start lh-1">
-                            <div class="d-flex align-items-baseline gap-1">
-                                <span class="brand-top text-white"
-                                    style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 2rem; letter-spacing: -0.5px;">harmony</span>
-                                <span class="brand-bottom text-white text-uppercase"
-                                    style="font-family: 'Lato', sans-serif; font-size: 0.8rem; letter-spacing: 1px; font-weight: 400;">NEUROCARE</span>
-                            </div>
-                            <span class="text-uppercase"
-                                style="font-family: 'Lato', sans-serif; font-size: 0.55rem; letter-spacing: 2px; color: #EFEDE6; margin-top: 4px; padding-left: 2px;">TMS
-                                & MENTAL WELLNESS CENTER</span>
-                        </div>
-                    </a>
-                    <p class="small mb-5 fst-italic"
-                        style="font-size: 0.8rem; line-height: 1.6; max-width: 450px; color: #d0cbb8; font-weight: 300;">
-                        Harmony Neurocare provides hope-inspired mental health care in Castle Rock, CO, offering
-                        FDA-cleared TMS therapy, ketamine & SPRAVATO® treatments, and psychiatric support. With
-                        evidence-backed therapies, a judgment-free environment, and compassionate expertise, we help
-                        patients reclaim balance and find real transformation.
-                    </p>
-                    <div style="font-size: 0.65rem; color: #9f9b8c; font-weight: 300; line-height: 1.8;">
+                <div class="col-lg-4 pe-lg-4 d-flex flex-column justify-content-between">
+                    <div>
+                        <a href="index.html" class="d-flex flex-column align-items-start text-decoration-none mb-4"
+                            style="margin-left: -5px;">
+                            <img src="images/icons/footer-logo-transparent.png" alt="Harmony Neurocare Logo" class="img-fluid"
+                                style="height: auto; width: 100%; max-width: 280px; object-fit: contain;">
+                        </a>
+                        <p class="small mb-5 fst-italic"
+                            style="font-size: 0.8rem; line-height: 1.6; max-width: 450px; color: #d0cbb8; font-weight: 300;">
+                            Harmony Neurocare provides hope-inspired mental health care in Castle Rock, CO, offering FDA-cleared TMS therapy, ketamine &amp; SPRAVATO&reg; treatments, and psychiatric support. With evidence-backed therapies, a judgment-free environment, and compassionate expertise, we help patients reclaim balance and find real transformation.
+                        </p>
+                    </div>
+                    <div
+                        style="font-size: 0.7rem; color: #9f9b8c; font-weight: 300; line-height: 1.8; margin-top: auto;">
                         &copy; 2026 Harmony Neurocare in Castle Rock, CO | All Rights Reserved<br>
                         <a href="#" class="text-reset text-decoration-none hover-white">Privacy Policy</a> | <a href="#"
                             class="text-reset text-decoration-none hover-white">Terms & Conditions</a> | <a href="#"
@@ -593,19 +652,16 @@
                 </div>
 
                 <!-- Column 2: Quicklinks -->
-                <div class="col-lg-2">
+                <div class="col-lg-2 offset-lg-1">
                     <h6 class="mb-4 text-uppercase"
-                        style="color: #6a7f60; font-size: 0.7rem; letter-spacing: 1px; font-weight: 600;">QUICKLINKS
+                        style="color: #606C39; font-size: 0.7rem; letter-spacing: 1px; font-weight: 600;">QUICKLINKS
                     </h6>
                     <ul class="list-unstyled small d-flex flex-column gap-3"
-                        style="font-size: 0.8rem; font-weight: 300; color: #e5e1d0;">
-                        <li><a href="tms.html" class="text-reset text-decoration-none hover-white">What is TMS
-                                Therapy?</a></li>
-                        <li><a href="ketamine.html" class="text-reset text-decoration-none hover-white">How Ketamine &
-                                SPRAVATO® Works</a></li>
+                        style="font-size: 0.85rem; font-weight: 300; color: #e5e1d0;">
+                        <li><a href="tms.html" class="text-reset text-decoration-none hover-white">What is TMS Therapy?</a></li>
+                        <li><a href="ketamine.html" class="text-reset text-decoration-none hover-white">How Ketamine &amp; SPRAVATO&reg; Works</a></li>
                         <li><a href="#" class="text-reset text-decoration-none hover-white">Patient Portal</a></li>
-                        <li><a href="referring-providers.html"
-                                class="text-reset text-decoration-none hover-white">Referring Providers</a></li>
+                        <li><a href="referring-providers.html" class="text-reset text-decoration-none hover-white">Referring Providers</a></li>
                         <li><a href="#" class="text-reset text-decoration-none hover-white">Careers</a></li>
                     </ul>
                 </div>
@@ -613,76 +669,76 @@
                 <!-- Column 3: Contact -->
                 <div class="col-lg-2">
                     <h6 class="mb-4 text-uppercase"
-                        style="color: #6a7f60; font-size: 0.7rem; letter-spacing: 1px; font-weight: 600;">CONTACT</h6>
+                        style="color: #606C39; font-size: 0.7rem; letter-spacing: 1px; font-weight: 600;">CONTACT</h6>
                     <ul class="list-unstyled small d-flex flex-column gap-3"
-                        style="font-size: 0.8rem; font-weight: 300; color: #e5e1d0;">
+                        style="font-size: 0.85rem; font-weight: 300; color: #e5e1d0;">
                         <li class="d-flex gap-2 align-items-start">
-                            <i class="fas fa-map-marker-alt mt-1" style="font-size: 0.7rem; opacity: 0.7;"></i>
+                            <i class="fa-solid fa-location-dot mt-1" style="font-size: 0.8rem; color: #FFF; width: 14px; text-align: center;"></i>
                             <span style="line-height: 1.6;">757 Maleta Lane, Suite 201<br>Castle Rock, CO 80108</span>
                         </li>
                         <li class="d-flex gap-2 align-items-center mt-2">
-                            <i class="fas fa-phone" style="font-size: 0.7rem; opacity: 0.7;"></i>
+                            <i class="fa-solid fa-phone" style="font-size: 0.8rem; color: #FFF; width: 14px; text-align: center;"></i>
                             <span>Phone: 303-409-7446</span>
                         </li>
-                        <li class="d-flex gap-2 align-items-center">
-                            <span class="ms-3 ps-2">Fax: 303-409-7443</span>
+                        <li class="d-flex gap-2 align-items-center" style="margin-top: -8px;">
+                            <span style="margin-left: 22px;">Fax: 303-409-7443</span>
                         </li>
 
-                        <li class="d-flex gap-2 align-items-center mt-3">
-                            <i class="fas fa-envelope" style="font-size: 0.7rem; opacity: 0.7;"></i>
+                        <li class="d-flex gap-2 align-items-center mt-2">
+                            <i class="fa-solid fa-envelope" style="font-size: 0.8rem; color: #FFF; width: 14px; text-align: center;"></i>
                             <span>info@harmonyneurocare.com</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Column 4: Clinic Hours -->
-                <div class="col-lg-3 ps-lg-4">
+                <div class="col-lg-3">
                     <h6 class="mb-4 text-uppercase"
-                        style="color: #6a7f60; font-size: 0.7rem; letter-spacing: 1px; font-weight: 600;">CLINIC HOURS
+                        style="color: #606C39; font-size: 0.7rem; letter-spacing: 1px; font-weight: 600;">CLINIC HOURS
                     </h6>
                     <ul class="list-unstyled small d-flex flex-column gap-2"
-                        style="font-size: 0.8rem; font-weight: 300; color: #e5e1d0;">
+                        style="font-size: 0.85rem; font-weight: 300; color: #e5e1d0;">
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Mon</span>
                             <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.3); transform: translateY(4px);"></span>
-                            <span>8:00AM - 6:00PM</span>
+                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
+                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Tues</span>
                             <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.3); transform: translateY(4px);"></span>
-                            <span>8:00AM - 6:00PM</span>
+                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
+                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Wed</span>
                             <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.3); transform: translateY(4px);"></span>
-                            <span>8:00AM - 6:00PM</span>
+                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
+                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Thu</span>
                             <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.3); transform: translateY(4px);"></span>
-                            <span>8:00AM - 6:00PM</span>
+                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
+                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Fri</span>
                             <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.3); transform: translateY(4px);"></span>
-                            <span>8:00AM - 6:00PM</span>
+                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
+                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Sat</span>
                             <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.3); transform: translateY(4px);"></span>
-                            <span>Closed</span>
+                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
+                            <span class="text-end" style="min-width: 120px;">Closed</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Sun</span>
                             <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.3); transform: translateY(4px);"></span>
-                            <span>Closed</span>
+                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
+                            <span class="text-end" style="min-width: 120px;">Closed</span>
                         </li>
                     </ul>
                 </div>

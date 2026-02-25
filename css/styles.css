@@ -31,10 +31,13 @@
     opacity: 1 !important;
 }
 
-body {
+body,
+html {
     font-family: var(--sans-font);
     color: var(--text-dark);
     line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 h1,
@@ -90,15 +93,15 @@ h6 {
 /* Active Nav State */
 .navbar .nav-item .nav-link.active-home,
 .navbar .nav-item .nav-link.active {
-    background-color: #636b52 !important;
-    /* Olive/Moss Green match */
+    background-color: #6a7458 !important;
+    /* Olive Green match */
     color: #ffffff !important;
     border-radius: 50px;
-    padding: 0.5rem 1.5rem !important;
-    border: none;
+    padding: 0.4rem 1.25rem !important;
     font-size: 0.65rem;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    opacity: 1;
 }
 
 /* Default Nav Link Style */
@@ -378,7 +381,14 @@ h6 {
 @media (max-width: 991.98px) {
     .navbar {
         background: var(--dark-green);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         /* Always solid on mobile */
+    }
+
+    .navbar-toggler {
+        border-color: white;
+        background-color: white;
     }
 
     .hero-title {
@@ -590,7 +600,7 @@ footer ul li {
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease;
-    cursor: default;
+    cursor: pointer;
     min-height: 250px;
 }
 
@@ -762,4 +772,71 @@ button {
     text-transform: uppercase !important;
     letter-spacing: 2px !important;
     font-weight: 700 !important;
+}
+
+/* Global Responsive Typography Fixes */
+@media (max-width: 991.98px) {
+
+    h1,
+    h2,
+    .display-1,
+    .display-2,
+    .display-3,
+    .display-4,
+    .display-5,
+    .display-6,
+    .hero-title,
+    .meet-harmony-card h2 {
+        font-size: 2.2rem !important;
+        line-height: 1.2 !important;
+        word-wrap: break-word !important;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    h1,
+    h2,
+    .display-1,
+    .display-2,
+    .display-3,
+    .display-4,
+    .display-5,
+    .display-6,
+    .hero-title,
+    .meet-harmony-card h2 {
+        font-size: 1.8rem !important;
+    }
+
+    /* Prevent padding from squishing content on mobile */
+    .p-5 {
+        padding: 1.5rem !important;
+    }
+
+    .px-5 {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+}
+
+a {
+    cursor: pointer !important;
 }
