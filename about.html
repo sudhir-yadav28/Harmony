@@ -24,7 +24,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container-fluid px-5">
-            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html">
+           <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html">
                 <img src="images/logo-full1.png" alt="Harmony Neurocare Logo" class="img-fluid"
                     style="height: auto; max-width: 220px; object-fit: contain;">
             </a>
@@ -137,7 +137,7 @@
                 <div class="col-lg-5 mb-5 mb-lg-0">
                     <div class="rounded-5 overflow-hidden shadow-lg position-relative">
                         <img src="images/img-Harmony.jpg" alt="Harmony" class="img-fluid w-100 object-fit-cover"
-                            style="height: auto; min-height: 400px; max-height: 600px; border-radius: 40px;">
+                            style="height: 600px; border-radius: 40px;">
                     </div>
                 </div>
 
@@ -183,12 +183,11 @@
             </div>
 
             <!-- Horizontal Scroll Container -->
-            <div id="coreValuesSlider" class="d-flex flex-nowrap overflow-auto pb-4 px-lg-5 gap-0 hide-scrollbar"
-                style="scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none;">
+            <div class="d-flex flex-nowrap overflow-auto pb-4 px-lg-5 gap-0 hide-scrollbar"
+                style="scroll-behavior: smooth;">
 
                 <!-- Item 1: Hope -->
-                <div class="flex-shrink-0 px-5 border-end border-secondary border-opacity-25"
-                    style="width: 85vw; max-width: 350px;">
+                <div class="flex-shrink-0 px-5 border-end border-secondary border-opacity-25" style="width: 350px;">
                     <div class="mb-4 d-flex justify-content-center" style="height: 80px;">
                         <!-- Guessing Icon 6 for geometry/circles -->
                         <img src="images/icons/Icon_Revive-6.png" alt="Hope Is Essential" class="img-fluid h-100 w-auto"
@@ -200,8 +199,7 @@
                 </div>
 
                 <!-- Item 2: Compassion -->
-                <div class="flex-shrink-0 px-5 border-end border-secondary border-opacity-25"
-                    style="width: 85vw; max-width: 350px;">
+                <div class="flex-shrink-0 px-5 border-end border-secondary border-opacity-25" style="width: 350px;">
                     <div class="mb-4 d-flex justify-content-center" style="height: 80px;">
                         <img src="images/icons/Icon_Revive-1.png" alt="Compassion First" class="img-fluid h-100 w-auto">
                     </div>
@@ -211,8 +209,7 @@
                 </div>
 
                 <!-- Item 3: Science -->
-                <div class="flex-shrink-0 px-5 border-end border-secondary border-opacity-25"
-                    style="width: 85vw; max-width: 350px;">
+                <div class="flex-shrink-0 px-5 border-end border-secondary border-opacity-25" style="width: 350px;">
                     <div class="mb-4 d-flex justify-content-center" style="height: 80px;">
                         <img src="images/icons/Icon_Revive-2.png" alt="Science With Humanity"
                             class="img-fluid h-100 w-auto">
@@ -223,8 +220,7 @@
                 </div>
 
                 <!-- Item 4: Individualized -->
-                <div class="flex-shrink-0 px-5 border-end border-secondary border-opacity-25"
-                    style="width: 85vw; max-width: 350px;">
+                <div class="flex-shrink-0 px-5 border-end border-secondary border-opacity-25" style="width: 350px;">
                     <div class="mb-4 d-flex justify-content-center" style="height: 80px;">
                         <img src="images/icons/Icon_Revive-3.png" alt="Individualized Healing"
                             class="img-fluid h-100 w-auto">
@@ -235,7 +231,7 @@
                 </div>
 
                 <!-- Item 5: Accessibility -->
-                <div class="flex-shrink-0 px-5" style="width: 85vw; max-width: 350px;">
+                <div class="flex-shrink-0 px-5" style="width: 350px;">
                     <div class="mb-4 d-flex justify-content-center" style="height: 80px;">
                         <img src="images/icons/Icon_Revive-4.png" alt="Accessibility" class="img-fluid h-100 w-auto">
                     </div>
@@ -246,28 +242,17 @@
 
             </div>
 
-            <style>
-                #coreValuesSlider::-webkit-scrollbar {
-                    display: none;
-                }
-            </style>
-
             <!-- Navigation Slider -->
             <div class="d-flex justify-content-center align-items-center mt-5">
-                <button id="prevCoreValue"
-                    class="btn btn-link text-dark text-decoration-none p-0 mx-3 opacity-50 hover-opacity-100"
-                    style="transition: opacity 0.2s;">
+                <button class="btn btn-link text-dark text-decoration-none p-0 mx-3 opacity-50 hover-opacity-100">
                     <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 2L2 10L10 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                             stroke-linejoin="round" />
                         <path d="M38 10H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
                     </svg>
                 </button>
-                <span id="coreValueFraction" class="small fw-bold text-dark mx-2" style="letter-spacing: 1px;">01 OF
-                    05</span>
-                <button id="nextCoreValue"
-                    class="btn btn-link text-dark text-decoration-none p-0 mx-3 opacity-50 hover-opacity-100"
-                    style="transition: opacity 0.2s;">
+                <span class="small fw-bold text-dark mx-2" style="letter-spacing: 1px;">01 OF 05</span>
+                <button class="btn btn-link text-dark text-decoration-none p-0 mx-3 opacity-50 hover-opacity-100">
                     <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M30 2L38 10L30 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                             stroke-linejoin="round" />
@@ -275,35 +260,6 @@
                     </svg>
                 </button>
             </div>
-
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    const slider = document.getElementById("coreValuesSlider");
-                    const prevBtn = document.getElementById("prevCoreValue");
-                    const nextBtn = document.getElementById("nextCoreValue");
-                    const fractionText = document.getElementById("coreValueFraction");
-
-                    // 5 cards total
-                    const itemsCount = 5;
-                    let currentIndex = 0;
-
-                    function updateFraction() {
-                        fractionText.textContent = `0${currentIndex + 1} OF 0${itemsCount}`;
-                    }
-
-                    prevBtn.addEventListener("click", () => {
-                        slider.scrollBy({ left: -350, behavior: 'smooth' }); // card width
-                        currentIndex = (currentIndex > 0) ? currentIndex - 1 : 0;
-                        updateFraction();
-                    });
-
-                    nextBtn.addEventListener("click", () => {
-                        slider.scrollBy({ left: 350, behavior: 'smooth' });
-                        currentIndex = (currentIndex < itemsCount - 1) ? currentIndex + 1 : itemsCount - 1;
-                        updateFraction();
-                    });
-                });
-            </script>
 
         </div>
     </section>
@@ -316,7 +272,7 @@
                     <div class="col-lg-5 mb-4 mb-lg-0">
                         <!-- Image Container with unique rounding and padding -->
                         <div class="rounded-5 overflow-hidden position-relative shadow-sm"
-                            style="height: auto; min-height: 300px; max-height: 450px; border-radius: 40px !important;">
+                            style="height: 450px; border-radius: 40px !important;">
                             <img src="images/about/img-Rosana.jpg" alt="Rosana Graves"
                                 class="img-fluid w-100 h-100 object-fit-cover">
                         </div>
@@ -450,7 +406,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5">
                         <div class="rounded-5 overflow-hidden shadow-sm"
-                            style="height: auto; min-height: 300px; max-height: 450px; border-radius: 40px !important;">
+                            style="height: 450px; border-radius: 40px !important;">
                             <img src="images/about/about-HarmonyScholarship.jpg" alt="Harmony Scholarship"
                                 class="img-fluid h-100 w-100 object-fit-cover">
                         </div>
@@ -479,46 +435,43 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-5 small" style="background-color: #2A371E !important; color: #f0ebd8;">
+    <footer class="text-white py-5 small" style="background-color: #2A371E !important;">
         <div class="container pt-5">
-            <div class="row g-4 mb-2">
+            <div class="row g-4 mb-5">
                 <!-- Column 1: Logo & Text -->
-                <div class="col-lg-4 pe-lg-4 d-flex flex-column justify-content-between">
-                    <div>
-                        <a href="index.html" class="d-flex flex-column align-items-start text-decoration-none mb-4"
-                            style="margin-left: -5px;">
-                            <img src="images/icons/footer-logo-transparent.png" alt="Harmony Neurocare Logo"
-                                class="img-fluid"
-                                style="height: auto; width: 100%; max-width: 280px; object-fit: contain;">
-                        </a>
-                        <p class="small mb-5 fst-italic"
-                            style="font-size: 0.8rem; line-height: 1.6; max-width: 450px; color: #d0cbb8; font-weight: 300;">
-                            Harmony Neurocare provides hope-inspired mental health care in Castle Rock, CO, offering
-                            FDA-cleared TMS therapy, ketamine &amp; SPRAVATO&reg; treatments, and psychiatric support.
-                            With evidence-backed therapies, a judgment-free environment, and compassionate expertise, we
-                            help patients reclaim balance and find real transformation.
-                        </p>
-                    </div>
-                    <div
-                        style="font-size: 0.7rem; color: #9f9b8c; font-weight: 300; line-height: 1.8; margin-top: auto;">
-                        &copy; 2026 Harmony Neurocare in Castle Rock, CO | All Rights Reserved<br>
-                        <a href="#" class="text-reset text-decoration-none hover-white">Privacy Policy</a> | <a href="#"
-                            class="text-reset text-decoration-none hover-white">Terms & Conditions</a> | <a href="#"
-                            class="text-reset text-decoration-none hover-white">Disclaimers</a>
-                    </div>
+                <div class="col-lg-4">
+                    <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none mb-3">
+                        <!-- Logo Icon -->
+                        <svg width="40" height="28" viewBox="0 0 70 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 12 Q 5 21 8 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
+                            <path d="M16 8 Q 10 21 16 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
+                            <ellipse cx="35" cy="21" rx="11" ry="16" fill="#c25e28" />
+                            <path d="M54 8 Q 60 21 54 34" stroke="#c25e28" stroke-width="6" stroke-linecap="round" />
+                            <path d="M62 12 Q 65 21 62 30" stroke="#c25e28" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                        <div class="d-flex flex-column align-items-start lh-1 ps-1">
+                            <span class="brand-top text-white" style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.8rem; letter-spacing: -0.5px; line-height: 0.9;">harmony</span>
+                            <span class="brand-bottom text-white text-uppercase" style="font-family: 'Lato', sans-serif; font-size: 0.65rem; letter-spacing: 3px; font-weight: 500; margin-left: 2px;">NEUROCARE</span>
+                        </div>
+                    </a>
+                    <p class="text-white-50 small mb-4 pe-lg-4"
+                        style="font-size: 0.85rem; line-height: 1.6; font-weight: 300;">
+                        Harmony Neurocare provides hope-inspired mental health care in Castle Rock, CO, offering
+                        FDA-cleared TMS therapy, ketamine & SPRAVATO® treatments, and psychiatric support. With
+                        evidence-backed therapies, a judgment-free environment, and compassionate expertise, we help
+                        patients reclaim balance and find real transformation.
+                    </p>
                 </div>
 
                 <!-- Column 2: Quicklinks -->
                 <div class="col-lg-2 offset-lg-1">
-                    <h6 class="mb-4 text-uppercase"
-                        style="color: #606C39; font-size: 0.7rem; letter-spacing: 1px; font-weight: 600;">QUICKLINKS
-                    </h6>
-                    <ul class="list-unstyled small d-flex flex-column gap-3"
-                        style="font-size: 0.85rem; font-weight: 300; color: #e5e1d0;">
+                    <h6 class="fw-bold mb-4 text-uppercase text-white-50"
+                        style="font-size: 0.75rem; letter-spacing: 1px; color: #606C39 !important;">QUICKLINKS</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-2" style="font-weight: 300;">
                         <li><a href="tms.html" class="text-reset text-decoration-none hover-white">What is TMS
                                 Therapy?</a></li>
-                        <li><a href="ketamine.html" class="text-reset text-decoration-none hover-white">How Ketamine
-                                &amp; SPRAVATO&reg; Works</a></li>
+                        <li><a href="ketamine.html" class="text-reset text-decoration-none hover-white">How Ketamine &
+                                SPRAVATO® Works</a></li>
                         <li><a href="#" class="text-reset text-decoration-none hover-white">Patient Portal</a></li>
                         <li><a href="referring-providers.html"
                                 class="text-reset text-decoration-none hover-white">Referring Providers</a></li>
@@ -528,27 +481,20 @@
 
                 <!-- Column 3: Contact -->
                 <div class="col-lg-2">
-                    <h6 class="mb-4 text-uppercase"
-                        style="color: #606C39; font-size: 0.7rem; letter-spacing: 1px; font-weight: 600;">CONTACT</h6>
-                    <ul class="list-unstyled small d-flex flex-column gap-3"
-                        style="font-size: 0.85rem; font-weight: 300; color: #e5e1d0;">
-                        <li class="d-flex gap-2 align-items-start">
-                            <i class="fa-solid fa-location-dot mt-1"
-                                style="font-size: 0.8rem; color: #FFF; width: 14px; text-align: center;"></i>
-                            <span style="line-height: 1.6;">757 Maleta Lane, Suite 201<br>Castle Rock, CO 80108</span>
+                    <h6 class="fw-bold mb-4 text-uppercase text-white-50"
+                        style="font-size: 0.75rem; letter-spacing: 1px; color: #606C39 !important;">CONTACT</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-4" style="font-weight: 300;">
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-map-marker-alt mt-1 text-white"></i>
+                            <span style="line-height: 1.4;">757 Maleta Lane, Suite 201<br>Castle Rock, CO 80108</span>
                         </li>
-                        <li class="d-flex gap-2 align-items-center mt-2">
-                            <i class="fa-solid fa-phone"
-                                style="font-size: 0.8rem; color: #FFF; width: 14px; text-align: center;"></i>
-                            <span>Phone: 303-409-7446</span>
+                        <li class="d-flex flex-column gap-1">
+                            <div class="d-flex gap-2"><i class="fas fa-phone mt-1 text-white"></i> <span>Phone:
+                                    303-409-7446</span></div>
+                            <div class="d-flex gap-2"><span class="ms-4">Fax: 303-409-7443</span></div>
                         </li>
-                        <li class="d-flex gap-2 align-items-center" style="margin-top: -8px;">
-                            <span style="margin-left: 22px;">Fax: 303-409-7443</span>
-                        </li>
-
-                        <li class="d-flex gap-2 align-items-center mt-2">
-                            <i class="fa-solid fa-envelope"
-                                style="font-size: 0.8rem; color: #FFF; width: 14px; text-align: center;"></i>
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-envelope mt-1 text-white"></i>
                             <span>info@harmonyneurocare.com</span>
                         </li>
                     </ul>
@@ -556,54 +502,35 @@
 
                 <!-- Column 4: Clinic Hours -->
                 <div class="col-lg-3">
-                    <h6 class="mb-4 text-uppercase"
-                        style="color: #606C39; font-size: 0.7rem; letter-spacing: 1px; font-weight: 600;">CLINIC HOURS
-                    </h6>
-                    <ul class="list-unstyled small d-flex flex-column gap-2"
-                        style="font-size: 0.85rem; font-weight: 300; color: #e5e1d0;">
-                        <li class="d-flex justify-content-between align-items-center mb-1">
-                            <span>Mon</span>
-                            <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center mb-1">
-                            <span>Tues</span>
-                            <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center mb-1">
-                            <span>Wed</span>
-                            <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center mb-1">
-                            <span>Thu</span>
-                            <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center mb-1">
-                            <span>Fri</span>
-                            <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center mb-1">
-                            <span>Sat</span>
-                            <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">Closed</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center mb-1">
-                            <span>Sun</span>
-                            <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">Closed</span>
-                        </li>
+                    <h6 class="fw-bold mb-4 text-uppercase text-white-50"
+                        style="font-size: 0.75rem; letter-spacing: 1px; color: #606C39 !important;">CLINIC HOURS</h6>
+                    <ul class="list-unstyled text-white-50 small d-flex flex-column gap-2" style="font-weight: 300;">
+                        <li class="d-flex justify-content-between"><span>Mon</span> <span>---------- 8:00AM -
+                                6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Tues</span> <span>---------- 8:00AM -
+                                6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Wed</span> <span>---------- 8:00AM -
+                                6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Thu</span> <span>---------- 8:00AM -
+                                6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Fri</span> <span>---------- 8:00AM -
+                                6:00PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Sat</span> <span>----------------------
+                                Closed</span></li>
+                        <li class="d-flex justify-content-between"><span>Sun</span> <span>----------------------
+                                Closed</span></li>
                     </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="pt-4 d-flex justify-content-between text-white-50 px-0"
+                style="font-size: 0.75rem; font-weight: 300;">
+                <span>&copy; 2026 Harmony Neurocare in Castle Rock, CO | All Rights Reserved</span>
+                <div>
+                    <a href="#" class="text-reset text-decoration-none me-2">Privacy Policy</a> |
+                    <a href="#" class="text-reset text-decoration-none mx-2">Terms & Conditions</a> |
+                    <a href="#" class="text-reset text-decoration-none ms-2">Disclaimers</a>
                 </div>
             </div>
         </div>
