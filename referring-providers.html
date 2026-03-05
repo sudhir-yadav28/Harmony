@@ -21,7 +21,7 @@
 
 <body>
 
-<!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container-fluid px-5">
             <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html">
@@ -48,79 +48,209 @@
     </nav>
 
     <!-- Hero Section -->
-    <section
-        class="d-flex align-items-center justify-content-center text-center text-white position-relative bg-dark-green"
-        style="min-height: 400px; padding-top: 100px; background-image: url('images/home/BG-hero.jpg'); background-size: cover; background-position: center;">
-        <div class="container relative z-2">
-            <p class="text-uppercase small ls-2 mb-3 text-white-50 fw-bold">PARTNERING IN CARE</p>
-            <h1 class="display-3 serif-font mb-4">Referring Providers</h1>
-        </div>
-        <!-- Background Overlay -->
+    <section class="d-flex align-items-end position-relative"
+        style="min-height: 50vh; padding-top: 140px; padding-bottom: 70px; overflow: hidden;">
+        <!-- Background Image -->
         <div class="position-absolute top-0 start-0 w-100 h-100"
-            style="background: radial-gradient(circle at center, rgba(46,74,51,0.6) 0%, rgba(26,47,32,0.9) 100%); z-index: 1;">
+            style="background: url('images/home/BG-hero.jpg') center/cover no-repeat; z-index: 0;"></div>
+        <!-- Dark Overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: linear-gradient(90deg, rgba(43,57,40,0.92) 0%, rgba(43,57,40,0.7) 100%); z-index: 1;">
+        </div>
+        <div class="container position-relative z-2">
+            <p class="small ls-2 mb-3 fw-bold"
+        style="color: rgba(255,255,255,0.5); font-size: 0.7rem; letter-spacing: 2px;">Psychiatry partnerships</p>
+            <h1 class="display-4 serif-font text-white mb-0" style="line-height: 1.15;">Provider &amp;
+                Physician<br>Referrals in Colorado</h1>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="py-5 bg-light-beige">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="serif-font display-5 mb-4 text-center">Refer a Patient</h2>
-                    <p class="text-muted lh-lg mb-5 text-center">
-                        We value our partnerships with local providers and are committed to offering seamless,
-                        collaborative care for your patients.
-                        To refer a patient for TMS Therapy, Ketamine/Spravato® treatment, or Psychiatry services, please
-                        use the form below or contact our office directly.
-                    </p>
+    <!-- Main Content: Two Column Layout -->
+    <section class="py-5 position-relative" style="overflow: hidden;">
+        <!-- Background matching hero -->
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: url('images/home/BG-hero.jpg') center/cover no-repeat; z-index: 0;"></div>
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: linear-gradient(180deg, rgba(43,57,40,0.88) 0%, rgba(43,57,40,0.92) 100%); z-index: 1;">
+        </div>
+        <div class="container py-5 position-relative z-2">
+            <div class="row g-5">
+                <!-- Left Column: Description + Resources -->
+                <div class="col-lg-6 pe-lg-5">
+                    <p class="text-uppercase small fw-bold ls-1 mb-4"
+                        style="color: #fff; font-size: 0.72rem; letter-spacing: 1.5px;">PARTNER WITH US TO SUPPORT
+                        YOUR PATIENTS' MENTAL HEALTH</p>
+                    <hr style="border-color: rgba(255,255,255,0.2); margin-bottom: 2rem;">
 
-                    <div class="glass-card p-5 rounded-4 shadow-sm bg-white">
-                        <h4 class="serif-font mb-4">Referral Form</h4>
+                    <p class="lh-lg mb-4" style="font-size: 0.9rem; color: rgba(255,255,255,0.7);">At Harmony Neurocare,
+                        we value
+                        collaborative care and welcome referrals from primary care physicians, therapists, and other
+                        healthcare professionals in Castle Rock and surrounding areas. When you refer a patient to us,
+                        you can trust they'll receive thorough psychiatric evaluation, personalized treatment planning,
+                        and compassionate support. We maintain open communication with referring providers and
+                        prioritize
+                        continuity of care, ensuring your patients get the high-quality mental health services they need
+                        while keeping you informed every step of the way.</p>
+
+                    <!-- Additional Resources Section -->
+                    <div style="margin-top: 6rem;">
+                        <h3 class="serif-font mb-3" style="color: #fff; font-size: 1.6rem;">Additional Education and
+                            Clinical Resources</h3>
+                        <p class="lh-lg mb-4" style="font-size: 0.9rem; color: rgba(255,255,255,0.7);">For providers
+                            interested in
+                            learning more about the clinical evidence, safety, and applications of TMS and
+                            ketamine-based treatments, the following resources offer peer-reviewed research, clinical
+                            guidelines, and continuing education opportunities.</p>
+                        <a href="resources.html"
+                            class="btn rounded-pill fw-bold text-uppercase ls-1 py-3 px-4 border-0 shadow-sm"
+                            style="background-color: #c25e28; color: #fff; font-size: 0.72rem; letter-spacing: 1.5px;">LEARN
+                            MORE</a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Referral Form Card -->
+                <div class="col-lg-6 ms-auto">
+                    <div class="p-4 p-lg-5 rounded-5 shadow-sm"
+                        style="background-color: #f7f5f0; border: 1px solid #e8e4da;">
                         <form>
-                            <div class="mb-3">
-                                <label for="providerName" class="form-label small fw-bold text-uppercase">Referring
-                                    Provider Name*</label>
-                                <input type="text" class="form-control" id="providerName" required>
+                            <!-- Referrer Contact Information -->
+                            <h4 class="serif-font mb-2" style="color: #2A371E; font-size: 1.6rem;">Referrer Contact
+                                Information</h4>
+                            <hr class="mb-4" style="border-color: #c25e28; opacity: 0.5;">
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold text-uppercase mb-2"
+                                        style="font-size: 0.65rem; letter-spacing: 1.2px; color: #2A371E;">PROVIDER
+                                        FIRST NAME*</label>
+                                    <input type="text" class="form-control rounded-pill px-3 py-2"
+                                        style="border: 1.5px solid #c5c0b5; font-size: 0.85rem; background-color: #fff;"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold text-uppercase mb-2"
+                                        style="font-size: 0.65rem; letter-spacing: 1.2px; color: #2A371E;">PROVIDER
+                                        LAST NAME*</label>
+                                    <input type="text" class="form-control rounded-pill px-3 py-2"
+                                        style="border: 1.5px solid #c5c0b5; font-size: 0.85rem; background-color: #fff;"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold text-uppercase mb-2"
+                                        style="font-size: 0.65rem; letter-spacing: 1.2px; color: #2A371E;">PROVIDER
+                                        PHONE NUMBER*</label>
+                                    <input type="tel" class="form-control rounded-pill px-3 py-2"
+                                        style="border: 1.5px solid #c5c0b5; font-size: 0.85rem; background-color: #fff;"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold text-uppercase mb-2"
+                                        style="font-size: 0.65rem; letter-spacing: 1.2px; color: #2A371E;">PROVIDER
+                                        EMAIL*</label>
+                                    <input type="email" class="form-control rounded-pill px-3 py-2"
+                                        style="border: 1.5px solid #c5c0b5; font-size: 0.85rem; background-color: #fff;"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold text-uppercase mb-2"
+                                        style="font-size: 0.65rem; letter-spacing: 1.2px; color: #2A371E;">PROVIDER FAX
+                                        NUMBER*</label>
+                                    <input type="tel" class="form-control rounded-pill px-3 py-2"
+                                        style="border: 1.5px solid #c5c0b5; font-size: 0.85rem; background-color: #fff;">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold text-uppercase mb-2"
+                                        style="font-size: 0.65rem; letter-spacing: 1.2px; color: #2A371E;">PRACTICE
+                                        NAME*</label>
+                                    <input type="text" class="form-control rounded-pill px-3 py-2"
+                                        style="border: 1.5px solid #c5c0b5; font-size: 0.85rem; background-color: #fff;">
+                                </div>
+                            </div>
+
+                            <!-- Patient Contact Information -->
+                            <h4 class="serif-font mb-2 mt-5" style="color: #2A371E; font-size: 1.6rem;">Patient Contact
+                                Information</h4>
+                            <hr class="mb-4" style="border-color: #c25e28; opacity: 0.5;">
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold text-uppercase mb-2"
+                                        style="font-size: 0.65rem; letter-spacing: 1.2px; color: #2A371E;">FIRST
+                                        NAME*</label>
+                                    <input type="text" class="form-control rounded-pill px-3 py-2"
+                                        style="border: 1.5px solid #c5c0b5; font-size: 0.85rem; background-color: #fff;"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold text-uppercase mb-2"
+                                        style="font-size: 0.65rem; letter-spacing: 1.2px; color: #2A371E;">LAST
+                                        NAME*</label>
+                                    <input type="text" class="form-control rounded-pill px-3 py-2"
+                                        style="border: 1.5px solid #c5c0b5; font-size: 0.85rem; background-color: #fff;"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold text-uppercase mb-2"
+                                        style="font-size: 0.65rem; letter-spacing: 1.2px; color: #2A371E;">PHONE
+                                        NUMBER*</label>
+                                    <input type="tel" class="form-control rounded-pill px-3 py-2"
+                                        style="border: 1.5px solid #c5c0b5; font-size: 0.85rem; background-color: #fff;"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold text-uppercase mb-2"
+                                        style="font-size: 0.65rem; letter-spacing: 1.2px; color: #2A371E;">EMAIL*</label>
+                                    <input type="email" class="form-control rounded-pill px-3 py-2"
+                                        style="border: 1.5px solid #c5c0b5; font-size: 0.85rem; background-color: #fff;"
+                                        required>
+                                </div>
                             </div>
                             <div class="mb-3">
-                                <label for="practiceName" class="form-label small fw-bold text-uppercase">Practice
-                                    Name</label>
-                                <input type="text" class="form-control" id="practiceName">
+                                <label class="form-label fw-bold text-uppercase mb-2"
+                                    style="font-size: 0.65rem; letter-spacing: 1.2px; color: #2A371E;">CONDITIONS WE
+                                    ARE TREATING:</label>
+                                <input type="text" class="form-control rounded-pill px-3 py-2"
+                                    style="border: 1.5px solid #c5c0b5; font-size: 0.85rem; background-color: #fff;">
                             </div>
-                            <div class="mb-3">
-                                <label for="patientName" class="form-label small fw-bold text-uppercase">Patient
-                                    Name*</label>
-                                <input type="text" class="form-control" id="patientName" required>
+                            <div class="mb-4">
+                                <label class="form-label fw-bold text-uppercase mb-2"
+                                    style="font-size: 0.65rem; letter-spacing: 1.2px; color: #2A371E;">COMMENTS:</label>
+                                <textarea class="form-control rounded-4 px-3 py-3"
+                                    style="border: 1.5px solid #c5c0b5; font-size: 0.85rem; min-height: 140px; background-color: #fff;"></textarea>
                             </div>
-                            <div class="mb-3">
-                                <label for="patientPhone" class="form-label small fw-bold text-uppercase">Patient
-                                    Phone*</label>
-                                <input type="tel" class="form-control" id="patientPhone" required>
+
+                            <!-- SMS Consent -->
+                            <div class="form-check mb-5">
+                                <input class="form-check-input" type="checkbox" id="smsConsent"
+                                    style="border-color: #999;">
+                                <label class="form-check-label text-muted" for="smsConsent"
+                                    style="font-size: 0.68rem; line-height: 1.5;">
+                                    I consent to receive SMS notifications/alerts from Harmony Neurocare. Message
+                                    frequency varies. Message &amp; data rates may apply. Text HELP to 720-410-6741 for
+                                    assistance. You can reply STOP to unsubscribe at any time.
+                                </label>
                             </div>
-                            <div class="mb-3">
-                                <label for="referralReason" class="form-label small fw-bold text-uppercase">Reason for
-                                    Referral</label>
-                                <textarea class="form-control" id="referralReason" rows="4"></textarea>
-                            </div>
-                            <div class="d-grid mt-4">
+
+                            <!-- Submit Button -->
+                            <div class="text-center">
                                 <button type="submit"
-                                    class="btn btn-dark-brown rounded-pill text-uppercase fw-bold py-3">Submit
-                                    Referral</button>
+                                    class="btn rounded-pill text-white fw-bold text-uppercase ls-1 py-3 px-5 border-0 shadow-sm w-100"
+                                    style="background-color: #c25e28; font-size: 0.72rem; letter-spacing: 1.5px; max-width: 450px;">SCHEDULE
+                                    A COMPLIMENTARY DISCOVERY CALL</button>
                             </div>
                         </form>
-                    </div>
-
-                    <div class="text-center mt-5">
-                        <p class="text-muted small">Prefer to fax? You can fax referrals to:
-                            <strong>303-409-7443</strong>
-                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-        <!-- Footer -->
+    <!-- Footer -->
     <footer class="py-5 small" style="background-color: #2A371E !important; color: #f0ebd8;">
         <div class="container pt-5">
             <div class="row g-4 mb-2">
@@ -129,16 +259,20 @@
                     <div>
                         <a href="index.html" class="d-flex flex-column align-items-start text-decoration-none mb-4"
                             style="margin-left: -5px;">
-                            <img src="images/icons/footer-logo-transparent.png" alt="Harmony Neurocare Logo" class="img-fluid"
+                            <img src="images/icons/footer-logo-transparent.png" alt="Harmony Neurocare Logo"
+                                class="img-fluid"
                                 style="height: auto; width: 100%; max-width: 280px; object-fit: contain;">
                         </a>
                         <p class="small mb-5 fst-italic"
                             style="font-size: 0.8rem; line-height: 1.6; max-width: 450px; color: #d0cbb8; font-weight: 300;">
-                            Harmony Neurocare provides hope-inspired mental health care in Castle Rock, CO, offering FDA-cleared TMS therapy, ketamine &amp; SPRAVATO&reg; treatments, and psychiatric support. With evidence-backed therapies, a judgment-free environment, and compassionate expertise, we help patients reclaim balance and find real transformation.
+                            Harmony Neurocare provides hope-inspired mental health care in Castle Rock, CO, offering
+                            FDA-cleared TMS therapy, ketamine &amp; SPRAVATO&reg; treatments, and psychiatric support.
+                            With evidence-backed therapies, a judgment-free environment, and compassionate expertise, we
+                            help patients reclaim balance and find real transformation.
                         </p>
                     </div>
                     <div
-                        style="font-size: 0.7rem; color: #9f9b8c; font-weight: 300; line-height: 1.8; margin-top: auto;">
+                        style="font-size: 0.7rem; color: #9f9b8c; font-weight: 300; line-height: 1.8; margin-top: auto; white-space: nowrap;">
                         &copy; 2026 Harmony Neurocare in Castle Rock, CO | All Rights Reserved<br>
                         <a href="#" class="text-reset text-decoration-none hover-white">Privacy Policy</a> | <a href="#"
                             class="text-reset text-decoration-none hover-white">Terms & Conditions</a> | <a href="#"
@@ -153,10 +287,13 @@
                     </h6>
                     <ul class="list-unstyled small d-flex flex-column gap-3"
                         style="font-size: 0.85rem; font-weight: 300; color: #e5e1d0;">
-                        <li><a href="tms.html" class="text-reset text-decoration-none hover-white">What is TMS Therapy?</a></li>
-                        <li><a href="ketamine.html" class="text-reset text-decoration-none hover-white">How Ketamine &amp; SPRAVATO&reg; Works</a></li>
+                        <li><a href="tms.html" class="text-reset text-decoration-none hover-white">What is TMS
+                                Therapy?</a></li>
+                        <li><a href="ketamine.html" class="text-reset text-decoration-none hover-white">How Ketamine
+                                &amp; SPRAVATO&reg; Works</a></li>
                         <li><a href="#" class="text-reset text-decoration-none hover-white">Patient Portal</a></li>
-                        <li><a href="referring-providers.html" class="text-reset text-decoration-none hover-white">Referring Providers</a></li>
+                        <li><a href="referring-providers.html"
+                                class="text-reset text-decoration-none hover-white">Referring Providers</a></li>
                         <li><a href="#" class="text-reset text-decoration-none hover-white">Careers</a></li>
                     </ul>
                 </div>
@@ -168,11 +305,13 @@
                     <ul class="list-unstyled small d-flex flex-column gap-3"
                         style="font-size: 0.85rem; font-weight: 300; color: #e5e1d0;">
                         <li class="d-flex gap-2 align-items-start">
-                            <i class="fa-solid fa-location-dot mt-1" style="font-size: 0.8rem; color: #FFF; width: 14px; text-align: center;"></i>
+                            <i class="fa-solid fa-location-dot mt-1"
+                                style="font-size: 0.8rem; color: #FFF; width: 14px; text-align: center;"></i>
                             <span style="line-height: 1.6;">757 Maleta Lane, Suite 201<br>Castle Rock, CO 80108</span>
                         </li>
                         <li class="d-flex gap-2 align-items-center mt-2">
-                            <i class="fa-solid fa-phone" style="font-size: 0.8rem; color: #FFF; width: 14px; text-align: center;"></i>
+                            <i class="fa-solid fa-phone"
+                                style="font-size: 0.8rem; color: #FFF; width: 14px; text-align: center;"></i>
                             <span>Phone: 303-409-7446</span>
                         </li>
                         <li class="d-flex gap-2 align-items-center" style="margin-top: -8px;">
@@ -180,14 +319,15 @@
                         </li>
 
                         <li class="d-flex gap-2 align-items-center mt-2">
-                            <i class="fa-solid fa-envelope" style="font-size: 0.8rem; color: #FFF; width: 14px; text-align: center;"></i>
+                            <i class="fa-solid fa-envelope"
+                                style="font-size: 0.8rem; color: #FFF; width: 14px; text-align: center;"></i>
                             <span>info@harmonyneurocare.com</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Column 4: Clinic Hours -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 ps-lg-4">
                     <h6 class="mb-4 text-uppercase"
                         style="color: #606C39; font-size: 0.7rem; letter-spacing: 1px; font-weight: 600;">CLINIC HOURS
                     </h6>
@@ -195,45 +335,38 @@
                         style="font-size: 0.85rem; font-weight: 300; color: #e5e1d0;">
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Mon</span>
-                            <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
+                            <span class="flex-grow-1 mx-2" style="border-bottom: 1px dashed rgba(229, 225, 208, 0.5); height: 1px; align-self: center;"></span>
+                            <span class="text-end" style="min-width: 120px; white-space: nowrap;">8:00AM - 6:00PM</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Tues</span>
-                            <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
+                            <span class="flex-grow-1 mx-2" style="border-bottom: 1px dashed rgba(229, 225, 208, 0.5); height: 1px; align-self: center;"></span>
+                            <span class="text-end" style="min-width: 120px; white-space: nowrap;">8:00AM - 6:00PM</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Wed</span>
-                            <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
+                            <span class="flex-grow-1 mx-2" style="border-bottom: 1px dashed rgba(229, 225, 208, 0.5); height: 1px; align-self: center;"></span>
+                            <span class="text-end" style="min-width: 120px; white-space: nowrap;">8:00AM - 6:00PM</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Thu</span>
-                            <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
+                            <span class="flex-grow-1 mx-2" style="border-bottom: 1px dashed rgba(229, 225, 208, 0.5); height: 1px; align-self: center;"></span>
+                            <span class="text-end" style="min-width: 120px; white-space: nowrap;">8:00AM - 6:00PM</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Fri</span>
-                            <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
+                            <span class="flex-grow-1 mx-2" style="border-bottom: 1px dashed rgba(229, 225, 208, 0.5); height: 1px; align-self: center;"></span>
+                            <span class="text-end" style="min-width: 120px; white-space: nowrap;">8:00AM - 6:00PM</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Sat</span>
-                            <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">Closed</span>
+                            <span class="flex-grow-1 mx-2" style="border-bottom: 1px dashed rgba(229, 225, 208, 0.5); height: 1px; align-self: center;"></span>
+                            <span class="text-end" style="min-width: 120px; white-space: nowrap;">Closed</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Sun</span>
-                            <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">Closed</span>
+                            <span class="flex-grow-1 mx-2" style="border-bottom: 1px dashed rgba(229, 225, 208, 0.5); height: 1px; align-self: center;"></span>
+                            <span class="text-end" style="min-width: 120px; white-space: nowrap;">Closed</span>
                         </li>
                     </ul>
                 </div>

@@ -1,110 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+#!/usr/bin/env python3
+"""Replace all footers across every HTML page with the canonical footer."""
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trauma & Addiction | Harmony</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+import re
+import os
+import glob
 
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-        <div class="container-fluid px-5">
-            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="index.html">
-                <img src="images/logo-full1.png" alt="Harmony Neurocare Logo" class="img-fluid"
-                    style="height: auto; max-width: 220px; object-fit: contain;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center gap-3">
-                    <li class="nav-item"><a class="nav-link active-home" href="#">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            SERVICES
-                        </a>
-                        <ul class="dropdown-menu border-0 shadow-sm rounded-3 overflow-hidden">
-                            <li><a class="dropdown-item small py-2" href="tms.html">TMS Therapy</a></li>
-                            <li><a class="dropdown-item small py-2" href="ketamine.html">Ketamine & Spravato</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="insurance.html">INSURANCE & PRICING</a></li>
-                    <li class="nav-item"><a class="nav-link" href="conditions.html">CONDITIONS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="resources.html">RESOURCES</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold" href="contact.html">CONTACT US</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- HERO (Image Background Full) -->
-    <section class="position-relative d-flex align-items-center justify-content-center text-white" style="min-height: 60vh; padding-top: 100px;">
-        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: url('images/about/img-Harmony.jpg') center/cover no-repeat; z-index: 0;"></div>
-        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50 z-1"></div>
-        <div class="container position-relative z-2 text-center pt-5">
-            <p class="small ls-2 mb-3 fw-bold text-white-50">Dual diagnosis treatment</p>
-            <h1 class="display-3 serif-font mb-4">Evidence-based care to restore<br>stability and deeply support healing</h1>
-        </div>
-    </section>
-
-    <!-- INTRO -->
-    <section class="py-5 bg-white text-center">
-        <div class="container py-5 mt-3">
-            <h2 class="serif-font display-4 mb-4" style="color: #2A371E">Dual Diagnosis Care</h2>
-            <div class="mx-auto" style="width: 60px; height: 2px; background-color: #c25e28; margin-bottom: 2rem;"></div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <p class="text-muted lh-lg mb-4 fs-5">Trauma and addiction are frequently intertwined. Substance use often begins as a way to self-medicate profound pain and anxiety.</p>
-                    <p class="text-muted lh-lg fw-bold" style="color: #c25e28;">At Harmony Neurocare, we treat the root causes—the trauma itself—recognizing that true healing requires addressing both simultaneously.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WIDE IMAGE SPLIT -->
-    <section class="container-fluid p-0">
-        <div class="row g-0">
-            <div class="col-lg-6">
-                <img src="images/psychiatry/psych-Ketamine.jpg" class="w-100 h-100 object-fit-cover" style="min-height: 400px;">
-            </div>
-            <div class="col-lg-6 d-flex align-items-center" style="background-color: #F4F2EC;">
-                <div class="p-5 m-lg-4">
-                    <h3 class="serif-font display-6 mb-3 text-dark">Recalibrating Brain Networks</h3>
-                    <p class="text-uppercase small fw-bold mb-3 ls-1" style="color: #c25e28;">REDUCING CRAVINGS WITH TMS</p>
-                    <p class="text-muted lh-lg">Chronic addiction and trauma alter reward circuitry. Deep TMS acts as a vital tool to recalibrate these specific networks, helping reduce the intensity of cravings and mood symptoms.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="py-5 text-center bg-white" style="min-height: 300px; display: flex; align-items: center;">
-        <div class="container py-4">
-            <h2 class="serif-font display-5 mb-4 text-dark">Reclaim Your Life</h2>
-            <p class="text-muted mx-auto lh-lg mb-5 fs-5" style="max-width: 650px;">You don't have to carry the weight of trauma and addiction alone. Our team provides the expert care needed to support your recovery.</p>
-            <a href="contact.html" class="btn rounded-pill px-5 py-3 fw-bold small text-uppercase ls-1 border shadow-sm text-dark" style="background-color: #fff;">SCHEDULE CARES</a>
-        </div>
-    </section>
-    <!-- Footer -->
+# The canonical footer HTML (from the reference screenshot / referring-providers.html)
+CANONICAL_FOOTER = '''    <!-- Footer -->
     <footer class="py-5 small" style="background-color: #2A371E !important; color: #f0ebd8;">
         <div class="container pt-5">
             <div class="row g-4 mb-2">
@@ -226,11 +128,45 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>'''
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
+def replace_footer(filepath):
+    """Replace the footer in an HTML file with the canonical footer."""
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # Match from <footer to </footer> with various possible indentation
+    # Also try to capture the <!-- Footer --> comment if present
+    pattern = r'(\s*<!--\s*Footer\s*-->\s*)?\s*<footer[^>]*>.*?</footer>'
+    
+    match = re.search(pattern, content, re.DOTALL)
+    if not match:
+        print(f"  WARNING: No footer found in {filepath}")
+        return False
+    
+    # Replace the matched footer with the canonical one
+    new_content = content[:match.start()] + '\n' + CANONICAL_FOOTER + content[match.end():]
+    
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(new_content)
+    
+    print(f"  ✓ Updated: {os.path.basename(filepath)}")
+    return True
 
-</html>
+def main():
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    html_files = sorted(glob.glob(os.path.join(base_dir, '*.html')))
+    
+    print(f"Found {len(html_files)} HTML files")
+    print("=" * 50)
+    
+    updated = 0
+    for filepath in html_files:
+        if replace_footer(filepath):
+            updated += 1
+    
+    print("=" * 50)
+    print(f"Updated {updated}/{len(html_files)} files")
+
+if __name__ == '__main__':
+    main()

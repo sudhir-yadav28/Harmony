@@ -57,8 +57,8 @@
         </div>
 
         <div class="container position-relative z-2 text-start pb-5">
-            <p class="text-uppercase small ls-2 mb-3 text-white fw-bold opacity-75">INSURANCE FOR DEEP TMS & KETAMINE
-                THERAPY IN COLORADO</p>
+            <p class="small ls-2 mb-3 text-white fw-bold opacity-75">Insurance for deep tms & ketamine
+                therapy in colorado</p>
             <h1 class="display-3 serif-font mb-4" style="max-width: 900px;">Mental health coverage and flexible payment
                 options designed to support your healing</h1>
         </div>
@@ -77,7 +77,7 @@
             <hr class="border-white opacity-25 mb-5">
 
             <div class="row justify-content-end">
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                     <p class="fw-light lh-lg text-white opacity-75" style="font-size: 1.1rem;">
                         Your mental health is one of the most important investments you will ever make. At Harmony
                         NeuroCare, we believe cost should never be the reason someone cannot access safe, effective, and
@@ -91,7 +91,7 @@
     </section>
 
     <!-- Insurance Partners Grid -->
-    <section class="py-5 bg-light-beige">
+    <section class="py-5 bg-light-beige" style="background-color: #EEECE5;">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-5 text-start pe-lg-5">
@@ -153,10 +153,10 @@
     </section>
 
     <!-- Financing Options Section -->
-    <section class="py-5 bg-light-beige position-relative overflow-hidden">
+    <section class="py-5 bg-light-beige" style="background-color: #DED9D2;">
+
         <!-- Wavy Background -->
-        <div class="position-absolute top-0 end-0 w-100 h-100"
-            style="background: url('images/insurance/AbstractWavyLines-3-Verdant.png') no-repeat top right; background-size: contain; opacity: 0.1;">
+        <div class="position-absolute top-0 end-0 w-100 h-100">
         </div>
 
         <div class="container py-5 position-relative z-1">
@@ -194,50 +194,226 @@
     </section>
 
     <!-- Private Pay Pricing -->
-    <section class="py-5 bg-light-beige">
-        <div class="container py-5 text-center">
-            <h2 class="serif-font display-4 mb-3">Private Pay Pricing (No Surprises)</h2>
-            <p class="text-muted w-75 mx-auto mb-5 fw-light">Treatment plans vary based on location and individual
-                needs. Most patients qualify for insurance coverage for Deep TMS and SPRAVATO® and our team will verify
-                your benefits and walk you through what to expect. Below are typical private pay pricing ranges so you
-                can plan with confidence before beginning care.</p>
-
-            <p class="text-muted w-75 mx-auto mb-5 fst-italic small">If you are unsure which treatment is right for you,
-                our team can walk through your goals and recommend a plan tailored to your needs. <a href="contact.html"
-                    class="text-orange text-decoration-none">Reach out on our Contact page here</a> for help.</p>
-
-            <div class="bg-white rounded-5 p-2 d-inline-flex mb-5 shadow-sm">
-                <div class="px-5 py-3 rounded-5 bg-white fw-bold text-orange">COST RANGES FOR DEEP TMS TREATMENTS</div>
-                <div class="px-5 py-3 rounded-5 text-muted bg-light">COST RANGES FOR KETAMINE & SPRAVATO®</div>
+    <section class="py-5" style="background-color: #EEECE5;">
+        <div class="container py-5">
+            <div class="text-center mx-auto" style="max-width: 800px; margin-bottom: 60px;">
+                <h2 class="serif-font mb-4" style="font-size: 2.5rem; color: #1a1a1a;">Private Pay Pricing <span
+                        style="font-weight: 300;">(No Surprises)</span></h2>
+                <p class="text-muted fw-light lh-lg mx-auto" style="font-size: 0.90rem; max-width: 650px;">Treatment
+                    plans vary based on location and individual
+                    needs. Most patients qualify for insurance coverage for Deep TMS and SPRAVATO® and our team will
+                    verify
+                    your benefits and walk you through what to expect. Below are typical private pay pricing ranges so
+                    you
+                    can plan with confidence before beginning care.</p>
+                <p class="text-muted mb-5 fw-light fst-italic mx-auto" style="font-size: 0.85rem; max-width: 650px;">If
+                    you are unsure which treatment is right for you,
+                    our team can walk through your goals and recommend a plan tailored to your needs. <a
+                        href="contact.html" style="color: #C25C2A;" class="text-decoration-underline">Reach out on our
+                        Contact page here</a> for help.</p>
             </div>
 
-            <div class="row justify-content-center g-4">
-                <!-- Standard TMS -->
-                <div class="col-lg-4">
-                    <div class="bg-white rounded-4 p-5 h-100 shadow-sm">
-                        <h4 class="serif-font mb-3">Standard Deep TMS</h4>
-                        <p class="fs-4 text-muted mb-2">$8,500 to $11,500</p>
-                        <p class="small fw-bold fst-italic mt-4">*Covered by most insurance plans.</p>
+            <div class="mx-auto" style="max-width: 1100px;">
+                <!-- Tabs Structure (Interactive) -->
+                <style>
+                    /* Custom Tab styling */
+                    .pricing-tab-btn {
+                        background: none;
+                        border: none;
+                        padding: 0;
+                        outline: none;
+                    }
+
+                    .pricing-tab-btn .pricing-tab-bg {
+                        background-color: #E0DDD4;
+                        border-radius: 30px 30px 0 0;
+                        min-height: 90px;
+                        padding: 25px 45px 10px 45px;
+                        transition: background-color 0s;
+                    }
+
+                    /* Custom padding overrides for tab alignments */
+                    #tms-tab .pricing-tab-bg {
+                        padding-left: 50px;
+                        padding-right: 50px;
+                    }
+
+                    /* Compensating for the negative margin overlapping to keep text visibly centered */
+                    #ketamine-tab .pricing-tab-bg {
+                        padding-left: 75px !important;
+                        padding-right: 45px !important;
+                    }
+
+                    .pricing-tab-btn h6 {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 0.65rem !important;
+                        font-weight: 600 !important;
+                        letter-spacing: 0.8px !important;
+                        color: #C25C2A;
+                        border-bottom: 2px solid #A9A69D;
+                        padding-bottom: 18px;
+                        transition: border-color 0s;
+                    }
+
+                    /* Active states */
+                    .pricing-tab-btn.active .pricing-tab-bg {
+                        background-color: #FFFFFF !important;
+                    }
+
+                    .pricing-tab-btn.active.nav-link h6 {
+                        border-bottom-color: #DCD9D1 !important;
+                    }
+
+                    /* Z-index management */
+                    .nav-item {
+                        position: relative;
+                    }
+
+                    .nav-item:first-child {
+                        z-index: 3;
+                    }
+
+                    .nav-item:last-child {
+                        z-index: 1;
+                        margin-left: -30px;
+                    }
+
+                    .pricing-tab-btn.active {
+                        z-index: 4;
+                        position: relative;
+                    }
+                </style>
+
+                <ul class="nav d-flex position-relative align-items-end border-0" id="pricingTab" role="tablist"
+                    style="margin-left: 0;">
+                    <!-- Deep TMS Tab -->
+                    <li class="nav-item flex-fill" role="presentation" style="max-width: 48%;">
+                        <button class="nav-link w-100 h-100 active pricing-tab-btn" id="tms-tab" data-bs-toggle="tab"
+                            data-bs-target="#tms-pane" type="button" role="tab" aria-controls="tms-pane"
+                            aria-selected="true">
+                            <div
+                                class="pricing-tab-bg text-center d-flex flex-column align-items-center justify-content-center">
+                                <h6 class="fw-bold mb-0 text-uppercase d-inline-block"
+                                    style="font-size: 0.75rem; letter-spacing: 0.2px;">COST RANGES FOR DEEP TMS
+                                    TREATMENTS</h6>
+                            </div>
+                        </button>
+                    </li>
+                    <!-- Ketamine Tab -->
+                    <li class="nav-item flex-fill" role="presentation">
+                        <button class="nav-link w-100 h-100 pricing-tab-btn" id="ketamine-tab" data-bs-toggle="tab"
+                            data-bs-target="#ketamine-pane" type="button" role="tab" aria-controls="ketamine-pane"
+                            aria-selected="false">
+                            <div
+                                class="pricing-tab-bg text-center d-flex flex-column align-items-center justify-content-center">
+                                <h6 class="fw-bold mb-0 text-uppercase d-inline-block"
+                                    style="font-size: 0.75rem; letter-spacing: 0.2px;">COST RANGES FOR KETAMINE &
+                                    SPRAVATO®</h6>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Content Container (Tab Content) -->
+                <div class="tab-content bg-white p-4 p-md-5 position-relative z-2 w-100 shadow-sm"
+                    id="pricingTabContent" style="border-radius: 0 40px 40px 40px;">
+
+                    <!-- Deep TMS Pane -->
+                    <div class="tab-pane fade show active" id="tms-pane" role="tabpanel" aria-labelledby="tms-tab"
+                        tabindex="0">
+                        <div class="row g-4 justify-content-center px-lg-4 py-lg-4">
+                            <!-- Standard TMS -->
+                            <div class="col-lg-4">
+                                <div class="rounded-4 p-4 text-center d-flex flex-column h-100"
+                                    style="background-color: #F1EFEA; min-height: 200px;">
+                                    <div class="mt-4">
+                                        <h4 class="serif-font mb-3 text-dark" style="font-size: 1.45rem;">Standard Deep
+                                            TMS</h4>
+                                        <p class="text-muted mb-0" style="font-size: 0.95rem;">$8,500 to $11,500</p>
+                                    </div>
+                                    <div class="mt-auto pb-4 pt-4 pt-lg-0">
+                                        <p class="fw-bold fst-italic mb-0 text-dark" style="font-size: 0.75rem;">
+                                            *Covered by most insurance plans.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accelerated TMS -->
+                            <div class="col-lg-4">
+                                <div class="rounded-4 p-4 text-center d-flex flex-column h-100"
+                                    style="background-color: #F1EFEA; min-height: 200px;">
+                                    <div class="mt-4">
+                                        <h4 class="serif-font mb-3 text-dark" style="font-size: 1.45rem;">Accelerated
+                                            Deep TMS</h4>
+                                        <p class="text-muted mb-0" style="font-size: 0.95rem;">$7,500 to 10,500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Maintenance -->
+                            <div class="col-lg-4">
+                                <div class="rounded-4 p-4 text-center d-flex flex-column h-100"
+                                    style="background-color: #F1EFEA; min-height: 200px;">
+                                    <div class="mt-4">
+                                        <h4 class="serif-font mb-3 text-dark" style="font-size: 1.45rem;">Maintenance
+                                            Sessions</h4>
+                                        <p class="text-muted mb-0" style="font-size: 0.95rem;">$200 to $300</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- Accelerated TMS -->
-                <div class="col-lg-4">
-                    <div class="bg-white rounded-4 p-5 h-100 shadow-sm">
-                        <h4 class="serif-font mb-3">Accelerated Deep TMS</h4>
-                        <p class="fs-4 text-muted mb-2">$7,500 to 10,500</p>
-                    </div>
-                </div>
-                <!-- Maintenance -->
-                <div class="col-lg-4">
-                    <div class="bg-white rounded-4 p-5 h-100 shadow-sm">
-                        <h4 class="serif-font mb-3">Maintenance Sessions</h4>
-                        <p class="fs-4 text-muted mb-2">$200 to $300</p>
+
+                    <!-- Ketamine Pane -->
+                    <div class="tab-pane fade" id="ketamine-pane" role="tabpanel" aria-labelledby="ketamine-tab"
+                        tabindex="0">
+                        <div class="row g-4 justify-content-center px-lg-4 py-lg-4">
+                            <!-- Standard TMS -->
+                            <div class="col-lg-4">
+                                <div class="rounded-4 p-4 text-center d-flex flex-column h-100"
+                                    style="background-color: #F1EFEA; min-height: 200px;">
+                                    <div class="mt-4">
+                                        <h4 class="serif-font mb-3 text-dark" style="font-size: 1.45rem;">Standard Deep
+                                            TMS</h4>
+                                        <p class="text-muted mb-0" style="font-size: 0.95rem;">$8,500 to $11,500</p>
+                                    </div>
+                                    <div class="mt-auto pb-4 pt-4 pt-lg-0">
+                                        <p class="fw-bold fst-italic mb-0 text-dark" style="font-size: 0.75rem;">
+                                            *Covered by most insurance plans.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accelerated TMS -->
+                            <div class="col-lg-4">
+                                <div class="rounded-4 p-4 text-center d-flex flex-column h-100"
+                                    style="background-color: #F1EFEA; min-height: 200px;">
+                                    <div class="mt-4">
+                                        <h4 class="serif-font mb-3 text-dark" style="font-size: 1.45rem;">Accelerated
+                                            Deep TMS</h4>
+                                        <p class="text-muted mb-0" style="font-size: 0.95rem;">$7,500 to 10,500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Maintenance -->
+                            <div class="col-lg-4">
+                                <div class="rounded-4 p-4 text-center d-flex flex-column h-100"
+                                    style="background-color: #F1EFEA; min-height: 200px;">
+                                    <div class="mt-4">
+                                        <h4 class="serif-font mb-3 text-dark" style="font-size: 1.45rem;">Maintenance
+                                            Sessions</h4>
+                                        <p class="text-muted mb-0" style="font-size: 0.95rem;">$200 to $300</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a href="contact.html"
-                class="btn btn-dark-brown shadow-sm rounded-pill px-4 py-2 mt-5 small fw-bold text-uppercase">REQUEST
-                FULL PRICING SHEET</a>
+
+            <div class="text-center mt-5">
+                <a href="contact.html"
+                    class="btn btn-dark-brown shadow-sm rounded-pill px-5 py-3 small fw-bold text-uppercase"
+                    style="background-color: #381B1A; color: white; border: none; font-size: 0.75rem; letter-spacing: 1px;">
+                    LEARN MORE ABOUT YOUR PAYMENT OPTIONS</a>
+            </div>
         </div>
     </section>
 
@@ -280,12 +456,8 @@
 
     <!-- Footer CTA -->
     <section class="py-5 bg-dark-green text-center position-relative overflow-hidden">
-        <!-- Background with blur/gradient effect to match image -->
-        <div class="position-absolute top-0 start-0 w-100 h-100"
-            style="background: radial-gradient(circle at 10% 50%, rgba(194, 92, 42, 0.4) 0%, rgba(42, 55, 30, 1) 50%); filter: blur(0px);">
-        </div>
         <div class="position-absolute top-0 end-0 w-100 h-100"
-            style="background: url('images/insurance/AbstractWavyLines-3-Verdant.png') no-repeat right center; background-size: cover; opacity: 0.1;">
+            style="background: url('images/tms/BG-MacroGreenLeaf.jpg') no-repeat right center; background-size: cover; opacity: 1;">
         </div>
 
         <div class="container position-relative z-1 py-5">
@@ -301,7 +473,6 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer class="py-5 small" style="background-color: #2A371E !important; color: #f0ebd8;">
         <div class="container pt-5">
@@ -324,7 +495,7 @@
                         </p>
                     </div>
                     <div
-                        style="font-size: 0.7rem; color: #9f9b8c; font-weight: 300; line-height: 1.8; margin-top: auto;">
+                        style="font-size: 0.7rem; color: #9f9b8c; font-weight: 300; line-height: 1.8; margin-top: auto; white-space: nowrap;">
                         &copy; 2026 Harmony Neurocare in Castle Rock, CO | All Rights Reserved<br>
                         <a href="#" class="text-reset text-decoration-none hover-white">Privacy Policy</a> | <a href="#"
                             class="text-reset text-decoration-none hover-white">Terms & Conditions</a> | <a href="#"
@@ -379,7 +550,7 @@
                 </div>
 
                 <!-- Column 4: Clinic Hours -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 ps-lg-4">
                     <h6 class="mb-4 text-uppercase"
                         style="color: #606C39; font-size: 0.7rem; letter-spacing: 1px; font-weight: 600;">CLINIC HOURS
                     </h6>
@@ -388,44 +559,44 @@
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Mon</span>
                             <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
+                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.5); height: 1px; align-self: center;"></span>
+                            <span class="text-end" style="min-width: 120px; white-space: nowrap;">8:00AM - 6:00PM</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Tues</span>
                             <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
+                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.5); height: 1px; align-self: center;"></span>
+                            <span class="text-end" style="min-width: 120px; white-space: nowrap;">8:00AM - 6:00PM</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Wed</span>
                             <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
+                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.5); height: 1px; align-self: center;"></span>
+                            <span class="text-end" style="min-width: 120px; white-space: nowrap;">8:00AM - 6:00PM</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Thu</span>
                             <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
+                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.5); height: 1px; align-self: center;"></span>
+                            <span class="text-end" style="min-width: 120px; white-space: nowrap;">8:00AM - 6:00PM</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Fri</span>
                             <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">8:00AM - 6:00PM</span>
+                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.5); height: 1px; align-self: center;"></span>
+                            <span class="text-end" style="min-width: 120px; white-space: nowrap;">8:00AM - 6:00PM</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Sat</span>
                             <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">Closed</span>
+                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.5); height: 1px; align-self: center;"></span>
+                            <span class="text-end" style="min-width: 120px; white-space: nowrap;">Closed</span>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-1">
                             <span>Sun</span>
                             <span class="flex-grow-1 mx-2"
-                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.4); transform: translateY(4px);"></span>
-                            <span class="text-end" style="min-width: 120px;">Closed</span>
+                                style="border-bottom: 1px dashed rgba(229, 225, 208, 0.5); height: 1px; align-self: center;"></span>
+                            <span class="text-end" style="min-width: 120px; white-space: nowrap;">Closed</span>
                         </li>
                     </ul>
                 </div>
